@@ -1,0 +1,68 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+
+.indexheader {
+  height: initial;
+  position: relative;
+  min-height: 760px;
+
+  >.container {
+    display: block;
+    min-height: inherit;
+  }
+
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+  }
+
+  &__content {
+    height: 100%;
+    max-width: 830px;
+    min-height: 100%;
+    min-height: inherit;
+    @include flex-left(row);
+  }
+
+  &__title {
+    font-size: 72px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    margin: 15px 0;
+    font-weight: 900;
+  }
+}
+
+#video-bg {
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  margin-top: 0;
+  position: absolute;
+  z-index: -1;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+#video-bg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+}
+
+#video-bg>video {
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  width: initial;
+  height: initial;
+}

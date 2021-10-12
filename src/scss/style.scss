@@ -1,0 +1,34 @@
+@import './fonts.scss';
+@import './header.scss';
+@import './indexheader.scss';
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+
+body {
+  font-family: 'New_Channel_Font', sans-serif;
+  color: $darkcolor;
+  font-weight: 500;
+  min-width: 320px;
+  @include clear;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+ul {
+  @include clear;
+}
+
+li {
+  @include clear-list;
+}
+
+a {
+  transition: $transition;
+}
+
+.btn {
+  @include btn;
+}

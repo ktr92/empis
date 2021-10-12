@@ -1,0 +1,77 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+
+
+.header {
+  padding: 14px 0;
+
+  &__content {
+    @include flex-between();
+  }
+
+  &__logo img {
+    width: 155px;
+  }
+
+  &__left {
+    @include flex-between;
+    width: 235px;
+
+  }
+}
+
+.headernav {
+  @include flex-between;
+
+  &__menu {
+    margin-right: 74px;
+
+    ul {
+      margin: 0 -37px;
+      @include flex-between;
+
+      li.headernav__link {
+        padding: 0 37px;
+
+        a {
+          font-size: 13px;
+          color: $textcolor;
+          text-transform: uppercase;
+          text-decoration: none;
+          border-bottom: 2px solid transparent;
+          padding-bottom: 2px;
+
+          &:hover,
+          &:focus {
+            border-bottom: 2px solid $maincolor;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  &__content {
+    display: none;
+  }
+
+  &__call {
+    a {
+      font-weight: 900;
+      font-size: 13px;
+      color: $textcolor;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-bottom: 1px dotted #fff;
+    }
+
+  }
+}
+
+.socials {
+  img {
+    width: 34px;
+    height: 34px;
+  }
+}

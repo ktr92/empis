@@ -1,0 +1,53 @@
+@import 'params.scss';
+
+@mixin clear {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin clear-list {
+  @include clear;
+  list-style: none;
+}
+
+@mixin flex-center($dir: column) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@mixin flex-left($dir: column) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: $dir;
+
+  >* {
+    width: 100%;
+  }
+}
+
+@mixin flex-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin btn($bgcolor: $maincolor, $color: $textcolor) {
+  cursor: pointer;
+  display: inline-block;
+  padding: 12px 30px 13px 30px;
+  line-height: 1;
+  white-space: nowrap;
+  background: $bgcolor;
+  color: $color;
+  font-size: 18px;
+  border: none;
+  margin: 15px 0;
+  text-decoration: none;
+  border-radius: 6px;
+  text-transform: none;
+}

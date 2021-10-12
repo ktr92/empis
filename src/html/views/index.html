@@ -1,0 +1,31 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+
+<div class="indexheader">
+  <%= _.template(require('./../includes/header.html').default)(data) %>
+  <div id="video-bg">
+    <video width="100%" height="auto" preload="auto" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="uploads/intro.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="container">
+    <div class="indexheader__content">
+      <div class="indexheader__items">
+        <div class="indexheader__title">Веб-проекты любой сложности на 1С-Битрикс</div><!-- /.indexheader__title -->
+        <div class="indexheader__button">
+          <a href="" class="indexheader__btn btn btn--main">Все услуги агентства</a>
+          <!-- /.indexheader__btn btn btn--main -->
+        </div><!-- /.indexheader__button -->
+      </div><!-- /.indexheader__items -->
+
+    </div><!-- /.indexheader__content -->
+  </div><!-- /.container -->
+</div><!-- /.indexpage -->
+
+<main></main>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
