@@ -2,6 +2,8 @@
 @import './header.scss';
 @import './indexheader.scss';
 @import './projects.scss';
+@import './services.scss';
+@import './about.scss';
 @import './partials/params.scss';
 @import './partials/mixins.scss';
 
@@ -30,9 +32,21 @@ li {
   @include clear-list;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: initial;
+  height: initial;
+}
+
 a {
   transition: $transition;
   text-decoration: none;
+  color: $maincolor;
+}
+
+a:hover {
+  color: $secondcolor;
 }
 
 .btn {
@@ -41,4 +55,56 @@ a {
 
 .bigButton {
   @include btn-big;
+}
+
+h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  margin: 10px 0 10px 0;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 10px 0 10px 0;
+}
+
+.titleLine {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  hr {
+    height: 7px;
+    background: $maincolor;
+    margin: 0 0 0 90px;
+    width: 100%;
+    border: none;
+  }
+
+
+  h2 {
+    font-size: 72px;
+    line-height: 1.2;
+    margin: 20px 0;
+    font-weight: 900;
+  }
+}
+
+.cols {
+  @include flex-grid;
+  margin: 0 -25px;
+
+  &__col--6 {
+    width: 50%;
+    padding: 0 25px;
+  }
+
+}
+
+p {
+  font-size: 18px;
+  color: $darkcolor;
+  line-height: 1.333;
+  text-align: justify;
 }

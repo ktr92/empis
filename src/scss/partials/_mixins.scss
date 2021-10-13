@@ -16,6 +16,14 @@
   list-style: none;
 }
 
+@mixin flex-grid($dir: row) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
 @mixin flex-center($dir: column) {
   display: flex;
   flex-direction: $dir;
@@ -30,9 +38,13 @@
   align-items: center;
   flex-direction: $dir;
 
-  >* {
-    width: 100%;
+  @if ($dir==column) {
+    >* {
+      width: 100%;
+    }
   }
+
+
 }
 
 @mixin flex-between($alignitems: center) {

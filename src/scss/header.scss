@@ -1,5 +1,6 @@
 @import './partials/params.scss';
 @import './partials/mixins.scss';
+@import './partials/animations.scss';
 
 
 .header {
@@ -9,8 +10,17 @@
     @include flex-between();
   }
 
-  &__logo img {
+  &__logo img.logo {
     width: 155px;
+  }
+
+  &__logo img.logo--fixed {
+    display: none;
+  }
+
+
+  .headerToggler--fixed {
+    display: none;
   }
 
   &__left {
@@ -18,6 +28,62 @@
     width: 235px;
 
   }
+
+
+}
+
+.header.fixed {
+  animation: smoothScroll 0.4s forwards;
+  padding: 4px 0;
+  background: #fff;
+  position: fixed !important;
+
+  .topmenu__header {
+    padding: 4px 0;
+  }
+
+  .contact__call {
+    padding: 7px 13px 7px 7px;
+  }
+
+  img.logo {
+    display: none;
+  }
+
+  img.logo--fixed {
+    display: block;
+  }
+
+  .headerToggler {
+    display: none;
+  }
+
+  .headerToggler--fixed {
+    display: block;
+  }
+
+  li.headernav__link {
+    a {
+      color: $darkcolor;
+    }
+  }
+
+  .contact:hover .contact__content {
+    border: 1px solid $graycolor;
+  }
+
+
+  .contact__call a {
+    color: $darkcolor;
+    border-color: $darkcolor;
+  }
+
+  .contact__call {
+    background-image: url(../img/dropdown2.png);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+  }
+
 }
 
 .headernav {

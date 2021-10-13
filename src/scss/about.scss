@@ -1,0 +1,45 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+@import './partials/animations.scss';
+
+.aboutblock {
+  background-color: $bgcolor;
+  padding: 50px 0;
+}
+
+.about__clients {}
+
+.rounditems {
+  margin: 30px 0;
+
+  &__items {
+    @include flex-grid;
+    margin: 0 -20px;
+  }
+
+  &__item {
+    width: calc(100% / 6);
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+
+  &__content {}
+
+  &__wrapper {
+    border-radius: 50%;
+    background: #fff;
+    padding-top: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  &__image img {
+    @include absolute-image-center;
+    transition: $transition;
+
+    &:hover {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+  }
+}

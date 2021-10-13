@@ -8,4 +8,15 @@ document.addEventListener('DOMContentLoaded', function () {
     event.preventDefault()
     document.getElementById('topmenu').classList.remove('active')
   })
+
+  window.addEventListener('scroll', (event) => {
+    scroll = window.scrollY
+    if (scroll >= 77) {
+      document.getElementById('header').classList.add('fixed')
+    } else {
+      document.getElementById('header').classList.remove('fixed')
+    }
+
+  });
+
 });

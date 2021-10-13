@@ -1,0 +1,71 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+@import './partials/animations.scss';
+
+.servicesblock {
+  padding: 75px 0;
+
+  &__content {}
+
+  &__title {}
+
+  &__services {}
+}
+
+
+.services {
+  padding: 25px 0;
+
+  &__items {
+    @include flex-grid;
+  }
+
+  &__item {
+    width: 50%;
+    margin-bottom: 40px;
+
+    &:nth-child(2n) {
+      width: 43%
+    }
+
+    &:nth-child(2n-1) {
+      width: 57%
+    }
+  }
+
+  &__content {}
+
+  &__header {
+    @include flex-left(row);
+    margin-bottom: 15px;
+  }
+
+  &__icon {
+    padding-right: 15px;
+  }
+
+  &__img {
+    width: 43px;
+  }
+
+  &__title {
+    font-size: 36px;
+  }
+
+  &__main {}
+
+  &__list {
+    ul {
+      margin-left: 60px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 18px;
+      padding-left: 30px;
+      background-image: url(../img/list.png);
+      background-repeat: no-repeat;
+      background-position: left top 11px;
+    }
+  }
+}
