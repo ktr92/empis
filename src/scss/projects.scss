@@ -1,0 +1,135 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+
+.projectsblock {
+  position: relative;
+
+  background: $maincolor;
+  @include flex-center(row);
+
+  &__left {
+    width: 35%;
+    height: 100%;
+  }
+
+  &__right {
+    width: 65%;
+  }
+
+  &__main {
+    width: 100%;
+  }
+
+  &__bg {
+
+    height: 100%;
+    width: 100%;
+  }
+
+  &__content {
+    @include container;
+    @include absolute-center;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    display: table-caption;
+  }
+
+  &__link {
+    color: #fff;
+    font-size: 18px;
+
+    span {
+      padding-right: 10px;
+    }
+  }
+}
+
+.projects {
+  width: 100%;
+
+  &__items {
+    @include flex-center(row);
+    flex-wrap: wrap;
+    width: 100%;
+
+  }
+
+  &__item {
+    width: calc(100% / 3);
+
+
+
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    padding-top: 87.5%;
+    overflow: hidden;
+
+    img {
+      @include absolute-image-center;
+      transition: $transition;
+
+    }
+
+    &:hover {
+      .projects__info {
+        opacity: 1;
+        z-index: 1;
+      }
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+
+  }
+
+  &__info {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(5, 5, 5, 0.8);
+    color: #fff;
+    @include flex-center;
+    text-align: center;
+    opacity: 0;
+    z-index: -1;
+    transition: $transition;
+
+    * {
+      max-width: 260px;
+    }
+
+
+  }
+
+  &__title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+
+
+}

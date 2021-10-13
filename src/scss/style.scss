@@ -1,6 +1,7 @@
 @import './fonts.scss';
 @import './header.scss';
 @import './indexheader.scss';
+@import './projects.scss';
 @import './partials/params.scss';
 @import './partials/mixins.scss';
 
@@ -17,8 +18,8 @@ body {
 }
 
 .container {
-  max-width: 1170px;
-  margin: 0 auto;
+  @include container;
+  padding: 0 15px;
 }
 
 ul {

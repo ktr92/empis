@@ -1,5 +1,11 @@
 @import 'params.scss';
 
+@mixin container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 @mixin clear {
   padding: 0;
   margin: 0;
@@ -94,4 +100,22 @@
     background: $maincolor;
     color: #fff
   }
+}
+
+@mixin absolute-center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@mixin absolute-image-center {
+  position: absolute;
+  left: -99999px;
+  right: -99999px;
+  top: -99999px;
+  bottom: -99999px;
+  margin: auto;
+  max-height: 100%;
+  max-width: initial;
 }

@@ -149,13 +149,18 @@
 }
 
 .topmenu {
+  transition: $transition;
   position: absolute;
   width: 100%;
   left: 0;
   right: 0;
   top: 0;
   background: #fff;
+  display: none;
 
+  &.active {
+    display: block;
+  }
 
   &__wrapper {
     padding-bottom: 100px;
@@ -174,7 +179,10 @@
     }
   }
 
-  &__close {}
+  &__close {
+    width: 25px;
+    text-align: center;
+  }
 
   &__main {
     @include flex-between(flex-start);
