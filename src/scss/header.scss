@@ -52,11 +52,74 @@
 }
 
 .contact {
-  &__content {
-    display: none;
+  position: relative;
+  width: 180px;
+
+  &:hover {
+    .contact__content {
+      display: block !important;
+    }
+
+    .contact__call a {
+      color: $darkcolor;
+      border-color: $darkcolor;
+    }
+
+    .contact__call {
+      background-image: url(../img/dropdown2.png);
+      background-position: right 10px center;
+      background-repeat: no-repeat;
+    }
+
   }
 
+
+  &__phone {
+    padding-bottom: 5px;
+
+    a {
+      font-size: 22px;
+      color: $darkcolor;
+      line-height: 0.6;
+      text-decoration: none;
+      border-bottom: 1px dotted $darkcolor;
+      white-space: nowrap;
+    }
+
+  }
+
+
+  &__content {
+    background: #fff;
+    padding: 30px 13px 13px 13px;
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    display: none;
+    box-sizing: border-box;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-family: "New_Channel_Font";
+    color: rgb(153, 153, 153);
+    line-height: 1.16;
+    margin: 12px 0;
+
+  }
+
+
+
   &__call {
+    background-image: url(../img/dropdown.png);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    padding: 13px;
+    position: relative;
+    z-index: 2;
+
     a {
       font-weight: 900;
       font-size: 13px;
@@ -64,14 +127,115 @@
       text-transform: uppercase;
       text-decoration: none;
       border-bottom: 1px dotted #fff;
+
     }
 
   }
+
+
 }
 
 .socials {
+  margin: 10px 0;
+
   img {
     width: 34px;
     height: 34px;
   }
+
+  ul {
+    @include flex-between;
+  }
+}
+
+.topmenu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #fff;
+
+
+  &__wrapper {
+    padding-bottom: 100px;
+  }
+
+  &__header {
+    @include flex-between;
+    width: 235px;
+    margin-bottom: 40px;
+    padding: 14px 0;
+  }
+
+  &__logo {
+    img {
+      width: 155px;
+    }
+  }
+
+  &__close {}
+
+  &__main {
+    @include flex-between(flex-start);
+  }
+
+  &__left {}
+
+  &__menu {}
+
+  &__items {
+    @include flex-between(row);
+    min-width: 640px;
+  }
+
+  &__item {
+    padding-left: 42px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    +.topmenu__title {
+      margin-top: 60px;
+    }
+
+    a {
+      font-size: 32px;
+      font-weight: 900;
+      color: $graycolor;
+      text-transform: uppercase;
+
+      &:hover,
+      &:focus {
+        color: $darkcolor;
+      }
+    }
+  }
+
+  &__subitems {
+    margin: 17px 0;
+
+    li {
+      margin-bottom: 15px;
+
+      a {
+        font-size: 21px;
+        color: $graycolor;
+
+        &:hover,
+        &:focus {
+          color: $darkcolor;
+        }
+      }
+    }
+
+  }
+
+  &__right {}
+
+  &__button {
+    width: 320px;
+  }
+
 }

@@ -12,6 +12,10 @@ body {
   @include clear;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -27,8 +31,13 @@ li {
 
 a {
   transition: $transition;
+  text-decoration: none;
 }
 
 .btn {
   @include btn;
+}
+
+.bigButton {
+  @include btn-big;
 }

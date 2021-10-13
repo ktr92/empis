@@ -29,11 +29,11 @@
   }
 }
 
-@mixin flex-between {
+@mixin flex-between($alignitems: center) {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: $alignitems;
 }
 
 @mixin btn($bgcolor: $maincolor, $color: $textcolor) {
@@ -50,4 +50,48 @@
   text-decoration: none;
   border-radius: 6px;
   text-transform: none;
+  text-align: center;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    @if ($bgcolor==$maincolor) {
+      background: $secondcolor;
+      color: $color;
+    }
+  }
+
+  &--small {
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@mixin btn-big($bgcolor: #fff, $color: $darkcolor) {
+  cursor: pointer;
+  display: inline-block;
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 1;
+  white-space: nowrap;
+  background: $bgcolor;
+  color: $color;
+  font-size: 24px;
+  border: 3px solid $maincolor;
+  margin: 0;
+  border-radius: 50%;
+  text-decoration: none;
+  border-radius: 100px;
+  text-transform: none;
+  text-align: center;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    background: $maincolor;
+    color: #fff
+  }
 }
