@@ -50,6 +50,17 @@
 
   &__title {
     font-size: 36px;
+
+    a {
+      color: $darkcolor;
+      border-bottom: 3px solid transparent;
+      padding-bottom: 2px;
+
+      &:hover {
+        color: $darkcolor;
+        border-bottom: 3px solid $maincolor;
+      }
+    }
   }
 
   &__main {}

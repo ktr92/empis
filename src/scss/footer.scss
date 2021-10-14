@@ -1,0 +1,142 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+@import './partials/animations.scss';
+
+.footer {
+  background-color: $darkcolor;
+  padding: 30px 0;
+
+  * {
+    color: #fff;
+  }
+
+  &__content {}
+
+  &__menu {
+    padding: 10px 0;
+  }
+
+  .footer__contacts {}
+
+  .footercontacts {
+    padding: 20px 0;
+    @include flex-between;
+
+    &__item {}
+
+    &__phone {
+      a {
+        font-size: 48px;
+        border-bottom: 1px dotted #fff;
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+          border-bottom: none;
+        }
+      }
+    }
+
+    &__mess {
+      @include flex-left(row);
+
+    }
+
+    &__text {
+      font-size: 30px;
+      padding-bottom: 10px;
+
+      a {
+        border-bottom: 1px dotted #fff;
+
+        &:hover {
+          border-bottom: none;
+          color: #fff;
+        }
+      }
+    }
+
+    &__email {}
+  }
+
+  .socials {
+    padding-left: 15px;
+
+    li {
+      padding: 0 10px;
+    }
+
+    img {
+      width: 37px;
+      height: 37px;
+    }
+  }
+
+
+
+}
+
+.footermenu {
+  &__ul {
+    @include flex-grid($space: 60px, $cols: 4, $count: 4);
+    margin-bottom: 5px;
+    justify-content: flex-start;
+  }
+
+  &__li {
+    width: initial;
+
+    a {
+      color: #fff;
+      font-size: 16px;
+      text-transform: uppercase;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 2px;
+
+      &:hover {
+        color: #fff;
+        border-color: $maincolor;
+      }
+    }
+  }
+}
+
+
+.footerinfo {
+  padding: 25px 0;
+
+  &__items {
+    @include flex-between;
+  }
+
+  &__item {}
+
+  &__text {
+    color: $footercolor;
+  }
+
+  small {
+    color: $footerlink;
+    font-size: 12px;
+
+    a {
+      color: $footerlink;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+
+  &__link {
+    a {
+      color: $footerlink;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}

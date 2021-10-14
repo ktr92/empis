@@ -1,9 +1,11 @@
 @import './fonts.scss';
 @import './header.scss';
+@import './footer.scss';
 @import './indexheader.scss';
 @import './projects.scss';
 @import './services.scss';
 @import './about.scss';
+@import './form.scss';
 @import './partials/params.scss';
 @import './partials/mixins.scss';
 
@@ -17,6 +19,7 @@ body {
 
 * {
   box-sizing: border-box;
+  outline: none !important;
 }
 
 .container {
@@ -54,7 +57,7 @@ a:hover {
 }
 
 .bigButton {
-  @include btn-big;
+  @include btn-big($bgcolor: #fff, $color: $darkcolor, $bordercolor: $maincolor, $bordersize: 3px);
 }
 
 h2 {

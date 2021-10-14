@@ -4,6 +4,9 @@
 
 
 .header {
+
+
+
   padding: 14px 0;
 
   &__content {
@@ -37,6 +40,7 @@
   padding: 4px 0;
   background: #fff;
   position: fixed !important;
+  box-shadow: 0px 0 11px -6px #202020;
 
   .topmenu__header {
     padding: 4px 0;
@@ -223,6 +227,7 @@
   top: 0;
   background: #fff;
   display: none;
+  box-shadow: 0px 0 11px -6px #202020;
 
   &.active {
     display: block;

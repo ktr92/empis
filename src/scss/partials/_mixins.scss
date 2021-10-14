@@ -16,12 +16,25 @@
   list-style: none;
 }
 
-@mixin flex-grid($dir: row) {
+@mixin flex-grid($cols: 2, $dir: row, $space: 25px, $count: 2) {
   display: flex;
   flex-direction: $dir;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  margin-left: -$space;
+  margin-right: -$space;
+
+
+  >* {
+    padding: 0 $space;
+    width: 100% / $cols;
+
+    @if ($count > $cols) {
+      margin-bottom: $space;
+    }
+
+  }
 }
 
 @mixin flex-center($dir: column) {
@@ -87,7 +100,7 @@
   }
 }
 
-@mixin btn-big($bgcolor: #fff, $color: $darkcolor) {
+@mixin btn-big($bgcolor: #fff, $color: $darkcolor, $bordercolor: $maincolor, $bordersize: 3px) {
   cursor: pointer;
   display: inline-block;
   padding: 16px;
@@ -98,7 +111,8 @@
   background: $bgcolor;
   color: $color;
   font-size: 24px;
-  border: 3px solid $maincolor;
+  border: $bordersize solid;
+  border-color: $bordercolor;
   margin: 0;
   border-radius: 50%;
   text-decoration: none;
@@ -107,11 +121,27 @@
   text-align: center;
   transition: $transition;
 
-  &:hover,
-  &:focus {
-    background: $maincolor;
-    color: #fff
+
+  @if ($color==$darkcolor) {
+
+    &:hover,
+    &:focus {
+      background: $maincolor;
+      color: #fff;
+    }
   }
+
+  @else {
+
+    &:hover,
+    &:focus {
+      background: #fff;
+      color: $darkcolor;
+    }
+  }
+
+
+
 }
 
 @mixin absolute-center {
