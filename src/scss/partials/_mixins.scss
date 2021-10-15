@@ -4,6 +4,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+
 }
 
 @mixin clear {
@@ -26,6 +27,9 @@
   margin-right: -$space;
 
 
+
+
+
   >* {
     padding: 0 $space;
     width: 100% / $cols;
@@ -34,7 +38,18 @@
       margin-bottom: $space;
     }
 
+    @include small-screen {
+      width: 100%;
+    }
+
+
+
+
   }
+
+
+
+
 }
 
 @mixin flex-center($dir: column) {
@@ -65,6 +80,16 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: $alignitems;
+
+  @include small-screen {
+    flex-wrap: wrap;
+  }
+
+  >* {
+    @include small-screen {
+      width: 100%;
+    }
+  }
 }
 
 @mixin btn($bgcolor: $maincolor, $color: $textcolor) {
@@ -97,6 +122,10 @@
     padding: 10px 0;
     width: 100%;
     margin: 0;
+
+    @include small-screen {
+      font-size: 12px;
+    }
   }
 }
 
@@ -160,4 +189,30 @@
   margin: auto;
   max-height: 100%;
   max-width: initial;
+}
+
+
+@mixin large-screen() {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin medium-screen() {
+  @media only screen and (max-width: 999px) {
+    @content;
+  }
+}
+
+
+@mixin small-screen() {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin extrasmall-screen() {
+  @media only screen and (max-width: 410px) {
+    @content;
+  }
 }

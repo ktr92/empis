@@ -22,9 +22,18 @@ body {
   outline: none !important;
 }
 
+*::selection {
+  background: $maincolor;
+
+}
+
 .container {
   @include container;
   padding: 0 15px;
+
+  @include small-screen {
+    padding: 0 5px;
+  }
 }
 
 ul {
@@ -70,6 +79,10 @@ h3 {
   font-size: 30px;
   line-height: 1.2;
   margin: 10px 0 10px 0;
+
+  @include small-screen {
+    font-size: 24px;
+  }
 }
 
 .titleLine {
@@ -77,12 +90,18 @@ h3 {
   display: flex;
   align-items: center;
 
+
   hr {
     height: 7px;
     background: $maincolor;
     margin: 0 0 0 90px;
     width: 100%;
     border: none;
+
+    @include small-screen {
+      height: 4px;
+      margin-left: 25px;
+    }
   }
 
 
@@ -91,6 +110,14 @@ h3 {
     line-height: 1.2;
     margin: 20px 0;
     font-weight: 900;
+
+    @include medium-screen {
+      font-size: 40px;
+    }
+
+    @include small-screen {
+      font-size: 36px;
+    }
   }
 }
 
@@ -98,9 +125,18 @@ h3 {
   @include flex-grid;
   margin: 0 -25px;
 
+  @include medium-screen {
+    margin: 0;
+  }
+
   &__col--6 {
     width: 50%;
     padding: 0 25px;
+
+    @include medium-screen {
+      width: 100%;
+      padding: 0;
+    }
   }
 
 }
@@ -110,4 +146,31 @@ p {
   color: $darkcolor;
   line-height: 1.333;
   text-align: justify;
+  margin: 10px 0;
+
+  @include small-screen {
+    font-size: 15px;
+  }
+
+}
+
+[class$=--halfsm] {
+  @include medium-screen {
+    width: 50%;
+  }
+
+  @include small-screen {
+    width: 100%;
+  }
+}
+
+main {
+  overflow: hidden;
+  width: 100%;
+}
+
+h2 {
+  @include small-screen {
+    font-size: 36px;
+  }
 }

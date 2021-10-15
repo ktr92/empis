@@ -6,6 +6,10 @@
   position: relative;
   min-height: 760px;
 
+  @include medium-screen {
+    min-height: initial;
+  }
+
   >.container {
     display: block;
     min-height: inherit;
@@ -21,10 +25,21 @@
 
   &__content {
     height: 100%;
-    max-width: 830px;
     min-height: 100%;
+    max-width: 830px;
+
     min-height: inherit;
     @include flex-left(row);
+
+    @include medium-screen {
+      padding: 100px 0 50px 0;
+      max-width: 530px;
+
+    }
+
+    @include small-screen {
+      padding: 134px 10px 105px 10px;
+    }
   }
 
   &__title {
@@ -33,6 +48,21 @@
     line-height: 1.2;
     margin: 15px 0;
     font-weight: 900;
+
+    @include medium-screen {
+      font-size: 38px;
+    }
+
+    @include small-screen {
+      font-size: 26px;
+      text-align: center;
+    }
+  }
+
+  &__button {
+    @include small-screen {
+      text-align: center;
+    }
   }
 }
 
@@ -46,6 +76,7 @@
   z-index: -1;
   max-height: 100%;
   overflow: hidden;
+  height: 100%;
 }
 
 #video-bg:after {
@@ -65,4 +96,5 @@
   height: auto;
   width: initial;
   height: initial;
+  min-height: 100%;
 }

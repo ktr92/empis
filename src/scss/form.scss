@@ -6,6 +6,10 @@
 .formblock {
 	padding: 50px 0 0 0;
 	background: $maincolor;
+
+	@include small-screen {
+		padding: 25px 0 20px 0;
+	}
 }
 
 input,
@@ -66,10 +70,20 @@ textarea {
 		font-size: 36px;
 		max-width: 350px;
 		margin-bottom: 20px;
+
+		@include small-screen {
+			font-size: 24px;
+		}
+
 	}
+
 
 	&__form {
 		padding: 40px 0;
+
+		@include small-screen {
+			padding: 0;
+		}
 	}
 
 	&__row {
@@ -83,9 +97,45 @@ textarea {
 		&.form__row--full {
 			@include flex-grid(1);
 		}
+
+
 	}
 
-	&__input {}
+	&__row--notsm &__input {
+		@include medium-screen {
+			width: calc(100% / 3);
+		}
+
+		@include small-screen {
+			width: 100%;
+		}
+	}
+
+
+	&__input {
+		@include medium-screen {
+			width: 50%;
+		}
+
+		@include small-screen {
+			width: 100%;
+			margin-bottom: 15px;
+		}
+
+		&--full {
+			width: 100%;
+
+			@include medium-screen {
+				width: 50%;
+			}
+
+			@include small-screen {
+				width: 100%;
+			}
+		}
+	}
+
+
 
 	.check {}
 
@@ -95,7 +145,7 @@ textarea {
 		&__file {}
 	}
 
-	.filebutton {}
+
 
 	.filenames {}
 
@@ -137,6 +187,13 @@ textarea {
 		padding-left: 20px;
 		min-height: 23px;
 		margin-left: 55px;
+		white-space: nowrap;
+	}
+
+	.filebutton {
+		@include medium-screen {
+			margin-left: 0;
+		}
 	}
 
 
@@ -189,6 +246,10 @@ textarea {
 		color: rgb(255, 255, 255);
 		line-height: 1.2;
 		font-weight: 300;
+
+		@include small-screen {
+			font-size: 12px;
+		}
 	}
 
 	.check label a {

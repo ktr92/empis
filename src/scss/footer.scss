@@ -6,6 +6,10 @@
   background-color: $darkcolor;
   padding: 30px 0;
 
+  @include small-screen {
+    padding: 30px 0 10px 0;
+  }
+
   * {
     color: #fff;
   }
@@ -14,6 +18,10 @@
 
   &__menu {
     padding: 10px 0;
+
+    @include small-screen {
+      padding: 0;
+    }
   }
 
   .footer__contacts {}
@@ -21,15 +29,37 @@
   .footercontacts {
     padding: 20px 0;
     @include flex-between;
+    margin: 0 -15px;
 
-    &__item {}
+    @include small-screen {
+      padding: 0;
+    }
+
+    &__item {
+      padding: 0 15px;
+    }
 
     &__phone {
+      @include small-screen {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
       a {
         font-size: 48px;
         border-bottom: 1px dotted #fff;
         text-decoration: none;
         color: #fff;
+        white-space: nowrap;
+
+        @include large-screen {
+          font-size: 28px;
+        }
+
+        @include small-screen {
+          font-size: 36px;
+          text-align: center;
+        }
 
         &:hover {
           border-bottom: none;
@@ -40,11 +70,23 @@
     &__mess {
       @include flex-left(row);
 
+      @include small-screen {
+        justify-content: center;
+      }
+
     }
 
     &__text {
       font-size: 30px;
       padding-bottom: 10px;
+
+      @include small-screen {
+        text-align: center;
+      }
+
+      @include large-screen {
+        font-size: 18px;
+      }
 
       a {
         border-bottom: 1px dotted #fff;
@@ -56,14 +98,42 @@
       }
     }
 
-    &__email {}
+    &__email {
+      a {
+        @include small-screen {
+          font-size: 30px;
+          text-align: center;
+          margin: auto;
+        }
+      }
+
+    }
   }
 
   .socials {
     padding-left: 15px;
 
+
+
+    @include small-screen {
+      padding-left: 0;
+    }
+
+    ul {
+      flex-wrap: nowrap;
+      padding: 0 10px;
+
+      @include small-screen {
+        margin: 0 -7px;
+      }
+    }
+
     li {
       padding: 0 10px;
+
+      @include small-screen {
+        padding: 0 7px;
+      }
     }
 
     img {
@@ -77,14 +147,24 @@
 }
 
 .footermenu {
+  @include small-screen {
+    display: none;
+  }
+
   &__ul {
     @include flex-grid($space: 60px, $cols: 4, $count: 4);
     margin-bottom: 5px;
     justify-content: flex-start;
+    margin: 0 -15px;
   }
 
   &__li {
     width: initial;
+
+
+    @include large-screen {
+      padding: 0 15px;
+    }
 
     a {
       color: #fff;
@@ -103,25 +183,65 @@
 
 
 .footerinfo {
+  @include medium-screen {
+    font-size: 14px;
+  }
+
+
+
   padding: 25px 0;
+
+  @include small-screen {
+    padding: 15px 0;
+  }
 
   &__items {
     @include flex-between;
+    margin: 0 -15px;
   }
 
-  &__item {}
+  &__item {
+    padding: 0 15px;
+    order: 1;
+
+    @include small-screen {
+      &--mobile-3 {
+        order: 99;
+      }
+    }
+
+
+  }
 
   &__text {
     color: $footercolor;
+
+    br {
+      @include large-screen {
+        display: none;
+      }
+
+    }
+
+    @include small-screen {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
   }
 
   small {
     color: $footerlink;
     font-size: 12px;
+    line-height: 1;
+    display: inline-block;
 
     a {
       color: $footerlink;
       text-decoration: underline;
+
+
 
       &:hover {
         text-decoration: none;
@@ -131,12 +251,20 @@
   }
 
   &__link {
+    @include small-screen {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
     a {
       color: $footerlink;
 
       &:hover {
         color: #fff;
       }
+
+
     }
   }
 }

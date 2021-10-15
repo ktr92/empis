@@ -5,6 +5,10 @@
 .aboutblock {
   background-color: $bgcolor;
   padding: 50px 0;
+
+  @include small-screen {
+    padding: 10px 0;
+  }
 }
 
 .about__clients {}
@@ -12,15 +16,36 @@
 .rounditems {
   margin: 30px 0;
 
+  @include medium-screen {
+    overflow-x: auto;
+  }
+
+
   &__items {
     @include flex-grid;
     margin: 0 -20px;
+    width: max-content;
+
+    @include small-screen {
+      margin: 0 -10px;
+    }
   }
 
   &__item {
     width: calc(100% / 6);
     padding: 0 20px;
     margin-bottom: 40px;
+
+    @include medium-screen {
+      width: max-content;
+    }
+
+    @include small-screen {
+      padding: 0 10px;
+      margin-bottom: 20px;
+    }
+
+
   }
 
   &__content {}
@@ -31,11 +56,26 @@
     padding-top: 100%;
     width: 100%;
     position: relative;
+
+
+    width: 155px;
+    height: 155px;
+
+
+    @include small-screen {
+      width: 118px;
+      height: 118px;
+    }
   }
 
   &__image img {
     @include absolute-image-center;
     transition: $transition;
+
+    @include medium-screen {
+      max-width: 90px;
+      max-height: 60px;
+    }
 
     &:hover {
       -webkit-filter: grayscale(100%);

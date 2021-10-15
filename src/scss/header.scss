@@ -4,8 +4,17 @@
 
 
 .header {
+  position: relative;
 
 
+
+  &__menu {
+    @include small-screen {
+      position: absolute;
+      top: calc(50% - 5px);
+      left: 10px;
+    }
+  }
 
   padding: 14px 0;
 
@@ -13,9 +22,25 @@
     @include flex-between();
   }
 
+  &__logo {
+    @include small-screen {
+      margin-left: 40px;
+    }
+  }
+
   &__logo img.logo {
     width: 155px;
+
+    @include medium-screen {
+      width: 100px;
+    }
+
+    @include small-screen {
+      width: 120px;
+    }
   }
+
+
 
   &__logo img.logo--fixed {
     display: none;
@@ -30,7 +55,126 @@
     @include flex-between;
     width: 235px;
 
+    @include medium-screen {
+      width: 155px;
+    }
+
   }
+
+  .contact {
+    position: relative;
+    width: 180px;
+
+    @include small-screen {
+      position: absolute;
+      right: 11px;
+      top: calc(50% - 18px);
+      width: 134px;
+    }
+
+
+
+    &:hover {
+      .contact__content {
+        display: block !important;
+
+        @include small-screen {
+          padding: 19px 7px 7px;
+        }
+      }
+
+      .contact__call a {
+        color: $darkcolor;
+        border-color: $darkcolor;
+      }
+
+      .contact__call {
+        background-image: url(../img/dropdown2.png);
+        background-position: right 10px center;
+        background-repeat: no-repeat;
+      }
+
+    }
+
+
+    &__phone {
+      padding-bottom: 5px;
+
+      a {
+        font-size: 22px;
+        color: $darkcolor;
+        line-height: 0.6;
+        text-decoration: none;
+        border-bottom: 1px dotted $darkcolor;
+        white-space: nowrap;
+
+        @include small-screen {
+          font-size: 16px;
+        }
+
+      }
+
+    }
+
+
+    &__content {
+      background: #fff;
+      padding: 30px 13px 13px 13px;
+      border-radius: 5px;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 1;
+      display: none;
+      box-sizing: border-box;
+    }
+
+    &__text {
+      font-size: 12px;
+      font-family: "New_Channel_Font";
+      color: rgb(153, 153, 153);
+      line-height: 1.16;
+      margin: 12px 0;
+
+    }
+
+
+
+    &__call {
+      background-image: url(../img/dropdown.png);
+      background-position: right 10px center;
+      background-repeat: no-repeat;
+      padding: 13px;
+      position: relative;
+      z-index: 2;
+
+      @include medium-screen {
+        padding: 7px 13px 7px 7px;
+      }
+
+      @include small-screen {
+        padding: 3px 0 3px 3px;
+      }
+
+      a {
+        font-weight: 900;
+        font-size: 13px;
+        color: $textcolor;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 1px dotted #fff;
+
+        @include medium-screen {
+          font-size: 10px;
+        }
+
+      }
+
+    }
+
+
+  }
+
 
 
 }
@@ -42,9 +186,20 @@
   position: fixed !important;
   box-shadow: 0px 0 11px -6px #202020;
 
+  @include small-screen {
+    padding: 10px 0;
+  }
+
   .topmenu__header {
     padding: 4px 0;
+
+    @include small-screen {
+      padding: 10px 0;
+    }
   }
+
+
+
 
   .contact__call {
     padding: 7px 13px 7px 7px;
@@ -93,15 +248,33 @@
 .headernav {
   @include flex-between;
 
+
+
   &__menu {
     margin-right: 74px;
+
+    @include small-screen {
+      display: none;
+    }
+
+    @include medium-screen {
+      margin-right: 24px;
+    }
 
     ul {
       margin: 0 -37px;
       @include flex-between;
 
+      @include medium-screen {
+        margin: 0 -15px;
+      }
+
       li.headernav__link {
         padding: 0 37px;
+
+        @include medium-screen {
+          padding: 0 15px;
+        }
 
         a {
           font-size: 13px;
@@ -121,89 +294,6 @@
   }
 }
 
-.contact {
-  position: relative;
-  width: 180px;
-
-  &:hover {
-    .contact__content {
-      display: block !important;
-    }
-
-    .contact__call a {
-      color: $darkcolor;
-      border-color: $darkcolor;
-    }
-
-    .contact__call {
-      background-image: url(../img/dropdown2.png);
-      background-position: right 10px center;
-      background-repeat: no-repeat;
-    }
-
-  }
-
-
-  &__phone {
-    padding-bottom: 5px;
-
-    a {
-      font-size: 22px;
-      color: $darkcolor;
-      line-height: 0.6;
-      text-decoration: none;
-      border-bottom: 1px dotted $darkcolor;
-      white-space: nowrap;
-    }
-
-  }
-
-
-  &__content {
-    background: #fff;
-    padding: 30px 13px 13px 13px;
-    border-radius: 5px;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-    display: none;
-    box-sizing: border-box;
-  }
-
-  &__text {
-    font-size: 12px;
-    font-family: "New_Channel_Font";
-    color: rgb(153, 153, 153);
-    line-height: 1.16;
-    margin: 12px 0;
-
-  }
-
-
-
-  &__call {
-    background-image: url(../img/dropdown.png);
-    background-position: right 10px center;
-    background-repeat: no-repeat;
-    padding: 13px;
-    position: relative;
-    z-index: 2;
-
-    a {
-      font-weight: 900;
-      font-size: 13px;
-      color: $textcolor;
-      text-transform: uppercase;
-      text-decoration: none;
-      border-bottom: 1px dotted #fff;
-
-    }
-
-  }
-
-
-}
 
 .socials {
   margin: 10px 0;
@@ -215,6 +305,13 @@
 
   ul {
     @include flex-between;
+    flex-wrap: nowrap;
+
+    >* {
+      @include small-screen {
+        width: initial;
+      }
+    }
   }
 }
 
@@ -235,6 +332,10 @@
 
   &__wrapper {
     padding-bottom: 100px;
+
+    @include small-screen {
+      padding-bottom: 30px;
+    }
   }
 
   &__header {
@@ -242,17 +343,46 @@
     width: 235px;
     margin-bottom: 40px;
     padding: 14px 0;
+
+    @include small-screen {
+      margin-bottom: 15px;
+    }
+
+    @include medium-screen {
+      width: 155px;
+    }
+
+
   }
 
   &__logo {
+    @include small-screen {
+      margin-left: 40px;
+    }
+
     img {
       width: 155px;
+
+
+      @include medium-screen {
+        width: 100px;
+      }
+
+      @include small-screen {
+        width: 120px;
+      }
     }
   }
 
   &__close {
     width: 25px;
     text-align: center;
+
+    @include small-screen {
+      left: 10px;
+      position: absolute;
+      top: 17px;
+    }
   }
 
   &__main {
@@ -266,10 +396,20 @@
   &__items {
     @include flex-between(row);
     min-width: 640px;
+
+    @include medium-screen {
+      min-width: initial;
+      margin: 0 -15px;
+    }
   }
 
   &__item {
     padding-left: 42px;
+
+    @include medium-screen {
+      padding-left: 0;
+      padding: 0 15px;
+    }
   }
 
   &__title {
@@ -277,6 +417,10 @@
 
     +.topmenu__title {
       margin-top: 60px;
+
+      @include medium-screen {
+        margin-top: 20px;
+      }
     }
 
     a {
@@ -287,7 +431,11 @@
 
       &:hover,
       &:focus {
-        color: $darkcolor;
+        color: $maincolor;
+      }
+
+      @include medium-screen {
+        font-size: 20px;
       }
     }
   }
@@ -304,7 +452,7 @@
 
         &:hover,
         &:focus {
-          color: $darkcolor;
+          color: $maincolor;
         }
       }
     }
@@ -315,6 +463,15 @@
 
   &__button {
     width: 320px;
+
+    @include medium-screen {
+      width: initial;
+    }
+
+    @include small-screen {
+      width: 260px;
+      margin: auto;
+    }
   }
 
 }

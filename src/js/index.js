@@ -9,15 +9,21 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('topmenu').classList.remove('active')
   })
 
-  window.addEventListener('scroll', (event) => {
-    scroll = window.scrollY
-    if (scroll >= 77) {
-      document.getElementById('header').classList.add('fixed')
-    } else {
-      document.getElementById('header').classList.remove('fixed')
-    }
+  if (window.innerWidth >= 767) {
 
-  });
+    window.addEventListener('scroll', (event) => {
+      scroll = window.scrollY
+      if (scroll >= 77) {
+        document.getElementById('header').classList.add('fixed')
+      } else {
+        document.getElementById('header').classList.remove('fixed')
+      }
+
+    });
+  } else {
+    document.getElementById('header').classList.add('fixed')
+  }
+
 
 
 

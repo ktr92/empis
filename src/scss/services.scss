@@ -5,6 +5,14 @@
 .servicesblock {
   padding: 75px 0;
 
+  @include medium-screen {
+    padding: 45px 0;
+  }
+
+  @include small-screen {
+    padding: 15px 0;
+  }
+
   &__content {}
 
   &__title {}
@@ -31,9 +39,33 @@
     &:nth-child(2n-1) {
       width: 57%
     }
+
+    @include medium-screen {
+      &:nth-child(2n) {
+        width: 50%
+      }
+
+      &:nth-child(2n-1) {
+        width: 50%
+      }
+    }
+
+    @include small-screen {
+      &:nth-child(2n) {
+        width: 100%
+      }
+
+      &:nth-child(2n-1) {
+        width: 100%
+      }
+    }
   }
 
-  &__content {}
+  &__content {
+    @include small-screen {
+      padding: 0 15px;
+    }
+  }
 
   &__header {
     @include flex-left(row);
@@ -46,10 +78,18 @@
 
   &__img {
     width: 43px;
+
+    @include small-screen {
+      width: 35px;
+    }
   }
 
   &__title {
     font-size: 36px;
+
+    @include medium-screen {
+      font-size: 26px;
+    }
 
     a {
       color: $darkcolor;
@@ -68,6 +108,10 @@
   &__list {
     ul {
       margin-left: 60px;
+
+      @include small-screen {
+        margin-left: 52px;
+      }
     }
 
     li {
@@ -77,6 +121,10 @@
       background-image: url(../img/list.png);
       background-repeat: no-repeat;
       background-position: left top 11px;
+
+      @include small-screen {
+        font-size: 15px;
+      }
     }
   }
 }
