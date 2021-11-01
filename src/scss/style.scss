@@ -2,8 +2,10 @@
 @import './header.scss';
 @import './footer.scss';
 @import './indexheader.scss';
+@import './pageheader.scss';
 @import './projects.scss';
 @import './services.scss';
+@import './cards.scss';
 @import './about.scss';
 @import './form.scss';
 @import './partials/params.scss';
@@ -63,6 +65,10 @@ a:hover {
 
 .btn {
   @include btn;
+}
+
+.btn_gray {
+  @include btn_gray;
 }
 
 .bigButton {
@@ -172,5 +178,61 @@ main {
 h2 {
   @include small-screen {
     font-size: 36px;
+  }
+}
+
+.page {
+  padding: 15px 0;
+}
+
+.linkspanel {
+  padding: 10px 0 35px 0;
+
+  ul {
+    margin: 0 -30px;
+    overflow-x: auto;
+    display: flex;
+
+    @include small-screen {
+      margin: 0 -15px;
+    }
+
+    li {
+      padding: 0 30px;
+
+      display: inline-block;
+
+      white-space: nowrap;
+
+      @include small-screen {
+        padding: 0 15px;
+      }
+
+      a {
+        display: block;
+        color: $darkcolor;
+        font-size: 24px;
+        border-bottom: 3px solid transparent;
+        padding-bottom: 3px;
+
+        @include small-screen {
+          font-size: 18px;
+          padding-bottom: 2px;
+        }
+
+      }
+
+      &:hover {
+        a {
+          border-bottom: 3px solid $maincolor;
+        }
+      }
+
+      &.active {
+        a {
+          border-bottom: 3px solid $maincolor;
+        }
+      }
+    }
   }
 }

@@ -5,6 +5,7 @@
   height: initial;
   position: relative;
   min-height: 760px;
+  background-color: rgba(0, 0, 0, 0.55);
 
   @include medium-screen {
     min-height: initial;
@@ -21,6 +22,7 @@
     left: 0;
     z-index: 2;
     width: 100%;
+    background: none;
   }
 
   &__content {
@@ -64,6 +66,44 @@
       text-align: center;
     }
   }
+
+  .contact {
+    &__call {
+      background-image: url(../img/dropdown.png);
+    }
+  }
+
+  img.logo {
+    display: block;
+  }
+
+  img.logo--fixed {
+    display: none;
+  }
+
+  .headerToggler {
+    display: inline-block;
+  }
+
+  .headerToggler--fixed {
+    display: none;
+  }
+
+  .contact__call a {
+    color: $textcolor;
+    border-color: transparent;
+  }
+
+
+
+  .header .contact .contact__call a {
+    border-color: #fff;
+  }
+
+  .headernav__menu ul li.headernav__link a {
+    color: #fff;
+  }
+
 }
 
 #video-bg {

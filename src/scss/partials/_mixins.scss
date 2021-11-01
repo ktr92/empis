@@ -127,6 +127,50 @@
       font-size: 12px;
     }
   }
+
+  &--border {
+    border: 2px solid $color;
+
+    @include small-screen {
+      font-size: 12px;
+    }
+  }
+
+
+
+}
+
+@mixin btn_gray($bgcolor: #fff, $color: #999999) {
+  cursor: pointer;
+  display: inline-block;
+  padding: 12px 30px 13px 30px;
+  line-height: 1;
+  white-space: nowrap;
+  background: $bgcolor;
+  color: $color;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  margin: 15px 0;
+  text-decoration: none;
+  border-radius: 3px;
+  text-transform: none;
+  text-align: center;
+  transition: $transition;
+  width: 215px;
+
+  &:hover,
+  &:focus {
+    background: #fff;
+    color: $darkcolor;
+    border-color: $darkcolor;
+  }
+
+
+
+  @include small-screen {
+    font-size: 12px;
+
+  }
 }
 
 @mixin btn-big($bgcolor: #fff, $color: $darkcolor, $bordercolor: $maincolor, $bordersize: 3px) {
@@ -189,6 +233,10 @@
   margin: auto;
   max-height: 100%;
   max-width: initial;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
 }
 
 

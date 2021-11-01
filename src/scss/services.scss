@@ -125,6 +125,32 @@
       @include small-screen {
         font-size: 15px;
       }
+
+
+
+
+
+    }
+
+    &.links {
+      li {
+        background-image: none;
+        padding: 0;
+
+        a {
+          font-size: 16px;
+          color: #31bdf6;
+          padding-left: 15px;
+          background-image: url(../img/bullet.png);
+          background-repeat: no-repeat;
+          background-position: left top 6px;
+          font-weight: 600;
+
+        }
+      }
+
     }
   }
+
+
 }

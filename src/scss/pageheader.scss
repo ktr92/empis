@@ -1,0 +1,149 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+
+.breadcrumbs ul {
+  padding: 16px 0 16px 0;
+  list-style: none;
+}
+
+.breadcrumbs ul li {
+  display: inline;
+  font-size: 14px;
+}
+
+.breadcrumbs ul li+li:before {
+  padding: 0 10px 0 6px;
+  content: url(../img/right.png);
+  font-size: 14px;
+  vertical-align: baseline;
+  color: rgba(82, 98, 114, 0.5);
+
+}
+
+
+.breadcrumbs ul li a>span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+
+  color: rgba(82, 98, 114, 1);
+  padding-left: 0;
+}
+
+.breadcrumbs ul li>span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(82, 98, 114, 0.5);
+  padding-left: 0;
+
+}
+
+.breadcrumbs ul li a:hover span {
+  color: rgba(82, 98, 114, 1);
+  text-decoration: none;
+}
+
+.breadcrumbs ul li a:hover {
+  color: rgba(82, 98, 114, 1);
+  text-decoration: none;
+}
+
+
+.pageheader {
+
+
+  background: #ecf3f6;
+
+
+
+  @include small-screen {
+    background: #fff;
+  }
+
+  h1 {
+    font-size: 120px;
+    line-height: 1.2;
+    margin: 5px 0 35px 0;
+    display: inline-block;
+
+    @include small-screen {
+      font-size: 48px;
+      margin: 5px 0 10px 0;
+    }
+  }
+
+  &__title--center {
+    * {
+      text-align: center;
+      display: block;
+    }
+
+    text-align: center;
+    display: block;
+  }
+
+  &.pageheader--cover {
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+
+
+    .breadcrumbs ul li+li:before {
+
+      color: rgba(255, 255, 255, 0.5);
+
+    }
+
+
+    .breadcrumbs ul li a>span {
+
+      color: rgba(255, 255, 255, 0.8);
+
+    }
+
+    .breadcrumbs ul li>span {
+
+      color: rgba(255, 255, 255, 0.5);
+
+    }
+
+    .breadcrumbs ul li a:hover span {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .breadcrumbs ul li a:hover {
+      color: rgba(82, 98, 114, 1);
+    }
+
+
+
+    .pagecover {
+      background-color: rgba(0, 0, 0, 0.6);
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+
+    .pageheader__title {
+      padding-top: 100px;
+
+      .offer {
+        font-size: 36px;
+        color: #fff;
+        max-width: 930px;
+        margin: auto;
+      }
+
+      h1 {
+        font-size: 72px;
+        color: #fff;
+      }
+    }
+  }
+
+
+}

@@ -25,6 +25,7 @@
     @include flex-grid;
     margin: 0 -20px;
     width: max-content;
+    margin: auto;
 
     @include small-screen {
       margin: 0 -10px;
@@ -61,6 +62,12 @@
     width: 155px;
     height: 155px;
 
+    @include large-screen {
+      width: 135px;
+      height: 135px;
+
+
+    }
 
     @include small-screen {
       width: 118px;
@@ -71,6 +78,11 @@
   &__image img {
     @include absolute-image-center;
     transition: $transition;
+
+    @include large-screen {
+      max-width: 120px;
+
+    }
 
     @include medium-screen {
       max-width: 90px;

@@ -78,6 +78,16 @@
     span {
       padding-right: 10px;
     }
+
+    &:hover {
+      color: #fff;
+
+      img {
+        transition: all 0.3s ease;
+        transform: translateX(10px);
+      }
+    }
+
   }
 }
 
@@ -88,6 +98,8 @@
     @include flex-center(row);
     flex-wrap: wrap;
     width: 100%;
+    background: #fff;
+
 
   }
 
@@ -117,6 +129,7 @@
     }
 
     &:hover {
+
       .projects__info {
         opacity: 1;
         z-index: 1;
@@ -167,4 +180,77 @@
 
 
 
+}
+
+
+.objects {
+  &__items {
+    display: flex;
+    margin: 0 -10px;
+    flex-wrap: wrap;
+
+    @include extrasmall-screen {
+      margin: 0;
+    }
+
+  }
+
+  &__item {
+    padding: 0 10px;
+    width: 33.3333%;
+    margin-bottom: 20px;
+
+    @include medium-screen {
+      width: 50%;
+    }
+
+    @include extrasmall-screen {
+      width: 100%;
+      padding: 0;
+    }
+
+  }
+
+  &__content {}
+
+  &__image {
+    margin-bottom: 15px;
+
+    a {
+      display: block;
+      position: relative;
+      padding-top: 87%;
+      overflow: hidden;
+
+      img {
+        @include absolute-image-center;
+        transition: all 0.3s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.1);
+      }
+
+    }
+  }
+
+  &__name {
+    margin-bottom: 5px;
+
+    a {
+      color: $darkcolor;
+      font-weight: 900;
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+
+
+  &__showmore {
+    text-align: center;
+    margin: 15px;
+  }
 }

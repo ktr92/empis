@@ -5,8 +5,22 @@
 
 .header {
   position: relative;
+  background: #ecf3f6;
 
+  width: 100%;
 
+  padding: 5px 0;
+
+  @include small-screen {
+    background: #fff;
+    padding: 10px 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  &.header--white {
+    background: #fff;
+  }
 
   &__menu {
     @include small-screen {
@@ -16,7 +30,7 @@
     }
   }
 
-  padding: 14px 0;
+
 
   &__content {
     @include flex-between();
@@ -42,13 +56,22 @@
 
 
 
-  &__logo img.logo--fixed {
+
+
+  &__logo img.logo {
     display: none;
   }
 
+  &__logo img.logo--fixed {
+    display: initial;
+  }
+
+  .headerToggler {
+    display: none;
+  }
 
   .headerToggler--fixed {
-    display: none;
+    display: block;
   }
 
   &__left {
@@ -65,6 +88,18 @@
     position: relative;
     width: 180px;
 
+    @include medium-screen {
+      .btn {
+        font-size: 13px;
+      }
+
+    }
+
+    @include medium-screen {
+
+      width: 134px;
+    }
+
     @include small-screen {
       position: absolute;
       right: 11px;
@@ -74,25 +109,32 @@
 
 
 
-    &:hover {
-      .contact__content {
-        display: block !important;
 
-        @include small-screen {
-          padding: 19px 7px 7px;
-        }
+    .contact__content.active {
+      display: block !important;
+      border: 1px solid $graycolor;
+
+      @include medium-screen {
+        padding: 19px 7px 7px;
       }
 
-      .contact__call a {
-        color: $darkcolor;
-        border-color: $darkcolor;
-      }
+    }
 
-      .contact__call {
-        background-image: url(../img/dropdown2.png);
-        background-position: right 10px center;
-        background-repeat: no-repeat;
-      }
+    .contact__call a {
+      border-color: $darkcolor;
+    }
+
+    .contact__call.active a {
+      color: $darkcolor;
+      border-color: transparent;
+    }
+
+    .contact__call.active {
+      background-image: url(../img/dropdown2.png);
+      background-position: right 10px center;
+      background-repeat: no-repeat;
+
+
 
     }
 
@@ -107,6 +149,15 @@
         text-decoration: none;
         border-bottom: 1px dotted $darkcolor;
         white-space: nowrap;
+
+        &:hover {
+          color: $secondcolor;
+          border-bottom: 1px dotted transparent;
+        }
+
+        @include medium-screen {
+          font-size: 16px;
+        }
 
         @include small-screen {
           font-size: 16px;
@@ -127,6 +178,9 @@
       z-index: 1;
       display: none;
       box-sizing: border-box;
+
+
+
     }
 
     &__text {
@@ -141,7 +195,7 @@
 
 
     &__call {
-      background-image: url(../img/dropdown.png);
+      background-image: url(../img/dropdown2.png);
       background-position: right 10px center;
       background-repeat: no-repeat;
       padding: 13px;
@@ -152,14 +206,12 @@
         padding: 7px 13px 7px 7px;
       }
 
-      @include small-screen {
-        padding: 3px 0 3px 3px;
-      }
+      @include small-screen {}
 
       a {
         font-weight: 900;
         font-size: 13px;
-        color: $textcolor;
+        color: $darkcolor;
         text-transform: uppercase;
         text-decoration: none;
         border-bottom: 1px dotted #fff;
@@ -185,9 +237,14 @@
   background: #fff;
   position: fixed !important;
   box-shadow: 0px 0 11px -6px #202020;
+  width: 100%;
+  background-color: #fff;
+
+  z-index: 99;
 
   @include small-screen {
     padding: 10px 0;
+    overflow-x: hidden;
   }
 
   .topmenu__header {
@@ -213,6 +270,10 @@
     display: block;
   }
 
+  .indexheader .contact__call a {
+    color: #fff;
+  }
+
   .headerToggler {
     display: none;
   }
@@ -227,7 +288,7 @@
     }
   }
 
-  .contact:hover .contact__content {
+  .contact__content.active {
     border: 1px solid $graycolor;
   }
 
@@ -278,7 +339,7 @@
 
         a {
           font-size: 13px;
-          color: $textcolor;
+          color: $darkcolor;
           text-transform: uppercase;
           text-decoration: none;
           border-bottom: 2px solid transparent;
@@ -325,6 +386,7 @@
   background: #fff;
   display: none;
   box-shadow: 0px 0 11px -6px #202020;
+  z-index: 91;
 
   &.active {
     display: block;
@@ -342,7 +404,7 @@
     @include flex-between;
     width: 235px;
     margin-bottom: 40px;
-    padding: 14px 0;
+    padding: 5px 0;
 
     @include small-screen {
       margin-bottom: 15px;
@@ -415,6 +477,7 @@
   &__title {
     margin-bottom: 15px;
 
+
     +.topmenu__title {
       margin-top: 60px;
 
@@ -446,6 +509,10 @@
     li {
       margin-bottom: 15px;
 
+      @include small-screen {
+        margin-bottom: 10px;
+      }
+
       a {
         font-size: 21px;
         color: $graycolor;
@@ -453,6 +520,10 @@
         &:hover,
         &:focus {
           color: $maincolor;
+        }
+
+        @include small-screen {
+          font-size: 16px;
         }
       }
     }
