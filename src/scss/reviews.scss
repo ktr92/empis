@@ -1,0 +1,90 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+@import './partials/animations.scss';
+
+
+.reviewsblock {
+  background-color: $bgcolor;
+  padding: 20px 0;
+}
+
+
+.imgcard {
+  margin: 30px 0 50px 0;
+
+  @include small-screen {
+    margin: 30px 0 0 0;
+  }
+
+  &__wrapper {
+    display: flex;
+
+    @include small-screen {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__image {
+    margin-right: 55px;
+
+    @include small-screen {
+      margin: 0 auto 30px auto;
+      width: 100%;
+    }
+  }
+
+  &__img {
+    width: 195px;
+    -webkit-box-shadow: 0px 0px 47px -15px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 47px -15px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 47px -15px rgba(34, 60, 80, 0.2);
+    background: #fff;
+
+    height: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+
+    @include small-screen {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    a {
+      display: block;
+    }
+  }
+
+  &__content {
+    padding: 30px 40px;
+    background: #fff;
+
+    @include small-screen {
+      width: 100%;
+      text-align: center;
+      padding: 20px 10px;
+      background: none;
+
+      p {
+        text-align: center;
+      }
+
+    }
+
+  }
+
+  &__text {}
+
+  &__title {
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+
+    @include small-screen {
+      font-size: 18px;
+    }
+  }
+}

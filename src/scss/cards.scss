@@ -12,14 +12,30 @@
       position: relative;
       z-index: 3;
       display: flex;
+
+      @include small-screen {
+        margin-top: 0;
+        flex-wrap: wrap;
+        margin: 0 -5px;
+        width: calc(100% + 10px);
+      }
     }
 
     &__main {
       padding: 30px 45px;
+
+      @include small-screen {
+        padding: 20px 5px;
+        width: 100%;
+      }
     }
 
     &__item {
       margin-bottom: 40px;
+
+      @include small-screen {
+        margin-bottom: 25px;
+      }
     }
 
     &__title {
@@ -27,15 +43,45 @@
       font-size: 26px;
       font-weight: 900;
       margin-bottom: 5px;
+
+      @include small-screen {
+        font-size: 20px;
+      }
+
     }
 
     &__text {
       font-size: 18px;
+
+      @include small-screen {
+        font-size: 16px;
+      }
+
+      ul {
+        li {
+          position: relative;
+          padding-left: 35px;
+          font-size: 18px;
+          margin-bottom: 5px;
+
+          @include small-screen {
+            font-size: 16px;
+          }
+
+          &:before {
+            content: url(../img/mdash.png);
+            position: absolute;
+            left: 0;
+            top: -3px;
+          }
+        }
+      }
     }
 
     &__form {
       background: $maincolor;
-
+      width: 100%;
+      padding: 35px 0 25px 0;
     }
 
   }
@@ -52,14 +98,39 @@
     width: 372px;
     max-width: 100%;
 
+    .btn--border {
+      font-size: 18px;
+      max-width: 234px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include small-screen {
+      width: 100%;
+      padding: 0;
+      display: block;
+    }
+
     * {
       width: 100%;
+    }
+
+    &__content {
+      @include small-screen {
+        max-width: 285px;
+        margin: auto;
+      }
     }
   }
 
   .callform__title {
     font-size: 20px;
     margin-bottom: 10px;
+    text-transform: uppercase;
+
+    @include small-screen {
+      font-weight: bold;
+    }
   }
 
   .callform__text {
@@ -81,10 +152,14 @@
 
   &__wrapper {
     padding: 30px 45px;
+
+    @include small-screen {}
   }
 
   &__content {
     display: flex;
+
+
   }
 
   &__left {
@@ -121,13 +196,45 @@
 
 .solutionslider {
 
+  &__wrapper {
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 20px;
+
+    @include small-screen {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__position {
+    position: absolute;
+    left: 0;
+    overflow-x: visible !important;
+  }
+
   &__container {}
 
-  &__slider {}
+  &__slider {
+    .solutionslider__slide:last-child {
+      .solutionslider__item {
+        margin-right: 0;
+      }
+    }
+  }
 
   &__slide {}
 
-  &__item {}
+  &__item {
+    margin-right: 150px;
+
+    @include large-screen {
+      margin-right: 50px;
+    }
+
+    @include small-screen {
+      margin-right: 40px;
+    }
+  }
 
   &__object {}
 
@@ -141,6 +248,14 @@
     height: 563px;
     margin: auto;
     overflow: hidden;
+
+    @include small-screen {
+      width: 100%;
+      padding: 0;
+      display: block;
+      width: 160px;
+      height: 314px;
+    }
   }
 
   &__image {
@@ -156,6 +271,10 @@
     margin: auto;
     width: calc(100% - 43px);
     height: 103%;
+
+    @include small-screen {
+      width: 100%;
+    }
   }
 
   &__phone {
@@ -165,6 +284,9 @@
     height: 100%;
     position: relative;
     z-index: 2;
+
+
+    @include small-screen {}
 
 
   }

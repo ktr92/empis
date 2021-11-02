@@ -1,3 +1,4 @@
+@import 'lightbox2/dist/css/lightbox.min.css';
 @import './fonts.scss';
 @import './header.scss';
 @import './footer.scss';
@@ -8,8 +9,11 @@
 @import './cards.scss';
 @import './about.scss';
 @import './form.scss';
+@import './sliders.scss';
+@import './reviews.scss';
 @import './partials/params.scss';
 @import './partials/mixins.scss';
+
 
 body {
   font-family: 'New_Channel_Font', sans-serif;
@@ -97,7 +101,7 @@ h3 {
   align-items: center;
 
 
-  hr {
+  h2+hr {
     height: 7px;
     background: $maincolor;
     margin: 0 0 0 90px;
@@ -123,6 +127,37 @@ h3 {
 
     @include small-screen {
       font-size: 36px;
+    }
+  }
+
+  h3+hr {
+    height: 4px;
+    background: $maincolor;
+    margin: 0 0 0 30px;
+    width: 100%;
+    border: none;
+
+    @include small-screen {
+      height: 3px;
+      margin-left: 25px;
+    }
+  }
+
+
+  h3 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 20px 0;
+    font-weight: 900;
+    width: max-content;
+    white-space: nowrap;
+
+    @include medium-screen {
+      font-size: 26px;
+    }
+
+    @include small-screen {
+      font-size: 24px;
     }
   }
 }
@@ -234,5 +269,23 @@ h2 {
         }
       }
     }
+  }
+}
+
+.lb-data .lb-close {
+  margin-right: -50px;
+}
+
+.onlyDesktop {
+  @include small-screen {
+    display: none;
+  }
+}
+
+.onlyMobile {
+  display: none;
+
+  @include small-screen {
+    display: block;
   }
 }

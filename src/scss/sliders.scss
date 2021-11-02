@@ -1,0 +1,39 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+@import './partials/animations.scss';
+
+
+.frame {
+  width: 100%;
+  padding: 0
+}
+
+.frame .slidee {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none
+}
+
+.frame .slidee>div {
+  float: left;
+  margin: 0 5px 0 0;
+  padding: 0;
+  height: 100%;
+}
+
+.scrollbar {
+  width: 100%;
+  margin: auto;
+  height: 3px;
+  margin-top: 10px;
+  background: #c6cbce;
+  margin-top: 60px;
+}
+
+.scrollbar .handle {
+  width: 100px;
+  height: 100%;
+  cursor: pointer;
+  background: #000
+}

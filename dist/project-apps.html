@@ -10,7 +10,6 @@
   <link rel="preload" href="/fonts/New_Channel_Font-Black.ttf" as="font" crossorigin="anonymous">
   <link rel="shortcut icon" href="favicon/favicon.ico" />
   <link rel="stylesheet" href="css/style.bundle.css" />
-
   <title>Заголовок | Проект</title>
 </head>
 
@@ -122,8 +121,9 @@
 <main>
   <div class="pageheader pageheader--cover" style="background-image: url(./img/cover1.jpg);">
     <div class="pagecover">
-      <div class="container">
-        <div class="pageheader__breacrumbs">
+
+      <div class="pageheader__breacrumbs">
+        <div class="container">
           <div class="breadcrumbs">
             <ul>
               <li><a href=""><span>Главная</span></a></li>
@@ -131,16 +131,18 @@
               <li><span>Подробный кейс</span></li>
             </ul>
           </div><!-- /.breadcrumbs -->
+        </div><!-- /.container -->
 
-        </div><!-- /.pageheader__breacrumbs -->
-
-
-        <div class="pageheader__title pageheader__title--center">
-          <h1>НБКИ</h1>
-          <div class="offer">Разработка мобильного приложения крупнейшего бюро кредитных историй в РФ</div>
-          <!-- /.offer -->
-        </div><!-- /.pageheader__title -->
-      </div><!-- /.container -->
+      </div><!-- /.pageheader__breacrumbs -->
+      <div class="pagecover__content">
+        <div class="container">
+          <div class="pageheader__title pageheader__title--center">
+            <h1>НБКИ</h1>
+            <div class="offer">Разработка мобильного приложения крупнейшего бюро кредитных историй в РФ</div>
+            <!-- /.offer -->
+          </div><!-- /.pageheader__title -->
+        </div><!-- /.container -->
+      </div><!-- /.pagecover__content -->
     </div><!-- /.pagecover -->
   </div><!-- /.pageheader -->
   <div class="cardblock">
@@ -160,6 +162,20 @@
               <div class="card__text">Разработать сайт на CMS 1С-Битрикс. Внедрить функционал онлайн оплаты. </div>
             </div><!-- /.card__item -->
 
+            <div class="card__item onlyMobile">
+              <div class="card__title">решение</div>
+              <div class="card__text">
+                <ul>
+                  <li>реализация проекта на системе 1С-Битрикс, редакция "Бизнес";</li>
+                  <li> модуль определения города;</li>
+                  <li>интеграция сайта с учетной системой "Мой склад";</li>
+                  <li>"выпадающая" корзина;</li>
+                  <li>настройка модуля "Персональные рекомендации";</li>
+                  <li>настройка "умного поиска".</li>
+                </ul>
+              </div>
+            </div><!-- /.card__item -->
+
           </div><!-- /.card__main -->
           <div class="card__form">
             <div class="callform">
@@ -167,7 +183,7 @@
                 <div class="callform__title">Хотите получить консультацию?</div>
                 <div class="callform__text">Оставьте заявку, и наш менеджер свяжется с вами в течение дня.</div>
                 <div class="callform__button">
-                  <a href="" class="btn btn--border">Отправить заявку</a>
+                  <a href="#formblock" class="btn btn--border scrollTo">Отправить заявку</a>
                 </div><!-- /.callform__button -->
               </div><!-- /.callform__content -->
             </div><!-- /.callform -->
@@ -178,7 +194,7 @@
   </div><!-- /.cardblock -->
 
   <div class="solution">
-    <div class="container">
+    <div class="container onlyDesktop">
       <div class="solution__wrapper">
         <div class="solution__content">
           <div class="solution__left">
@@ -202,32 +218,204 @@
 
     <div class="solutionslider">
       <div class="container">
-        <div class="solutionslider__container">
-          <div class="solutionslider__slider">
-            <div class="solutionslider__slide">
-              <div class="solutionslider__item">
-                <div class="solutionslider__object solutionslider__object_app">
-                  <div class="solutionslider__content">
+        <div class="solutionslider__wrapper">
+          <div class="solutionslider__position">
+            <div class="solutionslider__container frame frame_app" id="slider-app">
+              <div class="solutionslider__slider slidee">
 
-                    <div class="solutionslider__app">
-                      <div class="solutionslider__image" style="background-image: url(./img/app2.png)">
-                      </div>
-                      <!-- /.solutionslider__image -->
-                      <div class="solutionslider__phone">
-                      </div><!-- /.solutionslider__bg -->
-                    </div><!-- /.solutionslider_app -->
+                <div class="solutionslider__slide ">
+                  <div class="solutionslider__item">
+                    <div class="solutionslider__object solutionslider__object_app">
+                      <div class="solutionslider__content">
 
-                  </div><!-- /.solutionslider__content -->
-                </div><!-- /.solutionslider__object -->
-              </div><!-- /.solutionslider__item -->
-            </div><!-- /.solutionslider__slide -->
+                        <div class="solutionslider__app">
+                          <div class="solutionslider__image" style="background-image: url(./img/app2.png)">
+                          </div>
+                          <!-- /.solutionslider__image -->
+                          <div class="solutionslider__phone">
+                          </div><!-- /.solutionslider__bg -->
+                        </div><!-- /.solutionslider_app -->
 
-          </div><!-- /.solutionslider__slider -->
-        </div><!-- /.solutionslider__container -->
+                      </div><!-- /.solutionslider__content -->
+                    </div><!-- /.solutionslider__object -->
+                  </div><!-- /.solutionslider__item -->
+                </div><!-- /.solutionslider__slide -->
+
+                <div class="solutionslider__slide ">
+                  <div class="solutionslider__item">
+                    <div class="solutionslider__object solutionslider__object_app">
+                      <div class="solutionslider__content">
+
+                        <div class="solutionslider__app">
+                          <div class="solutionslider__image" style="background-image: url(./img/app2.png)">
+                          </div>
+                          <!-- /.solutionslider__image -->
+                          <div class="solutionslider__phone">
+                          </div><!-- /.solutionslider__bg -->
+                        </div><!-- /.solutionslider_app -->
+
+                      </div><!-- /.solutionslider__content -->
+                    </div><!-- /.solutionslider__object -->
+                  </div><!-- /.solutionslider__item -->
+                </div><!-- /.solutionslider__slide -->
+                <div class="solutionslider__slide ">
+                  <div class="solutionslider__item">
+                    <div class="solutionslider__object solutionslider__object_app">
+                      <div class="solutionslider__content">
+
+                        <div class="solutionslider__app">
+                          <div class="solutionslider__image" style="background-image: url(./img/app2.png)">
+                          </div>
+                          <!-- /.solutionslider__image -->
+                          <div class="solutionslider__phone">
+                          </div><!-- /.solutionslider__bg -->
+                        </div><!-- /.solutionslider_app -->
+
+                      </div><!-- /.solutionslider__content -->
+                    </div><!-- /.solutionslider__object -->
+                  </div><!-- /.solutionslider__item -->
+                </div><!-- /.solutionslider__slide -->
+                <div class="solutionslider__slide ">
+                  <div class="solutionslider__item">
+                    <div class="solutionslider__object solutionslider__object_app">
+                      <div class="solutionslider__content">
+
+                        <div class="solutionslider__app">
+                          <div class="solutionslider__image" style="background-image: url(./img/app2.png)">
+                          </div>
+                          <!-- /.solutionslider__image -->
+                          <div class="solutionslider__phone">
+                          </div><!-- /.solutionslider__bg -->
+                        </div><!-- /.solutionslider_app -->
+
+                      </div><!-- /.solutionslider__content -->
+                    </div><!-- /.solutionslider__object -->
+                  </div><!-- /.solutionslider__item -->
+                </div><!-- /.solutionslider__slide -->
+
+                <div class="solutionslider__slide ">
+                  <div class="solutionslider__item">
+                    <div class="solutionslider__object solutionslider__object_app">
+                      <div class="solutionslider__content">
+
+                        <div class="solutionslider__app">
+                          <div class="solutionslider__image" style="background-image: url(./img/app2.png)">
+                          </div>
+                          <!-- /.solutionslider__image -->
+                          <div class="solutionslider__phone">
+                          </div><!-- /.solutionslider__bg -->
+                        </div><!-- /.solutionslider_app -->
+
+                      </div><!-- /.solutionslider__content -->
+                    </div><!-- /.solutionslider__object -->
+                  </div><!-- /.solutionslider__item -->
+                </div><!-- /.solutionslider__slide -->
+
+                <div class="solutionslider__slide ">
+                  <div class="solutionslider__item">
+                    <div class="solutionslider__object solutionslider__object_app">
+                      <div class="solutionslider__content">
+
+                        <div class="solutionslider__app">
+                          <div class="solutionslider__image" style="background-image: url(./img/app2.png)">
+                          </div>
+                          <!-- /.solutionslider__image -->
+                          <div class="solutionslider__phone">
+                          </div><!-- /.solutionslider__bg -->
+                        </div><!-- /.solutionslider_app -->
+
+                      </div><!-- /.solutionslider__content -->
+                    </div><!-- /.solutionslider__object -->
+                  </div><!-- /.solutionslider__item -->
+                </div><!-- /.solutionslider__slide -->
+
+              </div><!-- /.solutionslider__slider -->
+
+            </div><!-- /.solutionslider__container -->
+            <div class="scrollbar">
+              <div class="handle"></div>
+            </div>
+          </div>
+        </div>
       </div><!-- /.container -->
     </div><!-- /.solutionslider -->
 
+
+
   </div><!-- /.solution -->
+
+  <div class="reviewsblock">
+    <div class="container">
+      <div class="titleLine">
+        <h3>Отзыв клиента</h3>
+        <hr>
+      </div><!-- /.titleline -->
+      <div class="imgcard">
+        <div class="imgcard__wrapper">
+          <div class="imgcard__image">
+            <div class="imgcard__img"><a href="./img/img1.jpg" data-lightbox="review"><img src="./img/img1.jpg"
+                  alt=""></a></div><!-- /.imgcard__img -->
+          </div><!-- /.imgcard__image -->
+          <div class="imgcard__content">
+            <div class="imgcard__text">
+              <div class="imgcard__title">Компания АО «НБКИ»
+              </div>
+              <p>Коллектив компании «НБКИ» выражает благодарность сотрудникам ООО «ЭМПИС»! Специалисты компании подошли
+                к обсуждению деталей четко, принимали во внимание наши пожелания. Услуги по технической поддержке сайта
+                оказываются оперативно. Отдельно хотим отметить работу нашего персонального менеджера поддержки
+                Александра Копнина, который всегда помогает нам при возникновении каких-либо вопросов в работе сайта.
+              </p>
+            </div><!-- /.imgcard__text -->
+          </div><!-- /.imgcard__content -->
+        </div><!-- /.imgcard__wrapper -->
+      </div><!-- /.imgcard -->
+    </div><!-- /.container -->
+  </div><!-- /.reviewsblock -->
+  <div class="formblock" id="formblock">
+    <div class="container">
+      <div class="form">
+        <div class="form__title">Расскажите о вашем проекте</div><!-- /.form__title -->
+        <div class="form__form">
+          <form action="">
+            <div class="form__row">
+              <div class="form__input"><input type="text" placeholder="Ваше имя *"></div><!-- /.form__input -->
+              <div class="form__input"><input type="text" placeholder="Телефон *"></div><!-- /.form__input -->
+              <div class="form__input form__input--halfsm"><input type="text" placeholder="E-mail *"></div>
+              <!-- /.form__input -->
+
+              <div class="form__input form__input--full"><textarea name="" id="" cols="" rows="1"
+                  placeholder="Сообщение"></textarea>
+                <!-- /# -->
+              </div><!-- /.form__input -->
+            </div><!-- /.form__row -->
+            <div class="form__row form__row--notsm">
+              <div class="form__input">
+                <div class="check">
+                  <input type="checkbox" id="checkbox_3"> <label for="checkbox_3">Согласие на обработку
+                    <a href="">персональных данных</a></label>
+                </div>
+              </div><!-- /.form__input -->
+              <div class="form__input">
+                <div class="fileupload">
+                  <label>
+                    <div class="fileupload__files">
+                      <div class="fileupload__file">
+                        <input type="file" name="file_upload">
+                        <span class="filebutton">Прикрепить файл</span>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div><!-- /.form__input -->
+              <div class="form__input">
+                <butto type="submit" class="bigButton">Отправить</butto>
+              </div><!-- /.form__input -->
+            </div><!-- /.form__row -->
+          </form>
+        </div><!-- /.form__form -->
+      </div><!-- /.form -->
+    </div><!-- /.container -->
+  </div><!-- /.formblock -->
 </main>
 
     <footer class="footer" id="footer">

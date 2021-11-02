@@ -1,6 +1,9 @@
 const path = require("path");
 const fs = require("fs");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+var webpack = require('webpack');
+const {
+  CleanWebpackPlugin
+} = require("clean-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -39,7 +42,9 @@ const config = {
           preset: [
             "default",
             {
-              discardComments: { removeAll: true },
+              discardComments: {
+                removeAll: true
+              },
             },
           ],
         },
@@ -50,12 +55,10 @@ const config = {
     ],
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.(sass|scss)$/,
         include: path.resolve(__dirname, "src/scss"),
-        use: [
-          {
+        use: [{
             loader: MiniCssExtractPlugin.loader,
             options: {},
           },
@@ -82,12 +85,16 @@ const config = {
     ],
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    }),
     new MiniCssExtractPlugin({
       filename: "./css/style.bundle.css",
     }),
     new CopyPlugin({
-      patterns: [
-        {
+      patterns: [{
           from: "./src/fonts",
           to: "./fonts",
         },
@@ -98,6 +105,10 @@ const config = {
         {
           from: "./src/img",
           to: "./img",
+        },
+        {
+          from: "./src/images",
+          to: "./images",
         },
         {
           from: "./src/uploads",
