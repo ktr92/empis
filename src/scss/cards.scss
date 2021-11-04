@@ -127,10 +127,8 @@
     font-size: 20px;
     margin-bottom: 10px;
     text-transform: uppercase;
+    font-weight: bold;
 
-    @include small-screen {
-      font-weight: bold;
-    }
   }
 
   .callform__text {
@@ -144,16 +142,25 @@
 
 .cardblock {
   background-color: $bgcolor;
+  margin: 15px 0;
+
+  @include small-screen {
+    background-color: #fff;
+  }
 }
 
 .solution {
   padding: 10px 0;
   background-color: $bgcolor;
 
+  @include small-screen {
+    background-color: #fff;
+  }
+
   &__wrapper {
     padding: 30px 45px;
 
-    @include small-screen {}
+
   }
 
   &__content {

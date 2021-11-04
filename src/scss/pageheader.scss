@@ -69,6 +69,7 @@
     line-height: 1.2;
     margin: 5px 0 35px 0;
     display: inline-block;
+    text-transform: uppercase;
 
     @include small-screen {
       font-size: 48px;

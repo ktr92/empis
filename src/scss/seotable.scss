@@ -1,0 +1,116 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+
+.tablecardblock {
+  background: $bgcolor;
+  padding: 30px 0;
+
+  @include small-screen {
+    background-color: #fff;
+    padding: 15px 0;
+  }
+}
+
+.tablecard__content {
+  padding: 40px 30px;
+  background: #fff;
+  box-shadow: 0 0 27px 5px rgba(34, 60, 80, 0.2);
+
+
+  @include small-screen {
+    box-shadow: none;
+    padding: 20px 0;
+  }
+}
+
+.tablecard__title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 5px;
+
+  @include small-screen {
+    font-size: 30px;
+  }
+}
+
+.tablecard__items {
+  display: flex;
+
+  margin: 0 -16px;
+
+  @include small-screen {
+    flex-wrap: wrap;
+  }
+}
+
+.tablecard__item {
+  width: 50%;
+  padding: 0 16px;
+  line-height: 1.2;
+
+  @include small-screen {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+
+.tablecard__table {
+  display: flex;
+  margin: 0 -10px;
+}
+
+.cardtable {
+  width: 33.33333%;
+  margin: 0 10px;
+
+  @include small-screen {
+    width: 170px;
+  }
+
+}
+
+.cardtable__title {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.cardtable__list {
+  margin-bottom: 30px;
+
+  @include small-screen {
+    width: 170px;
+  }
+
+}
+
+.cardtable__item {
+  font-size: 14px;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+
+}
+
+.tablecard__logo {
+  height: 95px;
+  display: flex;
+  align-items: center;
+
+  @include small-screen {
+    height: 45px;
+    margin-bottom: 10px;
+  }
+}
+
+.tablecard__text p {
+  text-align: center;
+
+  @include small-screen {
+    font-size: 16px;
+    padding: 0 5px;
+  }
+
+}
