@@ -142,7 +142,6 @@
 
 .cardblock {
   background-color: $bgcolor;
-  margin: 15px 0;
 
   @include small-screen {
     background-color: #fff;
@@ -247,7 +246,9 @@
 
   &__object_app {}
 
-  &__content {}
+  &__content {
+    padding: 10px 0;
+  }
 
   &__app {
     position: relative;
@@ -255,6 +256,8 @@
     height: 563px;
     margin: auto;
     overflow: hidden;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(0px 0px 5px #777);
 
     @include small-screen {
       width: 100%;
@@ -267,12 +270,14 @@
 
   &__image {
     background-repeat: no-repeat;
-    border-bottom-right-radius: 97px;
-    border-bottom-left-radius: 97px;
+    border-bottom-right-radius: 47px;
+    border-bottom-left-radius: 47px;
+    border-top-left-radius: 42px;
+    border-top-right-radius: 41px;
     background-size: contain;
     background-position: center;
     position: absolute;
-    top: 10px;
+    top: -6px;
     left: 0;
     right: 0;
     margin: auto;
@@ -296,5 +301,178 @@
     @include small-screen {}
 
 
+  }
+}
+
+
+.siteslider {
+  .frame_branding {
+    .arrows {}
+  }
+
+  .container {
+    position: relative;
+    max-width: 1280px;
+  }
+
+  .siteslider__container {
+    position: relative;
+    margin: 50px 0 30px 0;
+    padding: 0 0 50px 0;
+
+  }
+
+  .siteslider__slider {}
+
+  .siteslider__slide {}
+
+
+
+  .siteslider__desktop {}
+
+  .siteslider__image {
+    padding: 40px;
+
+    @include medium-screen {
+      padding: 10px;
+    }
+
+    img {
+      width: calc(100% - 210px);
+      box-shadow: 0 0 27px 5px rgba(34, 60, 80, 0.2);
+
+      @include medium-screen {
+        width: initial;
+        box-shadow: 0 0 12px 1px rgba(34, 60, 80, 0.2);
+
+      }
+
+
+
+    }
+
+  }
+
+  .siteslider__mobile {
+    position: absolute;
+    right: 20px;
+    bottom: 55px;
+
+    @include large-screen {
+      right: 40px;
+    }
+
+    @include medium-screen {
+      bottom: -5px;
+      right: 20px;
+    }
+  }
+
+  .solutionslider__app {
+    @include small-screen {
+      width: 117px;
+      height: 230px;
+    }
+  }
+
+  .solutionslider__image {
+    @include small-screen {
+      border-bottom-left-radius: 17px;
+      border-bottom-right-radius: 17px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 11px;
+
+      @include small-screen {
+        height: 94%;
+        top: 7px;
+      }
+    }
+  }
+
+  .solutionslider__phone {}
+
+
+}
+
+.brandlider {
+  padding-bottom: 40px;
+
+  @include small-screen {
+    padding-bottom: 0;
+  }
+
+  .container {
+    max-width: 1280px;
+  }
+
+  .arrows {
+    display: block;
+    position: initial;
+
+    @include small-screen {
+      display: none;
+    }
+  }
+
+  .prev {
+    position: absolute;
+    left: 38px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .next {
+    position: absolute;
+    right: 38px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .brandlider__container {
+    position: relative;
+    margin: 0px 0 30px 0;
+    padding: 20px 0 20px 0;
+
+    @include small-screen {
+      margin: 0px 0 0 0;
+    }
+  }
+
+
+
+
+  .frame {}
+
+  .frame_branding {}
+
+  .brandlider__slider {}
+
+  .slidee {}
+
+  .brandlider__slide {}
+
+  .brandlider__content {
+    padding: 40px;
+
+    @include small-screen {
+
+      padding: 10px;
+    }
+  }
+
+  .brandlider__image {
+    background: #f6f6f8;
+    display: flex;
+    height: 697px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 27px 5px rgba(34, 60, 80, 0.2);
+    border: 1px solid #bdbdbd;
+
+    @include small-screen {
+      height: initial;
+      padding: 20px;
+      box-shadow: 0 0 12px 1px rgba(34, 60, 80, 0.2);
+    }
   }
 }

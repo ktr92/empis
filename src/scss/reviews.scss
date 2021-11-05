@@ -6,6 +6,11 @@
 .reviewsblock {
   background-color: $bgcolor;
   padding: 20px 0;
+
+  @include medium-screen {
+    background-color: #fff;
+
+  }
 }
 
 

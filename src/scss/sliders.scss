@@ -12,7 +12,8 @@
   margin: 0;
   padding: 0;
   height: 100%;
-  list-style: none
+  list-style: none;
+
 }
 
 .frame .slidee>div {
@@ -36,4 +37,69 @@
   height: 100%;
   cursor: pointer;
   background: #000
+}
+
+.dots {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 3;
+}
+
+.dots li {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 8px;
+  text-indent: -999px;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  background: #bcbcbc;
+
+  @include medium-screen {
+    width: 9px;
+    height: 9px;
+    margin: 0 4px;
+  }
+}
+
+.dots li:hover {
+  background: #0db1f4;
+}
+
+.dots li.active {
+  background: #0db1f4;
+}
+
+.arrows {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  z-index: 3;
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+
+  @include medium-screen {
+    display: none;
+  }
+}
+
+.next,
+.prev {
+  cursor: pointer;
+}
+
+.slidecontent {
+  position: relative;
+  max-width: 1280px;
+
+
 }

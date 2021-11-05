@@ -68,6 +68,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 $(document).ready(function () {
 
+  $('.slidecontent').css('width', window.innerWidth + 'px');
+
   $('.solutionslider__wrapper').css(
     'height',
     $('.solutionslider__content').outerHeight() + $('.scrollbar').outerHeight(true))
@@ -77,7 +79,6 @@ $(document).ready(function () {
     horizontal: 1,
     itemNav: 'basic',
     smart: 1,
-    activateOn: 'mouseenter',
     mouseDragging: 1,
     touchDragging: 1,
     releaseSwing: 1,
@@ -100,6 +101,51 @@ $(document).ready(function () {
     prev: $(this).parent().find('.prev'),
     next: $(this).parent().find('.next')
   });
+
+  $('#slider-site').sly({
+    horizontal: 1,
+    itemNav: 'forceCentered',
+    smart: 1,
+    activateMiddle: 1,
+    releaseSwing: 1,
+    startAt: 0,
+    scrollBy: 1,
+    speed: 300,
+    elasticBounds: 1,
+    dragHandle: 1,
+    touchDragging: 1,
+    dynamicHandle: 1,
+    clickBar: 1,
+    pagesBar: $(this).find('.dots'),
+    activatePageOn: 'click',
+
+    // Buttons
+    prev: $(this).find('.prev'),
+    next: $(this).find('.next')
+  });
+
+  $('#slider-branding').sly({
+    horizontal: 1,
+    itemNav: 'forceCentered',
+    smart: 1,
+    activateMiddle: 1,
+    releaseSwing: 1,
+    startAt: 0,
+    scrollBy: 1,
+    speed: 300,
+    elasticBounds: 1,
+    dragHandle: 1,
+    touchDragging: 1,
+    dynamicHandle: 1,
+    clickBar: 1,
+    pagesBar: $(this).find('.dots'),
+    activatePageOn: 'click',
+
+    // Buttons
+    prev: $(this).find('.prev'),
+    next: $(this).find('.next')
+  });
+
 
 
 
