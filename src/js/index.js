@@ -1,6 +1,6 @@
 import './sly.min.js'
-import 'lightbox2/dist/js/lightbox.js';
 import './bootstrap.min.js';
+import './maskedinput.min.js';
 
 
 const {
@@ -149,7 +149,7 @@ $(document).ready(function () {
   });
 
 
-
+  $("input[type=tel]").mask("+7 (999) 999 99 99");
 
   $("a.scrollTo").click(function () {
 

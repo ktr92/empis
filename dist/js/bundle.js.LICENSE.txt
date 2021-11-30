@@ -9,20 +9,6 @@
  */
 
 /*!
- * Lightbox v2.11.3
- * by Lokesh Dhakar
- *
- * More info:
- * http://lokeshdhakar.com/projects/lightbox2/
- *
- * Copyright Lokesh Dhakar
- * Released under the MIT license
- * https://github.com/lokesh/lightbox2/blob/master/LICENSE
- *
- * @preserve
- */
-
-/*!
  * Sizzle CSS Selector Engine v2.3.6
  * https://sizzlejs.com/
  *
@@ -183,6 +169,8 @@
 
 /*! ./listScrollParents.js */
 
+/*! ./maskedinput.min.js */
+
 /*! ./math.js */
 
 /*! ./mergePaddingObject.js */
@@ -239,8 +227,6 @@
 
 /*! jquery */
 
-/*! lightbox2/dist/js/lightbox.js */
-
 /*!*************************!*\
   !*** ./src/js/index.js ***!
   \*************************/
@@ -257,6 +243,10 @@
   !*** ./src/js/bootstrap.min.js ***!
   \*********************************/
 
+/*!***********************************!*\
+  !*** ./src/js/maskedinput.min.js ***!
+  \***********************************/
+
 /*!********************************************!*\
   !*** ./node_modules/jquery/dist/jquery.js ***!
   \********************************************/
@@ -272,10 +262,6 @@
 /*!***************************************************!*\
   !*** ./node_modules/@popperjs/core/lib/popper.js ***!
   \***************************************************/
-
-/*!****************************************************!*\
-  !*** ./node_modules/lightbox2/dist/js/lightbox.js ***!
-  \****************************************************/
 
 /*!*******************************************************!*\
   !*** ./node_modules/@popperjs/core/lib/utils/math.js ***!
