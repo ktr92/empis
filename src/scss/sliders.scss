@@ -87,8 +87,14 @@
   width: 80px;
   justify-content: space-between;
 
+  @include large-screen {
+    right: 0;
+    
+  }
+
   @include medium-screen {
     display: none;
+
   }
 }
 

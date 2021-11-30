@@ -160,81 +160,6 @@ textarea {
 	}
 
 
-	.file-upload {
-		position: relative;
-	}
-
-	.fileupload input[type="file"] {
-		display: none;
-	}
-
-	.fileupload label {
-		display: block;
-
-		cursor: pointer;
-	}
-
-	.filebutton {
-		background-image: url(../img/clip.png);
-		background-position: left center;
-		background-repeat: no-repeat;
-		font-size: 18px;
-		color: #fff;
-		text-align: center;
-		display: inline-block;
-		vertical-align: middle;
-		transition: all 0.3s ease;
-		padding-left: 20px;
-		min-height: 23px;
-		margin-left: 55px;
-		white-space: nowrap;
-	}
-
-	.filebutton {
-		@include medium-screen {
-			margin-left: 0;
-		}
-	}
-
-
-
-	.filename {
-		font-size: 13px;
-		color: #0077cc;
-		display: inline-block;
-		vertical-align: middle;
-		padding: 0 5px;
-	}
-
-	.filenames {
-		font-size: 13px;
-		color: #0077cc;
-		display: inline-block;
-		vertical-align: middle;
-		width: calc(100% - 200px);
-	}
-
-	.fileinfo {
-		font-size: 13px;
-		color: #666666;
-		display: inline-block;
-		vertical-align: middle;
-		width: calc(100% - 200px);
-		margin-left: 20px;
-	}
-
-	.fileinfo .fa {
-		font-size: 19px;
-		display: inline-block;
-		vertical-align: middle;
-	}
-
-	.fileinfo span {
-		display: inline-block;
-		vertical-align: middle;
-	}
-
-	.fileupload__files {}
 
 
 	.check label {
@@ -280,3 +205,80 @@ textarea {
 
 
 }
+
+
+.file-upload {
+	position: relative;
+}
+
+.fileupload input[type="file"] {
+	display: none;
+}
+
+.fileupload label {
+	display: block;
+
+	cursor: pointer;
+}
+
+.filebutton {
+	background-image: url(../img/clip.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	transition: all 0.3s ease;
+	padding-left: 20px;
+	min-height: 23px;
+	margin-left: 55px;
+	white-space: nowrap;
+}
+
+.filebutton {
+	@include medium-screen {
+		margin-left: 0;
+	}
+}
+
+
+
+.filename {
+	font-size: 13px;
+	color: #0077cc;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 5px;
+}
+
+.filenames {
+	font-size: 13px;
+	color: #0077cc;
+	display: inline-block;
+	vertical-align: middle;
+	width: calc(100% - 200px);
+}
+
+.fileinfo {
+	font-size: 13px;
+	color: #666666;
+	display: inline-block;
+	vertical-align: middle;
+	width: calc(100% - 200px);
+	margin-left: 20px;
+}
+
+.fileinfo .fa {
+	font-size: 19px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.fileinfo span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.fileupload__files {}

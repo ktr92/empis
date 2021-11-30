@@ -12,6 +12,7 @@
 @import './sliders.scss';
 @import './reviews.scss';
 @import './seotable.scss';
+@import './modals.scss';
 @import './partials/params.scss';
 @import './partials/mixins.scss';
 
@@ -219,6 +220,7 @@ h2 {
 
 .page {
   padding: 15px 0;
+  background: #fff;
 }
 
 .linkspanel {
@@ -289,4 +291,48 @@ h2 {
   @include small-screen {
     display: block;
   }
+}
+
+.linkspanel ul::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.cardblock .callform .btn--border:hover {
+  background: #fff;
+  color: $darkcolor;
+}
+.imgcard__title {
+  text-align: left;
+}
+
+.tablecard__item{
+  margin-bottom: 20px;
+}
+.tablecard__item::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.tablecard__item::-webkit-scrollbar:vertical {
+  width: 3px;
+}
+
+.tablecard__item::-webkit-scrollbar:horizontal {
+  height: 2px;
+}
+
+.tablecard__item::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0);
+  border-radius: 2px;
+ 
+}
+
+.tablecard__item::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: #c6cbce;
+}
+@include small-screen {
+.lb-data .lb-close {
+  margin-right: 0;
+}
 }

@@ -114,6 +114,10 @@ const config = {
           from: "./src/uploads",
           to: "./uploads",
         },
+        {
+          from: "./src/css",
+          to: "./css",
+        },
       ],
     }),
   ].concat(htmlPlugins),
