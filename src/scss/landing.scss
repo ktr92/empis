@@ -1,0 +1,308 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+@import './partials/animations.scss';
+
+.landing {
+
+  header,
+  .pageheader {
+    background: #fff;
+  }
+}
+
+.pagenav {
+  ul {
+    margin: 0 -30px;
+    display: flex;
+
+  }
+
+  li {
+    padding: 0 30px;
+
+    a {
+      font-size: 24px;
+      color: $darkcolor;
+      line-height: 1.2;
+      border-bottom: 6px solid transparent;
+      text-decoration: none !important;
+      padding-bottom: 20px;
+      display: block;
+    }
+
+  }
+
+  li.active a {
+    border-color: $maincolor;
+  }
+
+  li a:hover {
+    border-color: $maincolor;
+  }
+}
+
+.devblock {
+  background-image: url(../img/bg1.png);
+  background-position: center;
+}
+
+.offerblock {
+  padding: 40px 0;
+
+  h2 {
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .offerblock__descr {
+    font-size: 18px;
+    line-height: 1.333;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    max-width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  .offerblock__cases a {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    max-width: 250px;
+    margin: 20px auto;
+    padding: 10px 25px;
+    text-decoration: none !important;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    * {
+      display: inline-block;
+      vertical-align: middle;
+
+    }
+
+    span {
+      padding-left: 10px;
+      text-transform: uppercase;
+    }
+
+    img {
+      width: 24px;
+    }
+
+  }
+
+
+
+}
+
+.offerblock__prices {}
+
+.offerblock__cards {
+  padding: 10px 0 30px 0;
+}
+
+.cards {
+  display: flex;
+  margin: 0 -15px;
+
+}
+
+
+.card {
+  padding: 0 15px;
+
+  flex: 1;
+}
+
+.card__wrapper {
+  border-radius: 10px;
+  background: #fff;
+  padding: 15px 10px 10px 10px;
+  height: 100%;
+
+
+}
+
+.card__content {
+  height: 100%;
+  position: relative;
+  /* padding-bottom: 106px; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+
+.card__main {}
+
+.card__icon {}
+
+.card__img {
+  height: 84px;
+  width: 84px;
+  border-radius: 50%;
+  border: 2px solid $maincolor;
+  text-align: center;
+  line-height: 80px;
+  margin-bottom: 24px;
+  margin-right: auto;
+  margin-left: auto;
+
+  img {
+    width: 37px;
+  }
+}
+
+.card__title {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.card__list {
+  padding-bottom: 10px;
+
+  li {
+    padding-left: 19px;
+    position: relative;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  li:after {
+    content: "";
+    border: 1px solid $maincolor;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 6px;
+
+  }
+}
+
+.card__bottom {
+  /*   position: absolute; */
+  bottom: 0;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  width: 100%;
+}
+
+.offerblock__prices {
+  margin-top: 30px;
+}
+
+.card__price {
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none !important;
+}
+
+.card__button {
+  .btn {
+    width: 100%;
+    margin: 10px 0 0 0;
+    font-size: 16px;
+
+  }
+}
+
+
+
+.card__price-text {
+  font-size: 24px;
+}
+
+.card__price-value {
+  font-size: 24px;
+
+  font-weight: 900;
+
+  .rouble {
+    font-weight: 600;
+  }
+}
+
+.offerblock__text {
+  margin-bottom: 30px;
+  font-size: 24px;
+
+  color: #fff;
+  line-height: 1.2;
+  text-align: center;
+
+
+}
+
+.offerblock__stages {
+  padding-top: 30px;
+}
+
+.offerblock__slider {
+  background: #fff;
+  border-radius: 15px;
+}
+
+.offerblock__slider {}
+
+.offerslider {}
+
+.offerslider__container {}
+
+.offerslider__slider {}
+
+.offerslider__slide {}
+
+.offerslider__wrapper {}
+
+.offerslider__content {}
+
+.offerslider__number {}
+
+.offerslider__main {}
+
+.offerslider__textcontent {}
+
+.offerslider__title {}
+
+.offerslider__text {}
+
+.offerslider__button {}
+
+.btn {}
+
+.btn_small {}

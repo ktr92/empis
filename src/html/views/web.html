@@ -1,0 +1,277 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+
+<div class="landing">
+  <%= _.template(require('./../includes/header.html').default)(data) %>
+
+  <main>
+    <div class="pageheader">
+      <div class="container">
+        <div class="pageheader__breacrumbs">
+          <div class="container">
+            <div class="breadcrumbs">
+              <ul>
+                <li><a href=""><span>Главная</span></a></li>
+                <li><a href=""><span>Услуги</span></a></li>
+                <li><span>Веб-разработка</span></li>
+              </ul>
+            </div><!-- /.breadcrumbs -->
+          </div><!-- /.container -->
+
+        </div><!-- /.pageheader__breacrumbs -->
+
+        <div class="container">
+          <div class="pageheader__title">
+            <h1>Веб-разработка</h1>
+          </div><!-- /.pageheader__title -->
+        </div><!-- /.container -->
+      </div><!-- /.container -->
+    </div><!-- /.pageheader -->
+
+    <div class="container">
+      <div class="pagenav">
+        <ul>
+          <li class="active"><a href="#block1" class="scrollTo">Создание сайтов</a></li>
+          <li><a href="#block2" class="scrollTo">Готовые решения</a></li>
+          <li><a href="#block3" class="scrollTo">Мобильные веб-приложения</a></li>
+        </ul>
+      </div><!-- /.pagenav -->
+    </div><!-- /.container -->
+
+    <div class="devblock offerblock">
+      <div class="container">
+        <div class="offerblock__title">
+          <h2>Создание сайтов на 1С-Битрикс</h2>
+          <div class="offerblock__descr">Сайт для компании — это важный инструмент привлечения новых клиентов,
+            увеличения
+            Ваших продаж и ведения успешного бизнеса в целом. Мы создаем уникальные проекты любой направленности и
+            сложности.</div>
+        </div>
+
+        <div class="offerblock__cases">
+          <a href="">
+            <img src="img/portfolio.svg" alt="">
+            <span>смотреть кейсы</span>
+          </a>
+        </div>
+
+        <div class="offerblock__prices">
+          <h3>Цены на создание сайта</h3>
+          <div class="offerblock__cards">
+            <div class="cards cards_5">
+              <div class="card">
+                <div class="card__wrapper">
+                  <div class="card__content">
+                    <div class="card__main">
+                      <div class="card__icon">
+                        <div class="card__img"><img src="img/landing-page.svg" alt=""></div><!-- /.card__img -->
+                      </div><!-- /.card__icon -->
+                      <div class="card__title">Landing <br> page</div><!-- /.card__title -->
+                      <div class="card__list">
+                        <ul>
+                          <li>UX/UI дизайн</li>
+                          <li>Адаптивная верстка</li>
+                          <li>Программирование на CMS 1С-Битрикс</li>
+                          <li>Обучение работе с системой</li>
+                        </ul>
+                      </div><!-- /.card__list -->
+
+                    </div><!-- /.card__main -->
+                    <div class="card__bottom">
+                      <div class="card__price">
+                        <span class="card__price-text">от</span>
+                        <span class="card__price-value">39 000 <span class="rouble">₽</span> </span>
+                      </div><!-- /.card__price -->
+                      <div class="card__button"><a href="#modal__order" data-toggle="modal"
+                          class="btn btn_small">Заказать</a> </div>
+                      <!-- /.card__button
+                          -->
+                    </div><!-- /.card__bottom -->
+
+                  </div><!-- /.card__wrapper -->
+                </div>
+              </div><!-- /.card -->
+
+              <div class="card">
+                <div class="card__wrapper">
+                  <div class="card__content">
+                    <div class="card__main">
+                      <div class="card__icon">
+                        <div class="card__img"><img src="img/browser.svg" alt=""></div><!-- /.card__img -->
+                      </div><!-- /.card__icon -->
+                      <div class="card__title">Сайт <br> визитка</div><!-- /.card__title -->
+                      <div class="card__list">
+                        <ul>
+                          <li>UX/UI дизайн</li>
+                          <li>Адаптивная верстка</li>
+                          <li>Программирование на CMS 1С-Битрикс</li>
+                          <li>Обучение работе с системой</li>
+                        </ul>
+                      </div><!-- /.card__list -->
+
+                    </div><!-- /.card__main -->
+                    <div class="card__bottom">
+                      <div class="card__price">
+                        <span class="card__price-text">от</span>
+                        <span class="card__price-value">74 000 <span class="rouble">₽</span> </span>
+                      </div><!-- /.card__price -->
+                      <div class="card__button"><a href="#modal__order" data-toggle="modal"
+                          class="btn btn_small">Заказать</a> </div>
+                      <!-- /.card__button
+                          -->
+                    </div><!-- /.card__bottom -->
+
+                  </div><!-- /.card__wrapper -->
+                </div>
+              </div><!-- /.card -->
+              <div class="card">
+                <div class="card__wrapper">
+                  <div class="card__content">
+                    <div class="card__main">
+                      <div class="card__icon">
+                        <div class="card__img"><img src="img/branding.svg" alt=""></div><!-- /.card__img -->
+                      </div><!-- /.card__icon -->
+                      <div class="card__title">Корпоративный <br> сайт</div><!-- /.card__title -->
+                      <div class="card__list">
+                        <ul>
+                          <li>UX/UI дизайн</li>
+                          <li>Адаптивная верстка</li>
+                          <li>Программирование на CMS 1С-Битрикс</li>
+                          <li>Обучение работе с системой</li>
+                        </ul>
+                      </div><!-- /.card__list -->
+
+                    </div><!-- /.card__main -->
+                    <div class="card__bottom">
+                      <div class="card__price">
+                        <span class="card__price-text">от</span>
+                        <span class="card__price-value">119 000 <span class="rouble">₽</span> </span>
+                      </div><!-- /.card__price -->
+                      <div class="card__button"><a href="#modal__order" data-toggle="modal"
+                          class="btn btn_small">Заказать</a> </div>
+                      <!-- /.card__button
+                          -->
+                    </div><!-- /.card__bottom -->
+
+                  </div><!-- /.card__wrapper -->
+                </div>
+              </div><!-- /.card -->
+              <div class="card">
+                <div class="card__wrapper">
+                  <div class="card__content">
+                    <div class="card__main">
+                      <div class="card__icon">
+                        <div class="card__img"><img src="img/catalog.svg" alt=""></div><!-- /.card__img -->
+                      </div><!-- /.card__icon -->
+                      <div class="card__title">Сайт с <br> каталогом</div><!-- /.card__title -->
+                      <div class="card__list">
+                        <ul>
+                          <li>UX/UI дизайн</li>
+                          <li>Адаптивная верстка</li>
+                          <li>Программирование на CMS 1С-Битрикс</li>
+                          <li>Обучение работе с системой</li>
+                        </ul>
+                      </div><!-- /.card__list -->
+
+                    </div><!-- /.card__main -->
+                    <div class="card__bottom">
+                      <div class="card__price">
+                        <span class="card__price-text">от</span>
+                        <span class="card__price-value">149 000 <span class="rouble">₽</span> </span>
+                      </div><!-- /.card__price -->
+                      <div class="card__button"><a href="#modal__order" data-toggle="modal"
+                          class="btn btn_small">Заказать</a> </div>
+                      <!-- /.card__button
+                          -->
+                    </div><!-- /.card__bottom -->
+
+                  </div><!-- /.card__wrapper -->
+                </div>
+              </div><!-- /.card -->
+              <div class="card">
+                <div class="card__wrapper">
+                  <div class="card__content">
+                    <div class="card__main">
+                      <div class="card__icon">
+                        <div class="card__img"><img src="img/online-shopping.svg" alt=""></div><!-- /.card__img -->
+                      </div><!-- /.card__icon -->
+                      <div class="card__title">Интернет <br>магазин</div><!-- /.card__title -->
+                      <div class="card__list">
+                        <ul>
+                          <li>UX/UI дизайн</li>
+                          <li>Адаптивная верстка</li>
+                          <li>Профессиональная разработка на CMS 1С-Битрикс</li>
+                          <li>Интеграция с 1С</li>
+                          <li>Обучение работе с системой</li>
+                        </ul>
+                      </div><!-- /.card__list -->
+
+                    </div><!-- /.card__main -->
+                    <div class="card__bottom">
+                      <div class="card__price">
+                        <span class="card__price-text">от</span>
+                        <span class="card__price-value">299 000 <span class="rouble">₽</span> </span>
+                      </div><!-- /.card__price -->
+                      <div class="card__button"><a href="#modal__order" data-toggle="modal"
+                          class="btn btn_small">Заказать</a> </div>
+                      <!-- /.card__button
+                          -->
+                    </div><!-- /.card__bottom -->
+
+                  </div><!-- /.card__wrapper -->
+                </div>
+              </div><!-- /.card -->
+
+            </div><!-- /.cards -->
+          </div><!-- /.offerblock__cards -->
+        </div><!-- /.offerblock__prices -->
+
+        <div class="offerblock__text">
+          Мы всегда открыты для диалога, поэтому также ждём ваших заявок для расчёта индивидуальной разработки
+          нестандартного решения.
+
+        </div><!-- /.offerblock__text -->
+
+        <div class="offerblock__stages">
+          <h3>Этапы создания сайта</h3>
+          <div class="offerblock__slider">
+            <div class="offerslider">
+              <div class="offerslider__container">
+                <div class="offerslider__slider">
+                  <div class="offerslider__slide" style="background-image: url(img/slide1.png);">
+                    <div class="offerslider__wrapper">
+                      <div class="offerslider__content">
+                        <div class="offerslider__number"></div>
+                        <div class="offerslider__main">
+                          <div class="offerslider__textcontent">
+                            <div class="offerslider__title">Брифование клиента</div>
+                            <div class="offerslider__text">Вы заполняете подробный бриф со всеми данными о проекте.
+                              После мы обсуждаем проект и находим подходящее решение, продумываем идею ресурса.</div>
+                          </div>
+
+                          <div class="offerslider__button">
+                            <a href="" class="btn btn_small">
+                              <span>Следующий этап</span>
+                              <img src="img/buttonArrow.png" alt="">
+                            </a></div>
+                        </div>
+
+                      </div><!-- /.offerslider__content -->
+                    </div><!-- /.offerslider__wrapper -->
+                  </div><!-- /.offerslider__slide -->
+                </div><!-- /.offerslider__slider -->
+              </div><!-- /.offerslider__container -->
+            </div><!-- /.offerslider -->
+          </div><!-- /.offerblock__slider -->
+        </div><!-- /.offerblock__stages -->
+      </div> <!-- /.container -->
+    </div><!-- /.devblock -->
+
+
+
+  </main>
+</div><!-- /.landing -->
+<%= _.template(require('./../includes/footer.html').default)(data) %>
