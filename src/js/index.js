@@ -3,9 +3,6 @@ import './bootstrap.min.js';
 import './maskedinput.min.js';
 
 
-const {
-  eventListeners
-} = require("@popperjs/core");
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -70,7 +67,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 $(document).ready(function () {
 
+  new WOW().init();
+
   $('.slidecontent').css('width', window.innerWidth + 'px');
+
 
   $('.solutionslider__wrapper').css(
     'height',
@@ -164,6 +164,8 @@ $(document).ready(function () {
     dragHandle: 1,
     dynamicHandle: 1,
     clickBar: 1,
+    cycleBy:       'items',  // Enable automatic cycling by 'items' or 'pages'.
+  	cycleInterval: 3000,  // Delay between cycles in milliseconds.
 
   });
 
@@ -185,7 +187,14 @@ $(document).ready(function () {
     dragHandle: 1,
     dynamicHandle: 1,
     clickBar: 1,
+    cycleBy:       'items',  // Enable automatic cycling by 'items' or 'pages'.
+  	cycleInterval: 3000,  // Delay between cycles in milliseconds.
   });
+
+  $('.offerslider__slide').each(function() {
+    let w = $(this).closest('.offerslider__container').width()
+    $(this).css('width', w + 'px')
+  })
 
 
   $('.next').each(function () {

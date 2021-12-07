@@ -355,6 +355,7 @@
   color: rgb(0, 0, 0);
   line-height: 1;
   margin-bottom: 10px;
+  padding-right: 30px;
 
 }
 
@@ -486,6 +487,7 @@
   font-weight: bold;
   text-transform: none;
   line-height: 1;
+  margin-bottom: 10px;
 
 }
 
@@ -659,4 +661,355 @@
 
 .devappblock {
   padding-bottom: 130px;
+}
+
+@include large-screen {
+  .offerslider__content {
+    min-height: 290px;
+  }
+  .fitches__item {
+    width: 33.33333%;
+  }
+  
+
+}
+
+@include medium-screen {
+  .pageheader h1 {
+    font-size: 80px;
+  }
+  .pagenav li a {
+    font-size: 18px;
+  }
+  .devblock {
+    background: #0db1f4;
+  }
+  .solutionblock {
+    background: #571251;
+  }
+  .devappblock {
+    background: #5f717f;
+  }
+  .offerblock__cards .cards.cards_5 {
+    overflow-x: auto;
+    padding-bottom: 20px;
+  }
+  .offerfitches__content {
+    padding: 15px;
+  }
+  .offerfitches__item {
+    width: 33.33333%;
+  }
+  .offerfitches__title {
+    font-size: 14px;
+  }
+  .fitches__item {
+    width: 50%;
+  }
+  .offerblock__aside {
+    width: 320px;
+  }
+  .offerblock__main {
+    width: calc(100% - 330px);
+}
+.offerblock__text_big {
+  font-size: 40px;
+}
+.offerblock__cards .cards.cards_5::-webkit-scrollbar {
+  -webkit-appearance: none;
+  background: #a7cde1;
+  border: none;
+}
+
+.offerblock__cards .cards.cards_5::-webkit-scrollbar:vertical {
+  width: 3px;
+}
+
+.offerblock__cards .cards.cards_5::-webkit-scrollbar:horizontal {
+  height: 2px;
+}
+
+.offerblock__cards .cards.cards_5::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0);
+  border-radius: 2px;
+
+}
+
+.offerblock__cards .cards.cards_5m::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: #c6cbce;
+}
+.offerslider__slide {
+  background-size: contain;
+}
+.offerslider__main {
+  padding-right: 100px;
+}
+.devappblock {
+  padding-bottom: 30px;
+}
+.pagenav li.active a, .pagenav li a:hover {
+  border-color: #0db1f4;
+}
+
+}
+
+@include small-screen {
+  .offerfitches__title {
+    font-size: 24px;
+  }
+  .frame .slidee>div {
+    padding-bottom: 240px;
+      background-position: center bottom;
+      background-size: 327px;
+  }
+  .offerslider__content {
+    min-height: initial;
+  }
+  
+
+ .pageheader h1 {
+    font-size: 40px;
+   
+   
+  }
+
+  .landing .pageheader h1 {
+    margin-bottom: 20px;
+  }
+  .pagenav li a{
+    font-size: 14px;
+    white-space: nowrap;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  .pagenav li {
+    margin-bottom: -1px;
+  }
+  .pagenav li {
+    padding: 0 15px;
+  }
+  .pagenav ul {
+    margin: 0 -15px;
+  }
+
+  .pagenav {
+    overflow-x: auto;
+    padding-bottom: 0;
+  }
+  .pagenav::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    padding-bottom: 0;
+    height: 0;
+    /* make scrollbar transparent */
+  }
+  .offerblock h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+   
+  }
+  .offerblock .offerblock__descr {
+    font-size: 16px;
+    br {
+      display: none;
+    }
+  }
+  .offerblock h3 {
+    font-size: 18px;
+    line-height: 1.333;
+    text-align: center;
+    margin-bottom: 5px;
+    
+  }
+  .card__title {
+    font-size: 13px;
+    
+  }
+  .card__img img {
+    width: initial;
+    height: 26px;
+  }
+  .card__img {
+    width: 50px;
+    height: 50px;
+    line-height: 46px;
+    margin-bottom: 15px;
+  }
+  .card__list li {
+    font-size: 11px;
+    line-height: 1.2;
+    padding-left: 8px;
+  }
+  .card__list li:after {
+    width: 4px;
+    height: 4px;
+    top: 4px;
+  }
+  .card {
+    padding: 0 9px;
+   
+  }
+  .card__wrapper {
+    border-radius: 5px;
+  }
+  .cards {
+    margin: 0 -9px;
+  }
+  .card__price-text, .card__price-value {
+    font-size: 17px;
+  }
+  .card__button .btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+  .card__wrapper {
+    padding: 5px;
+  }
+  .cards_5 .card__wrapper {
+    width: 130px;
+  }
+  .offerblock__text {
+    font-size: 16px;
+   
+  }
+  .offerblock h3 {
+    margin-top: 10px;
+  }
+  .offerslider {
+    margin-top: 15px;
+  }
+  .offerslider__number {
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 15px;
+  }
+  .offerslider__main {
+    padding-top: 13px;
+  }
+  .offerslider__number {
+    font-size: 30px;
+   
+  }
+  
+  .offerslider__title {
+    font-size: 28px;
+   
+  }
+  .offerslider__main {
+    padding-right: 15px;
+  }
+  .offerslider__text{
+    font-size: 14px;
+   
+  }
+
+  .offerslider__slide[style^='background-image: url("img/slide1.png");'] {
+    background-image: url(../img/slide1m.png) !important;
+    background-position: bottom right !important;
+  
+  }
+  .frame .slidee>div {
+    background-size: initial;
+  }
+  .offerslider__main {
+    padding-bottom: 0;
+  }
+  .offerblock .offerblock__descr {
+    padding: 0 5px;
+  }
+  .offerfitches__item {
+    width: 100%;
+  }
+  .offerfitches__items {
+    flex-wrap: wrap;
+  }
+  .offerfitches__content {
+    border-width: 1px;
+   
+  }
+  .offerfitches__item {
+    margin-bottom: 10px;  
+  }
+  .offerfitches__text br {
+    display: none;
+  }
+  .offerfitches__title {
+    font-size: 20px;
+  }
+  .offerfitches__text {
+    font-size: 15px;
+  }
+  .offerfitches__content {
+    padding: 15px 30px;
+    min-height: initial;
+  }
+  .offerfitches__item_1 br {
+    display: initial;
+  }
+  .offerfitches__icon img {
+    height: 57px;
+  }
+ .offerblock__text_big {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .offerslider__title {
+    padding-right: 0;
+  }
+  .offerblock__cols {
+    flex-wrap: wrap;
+  }
+  .offerblock__main {
+    width: 100%;
+  }
+    
+  .offerblock__aside {
+    width: 100%;
+  }
+  .offerblock__aside .solutionslider__app {
+    width: 286px;
+    height: 563px;
+  }
+  .offerblock__aside .solutionslider__image {
+    width: fit-content;
+  }
+  .appslogo__content {
+    padding: 0 13px;
+    height: 41px;
+  }
+  .appslogo__img {
+    width: 22px;
+    margin-right: 5px;
+  }
+  .appslogo__text {
+    font-size: 17px;
+  }
+  .appslogo__item {
+    padding: 0 7px;
+  }
+  .appslogo__items {
+    margin: 0 -7px;
+  }
+  .appslogo {
+    margin-top: 15px;
+  }
+  .offerblock__aside {
+    margin-top: 20px;
+  }
+  .offerblock__cols {
+    padding: 0 0;
+  }
+  .fitches {
+    margin: 20px 0;
+  }
+  .fitches__text {
+    font-size: 12px;
+    line-height: 1.2;
+    padding-left: 5px;
+  }
+  .fitches__img {
+    width: 26px;
+}
 }
