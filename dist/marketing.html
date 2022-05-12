@@ -1,685 +1,761 @@
+
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
-    <link rel="preload" href="/fonts/New_Channel_Font-Medium.ttf" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="/fonts/New_Channel_Font-Bold.ttf" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="/fonts/New_Channel_Font-Black.ttf" as="font" crossorigin="anonymous" />
-    <link rel="shortcut icon" href="favicon/favicon.ico" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.bundle.css" />
-    <title>Заголовок | Проект</title>
-  </head>
-  <div class="landing">
-    <body>
-      <header id="header" class="header">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preload" href="/fonts/New_Channel_Font-Medium.ttf" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/New_Channel_Font-Bold.ttf" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/New_Channel_Font-Black.ttf" as="font" crossorigin="anonymous">
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.bundle.css" />
+
+  <title>Заголовок | Проект</title>
+</head>
+
+<div class="landing">
+  <body>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__left">
+          <div class="header__logo">
+            <a href="/">
+              <img src="img/logo_black.svg" alt="" class="logo" width="155" height="44">
+              <img src="img/logo.svg" alt="" class="logo logo--fixed" width="155" height="44">
+            </a>
+          </div><!-- /.header__logo -->
+          <div class="header__menu"><a href="#">
+              <img src="img/menu.png" alt="" class="headerToggler" width="25" height="13">
+              <img src="img/menu2.png" alt="" class="headerToggler headerToggler--fixed" width="25" height="13">
+            </a>
+          </div><!-- /.header__menu -->
+        </div><!-- /.header__left -->
+
+        <div class="header__right">
+          <div class="header__nav">
+            <div class="headernav">
+              <div class="headernav__menu">
+                <ul>
+                  <li class="headernav__link"><a href="">Проекты</a></li>
+                  <li class="headernav__link"><a href="">Услуги</a></li>
+                  <li class="headernav__link"><a href="">Компания</a></li>
+                  <li class="headernav__link"><a href="">Контакты</a></li>
+                </ul>
+              </div><!-- /.headernav__menu -->
+              <div class="headernav__contact">
+                <div class="contact">
+                  <div class="contact__call"><a href="#">Связаться с нами</a></div><!-- /.contact__call -->
+                  <div class="contact__content">
+                    <div class="contact__text">Мы принимаем звонки по будням с 10:00 до 18:00</div>
+                    <!-- /.contact__text -->
+                    <div class="contact__phone"><a href="tel:+74951183013">+7 495 118 30 13</a></div>
+                    <!-- /.contact__phone -->
+
+
+                    <div class="contact__socials">
+                      <div class="socials">
+                        <ul>
+                          <li><a href="//api.whatsapp.com/send?phone=79165133202" target="_blank"><img
+                                src="img/whatsapp.svg" alt=""></a></li>
+                          <li><a href="//tlgg.ru/79165133202" target="_blank"><img src="img/telegram.svg" alt=""></a>
+                          </li>
+                          <li><a href="viber://chat?number=%79165133202" target="_blank"><img src="img/viber.svg"
+                                alt=""></a></li>
+                        </ul>
+                      </div><!-- /.socials -->
+                    </div><!-- /.contact__socials -->
+                    <div class="contact__button"><a href="" class="btn btn--small">Обратный звонок</a><!-- /.btn -->
+                    </div><!-- /.contact__button -->
+                  </div><!-- /.contact__content -->
+                </div><!-- /.contact -->
+              </div><!-- /.headernav__contact -->
+            </div><!-- /.headernav -->
+          </div><!-- /.header__nav -->
+        </div><!-- /.header__right -->
+      </div><!-- /.header__content -->
+    </div><!-- /.container -->
+    <div class="topmenu" id="topmenu">
+      <div class="container">
+        <div class="topmenu__wrapper">
+          <div class="topmenu__header">
+            <div class="topmenu__logo">
+              <a href="/">
+                <img src="img/logo.svg" alt="">
+              </a>
+            </div><!-- /.topmenu__logo -->
+            <div class="topmenu__close"><a href="#"><img src="img/close.png" alt=""></a></div><!-- /.topmenu__close -->
+          </div><!-- /.topmenu__header -->
+          <div class="topmenu__main">
+            <div class="topmenu__left">
+              <div class="topmenu__menu">
+                <div class="topmenu__items">
+                  <div class="topmenu__item">
+                    <div class="topmenu__title"><a href="">Услуги</a></div><!-- /.topmenu__title -->
+                    <div class="topmenu__subitems">
+                      <ul>
+                        <li><a href="">Веб-разработка</a></li>
+                        <li><a href="">Маркетинг</a></li>
+                        <li><a href="">Поддержка и автоматизация</a></li>
+                        <li><a href="">Другие услуги</a></li>
+                      </ul>
+                    </div><!-- /.topmenu__subitems -->
+                  </div><!-- /.topmenu__item -->
+                  <div class="topmenu__item">
+                    <div class="topmenu__title"><a href="">Проекты</a></div><!-- /.topmenu__title -->
+                    <div class="topmenu__title"><a href="">Компания</a></div><!-- /.topmenu__title -->
+                    <div class="topmenu__title"><a href="">Контакты</a></div><!-- /.topmenu__title -->
+                  </div><!-- /.topmenu__item -->
+                </div><!-- /.topmenu__items -->
+              </div><!-- /.topmenu__menu -->
+            </div><!-- /.topmenu__left -->
+            <div class="topmenu__right">
+              <div class="topmenu__button"><a href="#" class="bigButton">Оставить заявку</a><!-- /.bigButton -->
+              </div><!-- /.topmenu__button -->
+            </div><!-- /.topmenu__right -->
+          </div><!-- /.topmenu__main -->
+        </div><!-- /.topmenu__wrapper -->
+      </div><!-- /.container -->
+    </div><!-- /.topmenu -->
+  </header>
+
+  <main>
+    <div class="pageheader">
+      <div class="container">
+        <div class="pageheader__breacrumbs">
+          <div class="container">
+            <div class="breadcrumbs">
+              <ul>
+                <li><a href=""><span>Главная</span></a></li>
+                <li><a href=""><span>Услуги</span></a></li>
+                <li><span>Маркетинг</span></li>
+              </ul>
+            </div><!-- /.breadcrumbs -->
+          </div><!-- /.container -->
+
+        </div><!-- /.pageheader__breacrumbs -->
+
         <div class="container">
-          <div class="header__content">
-            <div class="header__left">
-              <div class="header__logo">
-                <a href="/"
-                  ><img src="img/logo_black.svg" alt="" class="logo" width="155" height="44" />
-                  <img src="img/logo.svg" alt="" class="logo logo--fixed" width="155" height="44"
-                /></a>
-              </div>
-              <div class="header__menu">
-                <a href="#"
-                  ><img src="img/menu.png" alt="" class="headerToggler" width="25" height="13" />
-                  <img src="img/menu2.png" alt="" class="headerToggler headerToggler--fixed" width="25" height="13"
-                /></a>
-              </div>
-            </div>
-            <div class="header__right">
-              <div class="header__nav">
-                <div class="headernav">
-                  <div class="headernav__menu">
-                    <ul>
-                      <li class="headernav__link"><a href="">Проекты</a></li>
-                      <li class="headernav__link"><a href="">Услуги</a></li>
-                      <li class="headernav__link"><a href="">Компания</a></li>
-                      <li class="headernav__link"><a href="">Контакты</a></li>
-                    </ul>
-                  </div>
-                  <div class="headernav__contact">
-                    <div class="contact">
-                      <div class="contact__call"><a href="#">Связаться с нами</a></div>
-                      <div class="contact__content">
-                        <div class="contact__text">Мы принимаем звонки по будням с 10:00 до 18:00</div>
-                        <div class="contact__phone"><a href="tel:+74951183013">+7 495 118 30 13</a></div>
-                        <div class="contact__socials">
-                          <div class="socials">
-                            <ul>
-                              <li>
-                                <a href="//api.whatsapp.com/send?phone=79165133202" target="_blank"
-                                  ><img src="img/whatsapp.svg" alt=""
-                                /></a>
-                              </li>
-                              <li>
-                                <a href="//tlgg.ru/79165133202" target="_blank"
-                                  ><img src="img/telegram.svg" alt=""
-                                /></a>
-                              </li>
-                              <li>
-                                <a href="viber://chat?number=%79165133202" target="_blank"
-                                  ><img src="img/viber.svg" alt=""
-                                /></a>
-                              </li>
-                            </ul>
+          <div class="pageheader__title">
+            <h1>Маркетинг</h1>
+          </div><!-- /.pageheader__title -->
+        </div><!-- /.container -->
+      </div><!-- /.container -->
+    </div><!-- /.pageheader -->
+
+    <div class="container">
+      <div class="pagenav">
+        <ul>
+          <li class="active"><a href="#block1" class="scrollTo">Поисковая оптимизация</a></li>
+          <li><a href="#block2" class="scrollTo">SEO-продвижение</a></li>
+          <li><a href="#block3" class="scrollTo">Контекстная реклама</a></li>
+        </ul>
+      </div><!-- /.pagenav -->
+    </div><!-- /.container -->
+
+    <div class="baseseoblock offerblock" id="block1">
+      <div class="container">
+        <div class="offerblock__title">
+          <h2>Базовая поисковая оптимизация</h2>
+          <div class="offerblock__descr">Поисковые системы портят своё отношение к новым сайтам без базовой оптимизации.
+            Не упустите возможность эффективного продвижения сайта сразу после его создания.</div>
+        </div>
+
+        <div class="offerblock__btn"><a href="#modal__order" data-toggle="modal" class="btn btn_black">ОСТАВИТЬ
+            ЗАЯВКУ</a></div>
+
+        <div class="offerblock__cols">
+          <div class="offerblock__aside">
+            <div class="offerblock__image slide-in-left wow" data-wow-delay="0.2s"><img src="img/img2.png" alt=""></div>
+          </div><!-- /.offerblock__aside -->
+          <div class="offerblock__main offerblock__main_right">
+            <h4>
+              Зачем нужна поисковая оптимизация?
+            </h4><!-- /.offerblock__title -->
+            <div class="offerblock__descr">Проекты, у которых не проведены базовые работы по SEO — теряют свой авторитет
+              в глазах поисковых систем и не привлекают трафик. Чем раньше вы выполните базовую оптимизацию, тем проще
+              будет в дальнейшем увеличивать целевой трафик и количество заявок.</div><!-- /.offerblock__descr -->
+
+            <h3>негативно сказываются:</h3>
+            <div class="listround">
+              <ul>
+                <li>Пустые разделы</li>
+                <li>Битые ссылки</li>
+                <li>Дубли страниц</li>
+                <li>Отсутствие мета-тегов</li>
+                <li>Ошибки отображения и отсутствие региона привязки</li>
+              </ul>
+            </div><!-- /.listround -->
+
+          </div><!-- /.offerblock__main -->
+        </div><!-- /.offerblock__cols -->
+
+
+        <h3>Сколько стоит?</h3>
+        <div class="offerblock__text offerblock__text_big">
+          от <span>20 000</span> руб.
+        </div>
+        <div class="offerblock__descr">Базовая оптимизация требуется проектам на этапе разработки, с молодым доменом, с
+          не большим количеством страниц и узкоспециализированной тематикой.</div>
+        <div class="offerblock__cases offerblock__cases_blue">
+          <a href="#modal__order" data-toggle="modal">
+            <img src="img/calculator2.svg" alt="">
+            <span>РАССЧИТАТЬ СТОИМОСТЬ</span>
+          </a>
+        </div>
+
+
+
+      </div> <!-- /.container -->
+    </div><!-- /.devblock -->
+    <div class="topseoblock offerblock" id="block2">
+      <div class="container">
+        <div class="offerblock__title">
+          <h2>SEO-ПРОДВИЖЕНИЕ сайта</h2>
+          <div class="offerblock__descr">Успешно увеличиваем продажи с 2011 года! Гарантируем ТОП-10!</div>
+        </div>
+
+        <div class="offerblock__cases">
+          <a href="">
+            <img src="img/portfolio.svg" alt="">
+            <span>смотреть кейсы</span>
+          </a>
+        </div>
+
+        <div class="offerblock__prices">
+          <h3>ТАРИФЫ НА ПРОДВИЖЕНИЕ</h3>
+          <div class="offerblock__cards">
+            <div class="cards cards_3">
+              <div class="card slide-in-bottom wow" data-wow-delay="0.2s">
+                <div class="card__wrapper">
+                  <div class="card__content">
+                    <div class="card__main">
+                      <div class="card__icon">
+                        <div class="card__onlyicon">
+                          <img src="img/startup.svg" alt="">
+                        </div><!-- /.card__onlyicon -->
+                      </div><!-- /.card__icon -->
+                      <div class="card__title">ПРОДВИЖЕНИЕ САЙТА В ТОП-10</div><!-- /.card__title -->
+                      <div class="card__list">
+                        <ul>
+                          <li>Аудит сайта</li>
+                          <li>Внутренняя оптимизация</li>
+                          <li>Семантическое ядро</li>
+                          <li>Копирайтинг</li>
+                          <li>Входящие ссылки</li>
+                          <li>Улучшение представления сайта в результатах поиска</li>
+                          <li>Мониторинг текущей ситуации</li>
+                        </ul>
+                      </div><!-- /.card__list -->
+
+                    </div><!-- /.card__main -->
+                    <div class="card__bottom">
+                      <div class="card__price">
+                        <span class="card__price-text">от</span>
+                        <span class="card__price-value">30 000 <span class="rouble">₽</span> </span>
+                      </div><!-- /.card__price -->
+                      <div class="card__button"><a href="#modal__order" data-toggle="modal"
+                          class="btn btn_small">Получить предложение</a> </div>
+                      <!-- /.card__button
+                          -->
+                    </div><!-- /.card__bottom -->
+
+                  </div><!-- /.card__wrapper -->
+                </div>
+              </div><!-- /.card -->
+
+              <div class="card slide-in-bottom wow" data-wow-delay="0.5s">
+                <div class="card__wrapper">
+                  <div class="card__content">
+                    <div class="card__main">
+                      <div class="card__icon">
+                        <div class="card__onlyicon">
+                          <img src="img/online-data.svg" alt="">
+                        </div><!-- /.card__onlyicon -->
+                      </div><!-- /.card__icon -->
+                      <div class="card__title">ПРОДВИЖЕНИЕ САЙТА ПО ТРАФИКУ</div><!-- /.card__title -->
+                      <div class="card__list">
+                        <ul>
+                          <li>Комплексный аудит сайта</li>
+                          <li>Развитие сайта с учётом актуальных требований поисковых систем и удобства пользователей
+                          </li>
+                          <li> Доработки сайта входят в стоимость</li>
+                          <li>Повышение качества контента</li>
+                          <li>Улучшение юзабилити</li>
+                          <li>Увеличение конверсии и рост целевой аудитории</li>
+                          <li>Мониторинг текущей ситуации</li>
+
+                        </ul>
+                      </div><!-- /.card__list -->
+
+                    </div><!-- /.card__main -->
+                    <div class="card__bottom">
+                      <div class="card__price">
+                        <span class="card__price-text">от</span>
+                        <span class="card__price-value">30 000 <span class="rouble">₽</span> </span>
+                      </div><!-- /.card__price -->
+                      <div class="card__button"><a href="#modal__order" data-toggle="modal"
+                          class="btn btn_small">Получить предложение</a> </div>
+                      <!-- /.card__button
+                          -->
+                    </div><!-- /.card__bottom -->
+
+                  </div><!-- /.card__wrapper -->
+                </div>
+              </div><!-- /.card -->
+              <div class="card slide-in-bottom wow" data-wow-delay="0.8s">
+                <div class="card__wrapper">
+                  <div class="card__content">
+                    <div class="card__main">
+                      <div class="card__icon">
+                        <div class="card__onlyicon">
+                          <img src="img/top-three.svg" alt="">
+                        </div><!-- /.card__onlyicon -->
+                      </div><!-- /.card__icon -->
+                      <div class="card__title">КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ</div><!-- /.card__title -->
+                      <div class="card__list">
+                        <ul>
+                          <li>Комплексное продвижение сайта</li>
+                          <li> SEO-продвижение в поисковых системах</li>
+                          <li> Контекстная реклама Яндекс Директ и Google AdWords</li>
+                          <li>Реклама в Яндекс.Картах</li>
+                          <li> Работа с отзывами на площадках</li>
+                          <li>Привлечение дополнительного трафика</li>
+                          <li> Полная аналитика</li>
+
+                        </ul>
+                      </div><!-- /.card__list -->
+
+                    </div><!-- /.card__main -->
+                    <div class="card__bottom">
+                      <div class="card__price">
+                        <span class="card__price-text">от</span>
+                        <span class="card__price-value">30 000 <span class="rouble">₽</span> </span>
+                      </div><!-- /.card__price -->
+                      <div class="card__button"><a href="#modal__order" data-toggle="modal"
+                          class="btn btn_small">Получить предложение</a> </div>
+                      <!-- /.card__button
+                          -->
+                    </div><!-- /.card__bottom -->
+
+                  </div><!-- /.card__wrapper -->
+                </div>
+              </div><!-- /.card -->
+
+            </div><!-- /.cards -->
+          </div><!-- /.offerblock__cards -->
+        </div><!-- /.offerblock__prices -->
+        <br>
+        <div class="offerblock__text">
+          Самый важный для нас KPI — рост вашего бизнеса и числа продаж через интернет.
+
+        </div><!-- /.offerblock__text -->
+
+        <div class="offerblock__stages">
+          <h3>Этапы создания сайта</h3>
+          <div class="offerblock__slider">
+            <div class="offerslider">
+              <div class="offerslider__container frame frame_branding" id="slider-topseoblock">
+                <div class="offerslider__slider slidee">
+                  <div class="offerslider__slide">
+                    <div class="offerslider__wrapper">
+                      <div class="offerslider__content">
+                        <div class="offerslider__number">01</div>
+                        <div class="offerslider__main">
+                          <div class="offerslider__textcontent">
+                            <div class="offerslider__title">Как мы работаем</div>
+                            <div class="offerslider__text">Подбираем для вас наиболее эффективные с точки зрения SEO
+                              поисковые запросы с высоким конверсионным потенциалом. Правильные фразы позволяют достичь
+                              максимального объема продаж, сократить время продвижения, а также снизить стоимость
+                              конечного лида.</div>
+                          </div>
+
+                          <div class="offerslider__button">
+                            <button class="btn btn_small next">
+                              <span>Следующий этап</span>
+                              <img src="img/buttonArrow.png" alt="">
+                            </button></div>
+                        </div>
+                        <div class="offerslider__image">
+                          <img src="img/img3.png" alt="">
+                        </div><!-- /.offerslider__image -->
+
+                      </div><!-- /.offerslider__content -->
+                    </div><!-- /.offerslider__wrapper -->
+                  </div><!-- /.offerslider__slide -->
+
+                  <div class="offerslider__slide" style="background-image: url(img/slide1.png);">
+                    <div class="offerslider__wrapper">
+                      <div class="offerslider__content">
+                        <div class="offerslider__number">02</div>
+                        <div class="offerslider__main">
+                          <div class="offerslider__textcontent">
+                            <div class="offerslider__title">Брифование клиента</div>
+                            <div class="offerslider__text">Вы заполняете подробный бриф со всеми данными о проекте.
+                              После мы обсуждаем проект и находим подходящее решение, продумываем идею ресурса.</div>
+                          </div>
+
+                          <div class="offerslider__button">
+                            <button class="btn btn_small next">
+                              <span>Следующий этап</span>
+                              <img src="img/buttonArrow.png" alt="">
+                            </button>
                           </div>
                         </div>
-                        <div class="contact__button"><a href="" class="btn btn--small">Обратный звонок</a></div>
-                      </div>
-                    </div>
+
+                      </div><!-- /.offerslider__content -->
+                    </div><!-- /.offerslider__wrapper -->
+                  </div><!-- /.offerslider__slide -->
+                  <div class="offerslider__slide" style="background-image: url(img/slide1.png);">
+                    <div class="offerslider__wrapper">
+                      <div class="offerslider__content">
+                        <div class="offerslider__number">03</div>
+                        <div class="offerslider__main">
+                          <div class="offerslider__textcontent">
+                            <div class="offerslider__title">Брифование клиента</div>
+                            <div class="offerslider__text">Вы заполняете подробный бриф со всеми данными о проекте.
+                              После мы обсуждаем проект и находим подходящее решение, продумываем идею ресурса.</div>
+                          </div>
+
+                          <div class="offerslider__button">
+                            <button class="btn btn_small next">
+                              <span>Следующий этап</span>
+                              <img src="img/buttonArrow.png" alt="">
+                            </button>
+                          </div>
+                        </div>
+
+                      </div><!-- /.offerslider__content -->
+                    </div><!-- /.offerslider__wrapper -->
+                  </div><!-- /.offerslider__slide -->
+
+                </div><!-- /.offerslider__slider -->
+              </div><!-- /.offerslider__container -->
+            </div><!-- /.offerslider -->
+          </div><!-- /.offerblock__slider -->
+        </div><!-- /.offerblock__stages -->
+      </div> <!-- /.container -->
+    </div><!-- /.devblock -->
+
+
+
+    <div class="contextblock offerblock" id="block3">
+      <div class="container">
+        <div class="offerblock__title">
+          <h2>КОНТЕКСТНАЯ РЕКЛАМА</h2>
+          <div class="offerblock__descr">Контекстная реклама - это объявления, показываемые по ключевым фразам. Хороший
+            источник новых клиентов практически для любого вида бизнеса, отлично работающий вместе с поисковым
+            продвижением сайта. Ваши потенциальные клиенты могут увидеть эти объявления, как на сайте ПС Яндекс, так и
+            на тысячах других сайтов.</div>
+        </div>
+
+        <div class="offerblock__fitches offerblock__fitches_type2">
+          <h3>Преимущества</h3>
+          <div class="offerfitches">
+            <div class="offerfitches__items">
+              <div class="offerfitches__item  slide-in-bottom wow" data-wow-delay="0.3s"
+                style="visibility: visible; animation-delay: 0.3s;">
+                <div class=" offerfitches__content">
+                  <div class="offerfitches__header">
+                    <div class="offerfitches__icon"><img src="img/checkout.svg" alt=""></div>
+                    <div class="offerfitches__title">Быстрые <br>заявки</div>
+                  </div><!-- /.offerfitches__header -->
+                  <div class="offerfitches__text">
+                    Мгновенное увеличение качественных заявок с сайта
+                  </div><!-- /.offerfitches__text -->
+                </div><!-- /.offerfitches__content -->
+              </div><!-- /.offerfitches__item -->
+              <div class="offerfitches__item  slide-in-bottom wow" data-wow-delay="0.6s"
+                style="visibility: visible; animation-delay: 0.6s;">
+                <div class="offerfitches__content">
+                  <div class="offerfitches__header">
+                    <div class="offerfitches__icon"><img src="img/target2.svg" alt=""></div>
+                    <div class="offerfitches__title">целевая <br> аудитория</div>
+                  </div><!-- /.offerfitches__header -->
+                  <div class="offerfitches__text">
+                    Показ объявления только <br> целевой аудитории
+                  </div><!-- /.offerfitches__text -->
+                </div><!-- /.offerfitches__content -->
+              </div><!-- /.offerfitches__item -->
+              <div class="offerfitches__item  slide-in-bottom wow" data-wow-delay="0.9s"
+                style="visibility: visible; animation-delay: 0.9s;">
+                <div class="offerfitches__content">
+                  <div class="offerfitches__header">
+                    <div class="offerfitches__icon"><img src="img/seo2.svg" alt=""></div>
+                    <div class="offerfitches__title">двойная <br> выгода</div>
+                  </div><!-- /.offerfitches__header -->
+                  <div class="offerfitches__text">
+                    Контекстная реклама дает
+                    положительный эффект для SEO
+                  </div><!-- /.offerfitches__text -->
+                </div><!-- /.offerfitches__content -->
+              </div><!-- /.offerfitches__item -->
+            </div><!-- /.offerfitches__items -->
+          </div><!-- /.offerfitches -->
+
+        </div>
+
+
+        <h3>Сколько стоит настройка и ведение?</h3>
+        <div class="offerblock__text offerblock__text_big">
+          от <span>15 000</span> руб.
+        </div>
+        <div class="offerblock__descr">(в стоимость не входит бюджет на клики)</div>
+        <div class="offerblock__cases offerblock__cases_red">
+          <a href="#modal__order" data-toggle="modal">
+            <img src="img/calculator.svg" alt="">
+            <span>РАССЧИТАТЬ СТОИМОСТЬ</span>
+          </a>
+        </div>
+
+
+
+      </div> <!-- /.container -->
+    </div><!-- /.devblock -->
+
+
+
+  </main>
+</div><!-- /.landing -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__menu">
+            <div class="footermenu">
+              <ul class="footermenu__ul">
+                <li class="footermenu__li"><a href="">Проекты</a></li><!-- /.footermenu__li -->
+                <li class="footermenu__li"><a href="">Услуги</a></li><!-- /.footermenu__li -->
+                <li class="footermenu__li"><a href="">Компания</a></li><!-- /.footermenu__li -->
+                <li class="footermenu__li"><a href="">Контакты</a></li><!-- /.footermenu__li -->
+              </ul><!-- /.footermenu__ul -->
+            </div><!-- /.footermenu -->
+          </div><!-- /.footer__menu -->
+          <div class="footer__contacts">
+            <div class="footercontacts">
+              <div class="footercontacts__item">
+                <div class="footercontacts__phone"><a href="tel:79165133202 ">+7 495 118 30 13 </a></div>
+                <!-- /.footercontacts__phone -->
+              </div><!-- /.footercontacts__item -->
+              <div class="footercontacts__item">
+                <div class="footercontacts__mess">
+                  <div class="footercontacts__text">Связаться через:</div><!-- /.footercontacts__text -->
+                  <div class="socials">
+                    <ul>
+                      <li><a href="//api.whatsapp.com/send?phone=79165133202" target="_blank"><img
+                            src="img/whatsapp.svg" alt=""></a></li>
+                      <li><a href="//tlgg.ru/79165133202" target="_blank"><img src="img/telegram.svg" alt=""></a></li>
+                      <li><a href="viber://chat?number=%79165133202" target="_blank"><img src="img/viber.svg"
+                            alt=""></a></li>
+                    </ul>
                   </div>
-                </div>
+                </div><!-- /.footercontacts__mess -->
+
+              </div><!-- /.footercontacts__item -->
+              <div class="footercontacts__item">
+                <div class="footercontacts__email">
+                  <div class="footercontacts__text"><a href="mailto:info@empis.ru">info@empis.ru</a></div>
+                  <!-- /.footercontacts__text -->
+                </div><!-- /.footercontacts__email -->
+              </div><!-- /.footercontacts__item -->
+            </div><!-- /.footercontacts -->
+          </div><!-- /.footer__contacts -->
+
+          <div class="footer__info">
+            <div class="footerinfo">
+              <div class="footerinfo__items">
+                <div class="footerinfo__item footerinfo__item--mobile-3">
+                  <div class="footerinfo__text">© 2010–2021, digital-агентство EMPIS</div><!-- /.footerinfo__text -->
+                  <div class="footerinfo__text"><small> Сайт защищен reCAPTCHA и Google. <a
+                        href="">Конфиденциальность</a> и <a href="">Условия</a>.</small></div>
+                  <!-- /.footerinfo__link -->
+                </div><!-- /.footerinfo__item -->
+                <div class="footerinfo__item">
+                  <div class="footerinfo__text">Москва, 5-й Донской проезд, д.15, <br> стр.9, офис 175</div>
+                  <!-- /.footerinfo__text -->
+                </div><!-- /.footerinfo__item -->
+                <div class="footerinfo__item">
+                  <div class="footerinfo__link"><a href="">Публичная оферта</a></div><!-- /.footerinfo__link -->
+                </div><!-- /.footerinfo__item -->
+                <div class="footerinfo__item">
+                  <div class="footerinfo__link"><a href="">Политика конфиденциальности</a></div>
+                  <!-- /.footerinfo__link -->
+                </div><!-- /.footerinfo__item -->
+              </div><!-- /.footerinfo__items -->
+            </div><!-- /.footerinfo -->
+          </div><!-- /.footer__info -->
+        </div><!-- /.footer__content -->
+      </div><!-- /.container -->
+    </footer>
+
+
+    <div id="modal__callback" class="modal fade" tabindex='-1'>
+      <div class="modal-dialog">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img
+            src="img/modalclose.png"></button>
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="modal__content">
+              <div class="modal__header">
+                <div class="modal-title">Оставьте ваш номер</div>
+                <div class="modal-subtitle">И мы перезвоним в удобное для вас время.</div>
+              </div><!-- /.modal__header -->
+
+              <div class="modal__form">
+                <form>
+                  <div class="form-group">
+                    <label for="">Представьтесь, пожалуйста *</label>
+                    <input type="text" name="" placeholder="" class="input_error">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Телефон *</label>
+                    <input type="tel" name="" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Время *</label>
+                    <div class="inputcols">
+                      <div class="inputcols__input">
+                        <select name="" id="">
+                          <option value="10:00">10:00</option>
+                          <option value="11:00">11:00</option>
+                          <option value="12:00">12:00</option>
+                          <option value="13:00">13:00</option>
+                          <option value="14:00">14:00</option>
+                          <option value="14:00">15:00</option>
+                        </select>
+                      </div>
+                      <div class="inputcols__input">
+                        <select name="" id="">
+                          <option value="10:00">10:00</option>
+                          <option value="11:00">11:00</option>
+                          <option value="12:00">12:00</option>
+                          <option value="13:00">13:00</option>
+                          <option value="14:00">14:00</option>
+                          <option value="14:00">15:00</option>
+                          <option value="14:00">16:00</option>
+                        </select>
+                      </div>
+                    </div><!-- /.inputcols -->
+
+                  </div>
+
+                  <div class="check">
+                    <input type="checkbox" id="checkbox_modal_1" checked>
+                    <label for="checkbox_modal_1">Согласие на обработку <a href=""> персональных данных</a></label>
+                  </div>
+
+                  <div class="form-group form-group_last">
+                    <button class="btn btn_gradient btn_modal maingradient" type="submit">Перезвоните мне</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
-        <div class="topmenu" id="topmenu">
-          <div class="container">
-            <div class="topmenu__wrapper">
-              <div class="topmenu__header">
-                <div class="topmenu__logo">
-                  <a href="/"><img src="img/logo.svg" alt="" /></a>
-                </div>
-                <div class="topmenu__close">
-                  <a href="#"><img src="img/close.png" alt="" /></a>
-                </div>
-              </div>
-              <div class="topmenu__main">
-                <div class="topmenu__left">
-                  <div class="topmenu__menu">
-                    <div class="topmenu__items">
-                      <div class="topmenu__item">
-                        <div class="topmenu__title"><a href="">Услуги</a></div>
-                        <div class="topmenu__subitems">
-                          <ul>
-                            <li><a href="">Веб-разработка</a></li>
-                            <li><a href="">Маркетинг</a></li>
-                            <li><a href="">Поддержка и автоматизация</a></li>
-                            <li><a href="">Другие услуги</a></li>
+      </div>
+    </div>
+
+
+    <div id="modal__order" class="modal modal_large fade" tabindex='-1'>
+      <div class="modal-dialog">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img
+            src="img/modalclose.png"></button>
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="modal__content">
+              <div class="modal__header">
+                <div class="modal-title">Отправить заявку</div>
+              </div><!-- /.modal__header -->
+              <div class="modal__form">
+                <form>
+                  <div class="modal__cols">
+                    <div class="modal__col">
+                      <div class="form-group">
+                        <label for="">Какая услуга Вас интересует?</label>
+                        <!-- кастомный "селект" -->
+                        <div class="dropdown">
+                          <input type="hidden" value="" class="dropdown_value">
+                          <div class="dropdown__label">Создание сайтов</div>
+                          <ul class="dropdown__menu">
+                            <li>Создание сайтов</li>
+                            <li>Готовое решение</li>
+                            <li>Мобильное приложение</li>
+                            <li>Поисковая оптимизация</li>
+                            <li>SEO-продвижение</li>
+                            <li>Контектсная реклама</li>
+                            <li>Поддержка сайта</li>
+                            <li>Интеграция с Битрикс 24</li>
+                            <li>Интеграция с 1С</li>
+                            <li>Другие услуги</li>
                           </ul>
                         </div>
                       </div>
-                      <div class="topmenu__item">
-                        <div class="topmenu__title"><a href="">Проекты</a></div>
-                        <div class="topmenu__title"><a href="">Компания</a></div>
-                        <div class="topmenu__title"><a href="">Контакты</a></div>
+                      <div class="form-group">
+                        <label for="">Представьтесь, пожалуйста *</label>
+                        <input type="text" name="" placeholder="" class="input_error">
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="topmenu__right">
-                  <div class="topmenu__button"><a href="#" class="bigButton">Оставить заявку</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <main>
-        <div class="pageheader">
-          <div class="container">
-            <div class="pageheader__breacrumbs">
-              <div class="container">
-                <div class="breadcrumbs">
-                  <ul>
-                    <li>
-                      <a href=""><span>Главная</span></a>
-                    </li>
-                    <li>
-                      <a href=""><span>Услуги</span></a>
-                    </li>
-                    <li><span>Маркетинг</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="pageheader__title"><h1>Маркетинг</h1></div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="pagenav">
-            <ul>
-              <li class="active"><a href="#block1" class="scrollTo">Поисковая оптимизация</a></li>
-              <li><a href="#block2" class="scrollTo">SEO-продвижение</a></li>
-              <li><a href="#block3" class="scrollTo">Контекстная реклама</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="baseseoblock offerblock" id="block1">
-          <div class="container">
-            <div class="offerblock__title">
-              <h2>Базовая поисковая оптимизация</h2>
-              <div class="offerblock__descr">
-                Поисковые системы портят своё отношение к новым сайтам без базовой оптимизации. Не упустите возможность
-                эффективного продвижения сайта сразу после его создания.
-              </div>
-            </div>
-            <div class="offerblock__btn">
-              <a href="#modal__order" data-toggle="modal" class="btn btn_black">ОСТАВИТЬ ЗАЯВКУ</a>
-            </div>
-            <div class="offerblock__cols">
-              <div class="offerblock__aside">
-                <div class="offerblock__image slide-in-left wow" data-wow-delay="0.2s">
-                  <img src="img/img2.png" alt="" />
-                </div>
-              </div>
-              <div class="offerblock__main offerblock__main_right">
-                <h4>Зачем нужна поисковая оптимизация?</h4>
-                <div class="offerblock__descr">
-                  Проекты, у которых не проведены базовые работы по SEO — теряют свой авторитет в глазах поисковых
-                  систем и не привлекают трафик. Чем раньше вы выполните базовую оптимизацию, тем проще будет в
-                  дальнейшем увеличивать целевой трафик и количество заявок.
-                </div>
-                <h3>негативно сказываются:</h3>
-                <div class="listround">
-                  <ul>
-                    <li>Пустые разделы</li>
-                    <li>Битые ссылки</li>
-                    <li>Дубли страниц</li>
-                    <li>Отсутствие мета-тегов</li>
-                    <li>Ошибки отображения и отсутствие региона привязки</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <h3>Сколько стоит?</h3>
-            <div class="offerblock__text offerblock__text_big">от <span>20 000</span> руб.</div>
-            <div class="offerblock__descr">
-              Базовая оптимизация требуется проектам на этапе разработки, с молодым доменом, с не большим количеством
-              страниц и узкоспециализированной тематикой.
-            </div>
-            <div class="offerblock__cases offerblock__cases_blue">
-              <a href="#modal__order" data-toggle="modal"
-                ><img src="img/calculator2.svg" alt="" /> <span>РАССЧИТАТЬ СТОИМОСТЬ</span></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="topseoblock offerblock" id="block2">
-          <div class="container">
-            <div class="offerblock__title">
-              <h2>SEO-ПРОДВИЖЕНИЕ сайта</h2>
-              <div class="offerblock__descr">Успешно увеличиваем продажи с 2011 года! Гарантируем ТОП-10!</div>
-            </div>
-            <div class="offerblock__cases">
-              <a href=""><img src="img/portfolio.svg" alt="" /> <span>смотреть кейсы</span></a>
-            </div>
-            <div class="offerblock__prices">
-              <h3>ТАРИФЫ НА ПРОДВИЖЕНИЕ</h3>
-              <div class="offerblock__cards">
-                <div class="cards cards_3">
-                  <div class="card slide-in-bottom wow" data-wow-delay="0.2s">
-                    <div class="card__wrapper">
-                      <div class="card__content">
-                        <div class="card__main">
-                          <div class="card__icon">
-                            <div class="card__onlyicon"><img src="img/startup.svg" alt="" /></div>
-                          </div>
-                          <div class="card__title">ПРОДВИЖЕНИЕ САЙТА В ТОП-10</div>
-                          <div class="card__list">
-                            <ul>
-                              <li>Аудит сайта</li>
-                              <li>Внутренняя оптимизация</li>
-                              <li>Семантическое ядро</li>
-                              <li>Копирайтинг</li>
-                              <li>Входящие ссылки</li>
-                              <li>Улучшение представления сайта в результатах поиска</li>
-                              <li>Мониторинг текущей ситуации</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="card__bottom">
-                          <div class="card__price">
-                            <span class="card__price-text">от</span>
-                            <span class="card__price-value">30 000 <span class="rouble">₽</span></span>
-                          </div>
-                          <div class="card__button">
-                            <a href="#modal__order" data-toggle="modal" class="btn btn_small">Получить предложение</a>
-                          </div>
-                        </div>
+                      <div class="form-group">
+                        <label for="">Телефон *</label>
+                        <input type="tel" name="" placeholder="" class="input_error">
                       </div>
-                    </div>
-                  </div>
-                  <div class="card slide-in-bottom wow" data-wow-delay="0.5s">
-                    <div class="card__wrapper">
-                      <div class="card__content">
-                        <div class="card__main">
-                          <div class="card__icon">
-                            <div class="card__onlyicon"><img src="img/online-data.svg" alt="" /></div>
-                          </div>
-                          <div class="card__title">ПРОДВИЖЕНИЕ САЙТА ПО ТРАФИКУ</div>
-                          <div class="card__list">
-                            <ul>
-                              <li>Комплексный аудит сайта</li>
-                              <li>
-                                Развитие сайта с учётом актуальных требований поисковых систем и удобства пользователей
-                              </li>
-                              <li>Доработки сайта входят в стоимость</li>
-                              <li>Повышение качества контента</li>
-                              <li>Улучшение юзабилити</li>
-                              <li>Увеличение конверсии и рост целевой аудитории</li>
-                              <li>Мониторинг текущей ситуации</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="card__bottom">
-                          <div class="card__price">
-                            <span class="card__price-text">от</span>
-                            <span class="card__price-value">30 000 <span class="rouble">₽</span></span>
-                          </div>
-                          <div class="card__button">
-                            <a href="#modal__order" data-toggle="modal" class="btn btn_small">Получить предложение</a>
-                          </div>
-                        </div>
+                      <div class="form-group">
+                        <label for="">E-mail *</label>
+                        <input type="text" name="" placeholder="" class="input_error">
                       </div>
-                    </div>
-                  </div>
-                  <div class="card slide-in-bottom wow" data-wow-delay="0.8s">
-                    <div class="card__wrapper">
-                      <div class="card__content">
-                        <div class="card__main">
-                          <div class="card__icon">
-                            <div class="card__onlyicon"><img src="img/top-three.svg" alt="" /></div>
-                          </div>
-                          <div class="card__title">КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ</div>
-                          <div class="card__list">
-                            <ul>
-                              <li>Комплексное продвижение сайта</li>
-                              <li>SEO-продвижение в поисковых системах</li>
-                              <li>Контекстная реклама Яндекс Директ и Google AdWords</li>
-                              <li>Реклама в Яндекс.Картах</li>
-                              <li>Работа с отзывами на площадках</li>
-                              <li>Привлечение дополнительного трафика</li>
-                              <li>Полная аналитика</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="card__bottom">
-                          <div class="card__price">
-                            <span class="card__price-text">от</span>
-                            <span class="card__price-value">30 000 <span class="rouble">₽</span></span>
-                          </div>
-                          <div class="card__button">
-                            <a href="#modal__order" data-toggle="modal" class="btn btn_small">Получить предложение</a>
-                          </div>
-                        </div>
+                      <div class="form-group">
+                        <label for="">Сайт</label>
+                        <input type="text" name="" placeholder="">
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br />
-            <div class="offerblock__text">
-              Самый важный для нас KPI — рост вашего бизнеса и числа продаж через интернет.
-            </div>
-            <div class="offerblock__stages">
-              <h3>Этапы создания сайта</h3>
-              <div class="offerblock__slider">
-                <div class="offerslider">
-                  <div class="offerslider__container frame frame_branding" id="slider-topseoblock">
-                    <div class="offerslider__slider slidee">
-                      <div class="offerslider__slide">
-                        <div class="offerslider__wrapper">
-                          <div class="offerslider__content">
-                            <div class="offerslider__number">01</div>
-                            <div class="offerslider__main">
-                              <div class="offerslider__textcontent">
-                                <div class="offerslider__title">Как мы работаем</div>
-                                <div class="offerslider__text">
-                                  Подбираем для вас наиболее эффективные с точки зрения SEO поисковые запросы с высоким
-                                  конверсионным потенциалом. Правильные фразы позволяют достичь максимального объема
-                                  продаж, сократить время продвижения, а также снизить стоимость конечного лида.
-                                </div>
-                              </div>
-                              <div class="offerslider__button">
-                                <button class="btn btn_small next">
-                                  <span>Следующий этап</span> <img src="img/buttonArrow.png" alt="" />
-                                </button>
+
+                    </div><!-- /.modal__col -->
+                    <div class="modal__col">
+                      <div class="form-group">
+                        <label for="">Сообщение</label>
+                        <textarea></textarea>
+                      </div>
+                      <div class="form-group">
+                        <div class="fileupload">
+                          <label>
+                            <div class="fileupload__files">
+                              <div class="fileupload__file">
+                                <input type="file" name="file_upload"> <span class="filebutton">Прикрепить файл</span>
                               </div>
                             </div>
-                            <div class="offerslider__image"><img src="img/img3.png" alt="" /></div>
-                          </div>
+                          </label>
                         </div>
                       </div>
-                      <div class="offerslider__slide" style="background-image: url(img/slide1.png)">
-                        <div class="offerslider__wrapper">
-                          <div class="offerslider__content">
-                            <div class="offerslider__number">02</div>
-                            <div class="offerslider__main">
-                              <div class="offerslider__textcontent">
-                                <div class="offerslider__title">Брифование клиента</div>
-                                <div class="offerslider__text">
-                                  Вы заполняете подробный бриф со всеми данными о проекте. После мы обсуждаем проект и
-                                  находим подходящее решение, продумываем идею ресурса.
-                                </div>
-                              </div>
-                              <div class="offerslider__button">
-                                <button class="btn btn_small next">
-                                  <span>Следующий этап</span> <img src="img/buttonArrow.png" alt="" />
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+
+                      <div class="check">
+                        <input type="checkbox" id="checkbox_modal_2" checked>
+                        <label for="checkbox_modal_2">Согласие на обработку <a href=""> персональных
+                            данных</a></label>
                       </div>
-                      <div class="offerslider__slide" style="background-image: url(img/slide1.png)">
-                        <div class="offerslider__wrapper">
-                          <div class="offerslider__content">
-                            <div class="offerslider__number">03</div>
-                            <div class="offerslider__main">
-                              <div class="offerslider__textcontent">
-                                <div class="offerslider__title">Брифование клиента</div>
-                                <div class="offerslider__text">
-                                  Вы заполняете подробный бриф со всеми данными о проекте. После мы обсуждаем проект и
-                                  находим подходящее решение, продумываем идею ресурса.
-                                </div>
-                              </div>
-                              <div class="offerslider__button">
-                                <button class="btn btn_small next">
-                                  <span>Следующий этап</span> <img src="img/buttonArrow.png" alt="" />
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+
+                      <div class="form-group form-group_last">
+                        <button class="btn btn_gradient btn_modal maingradient" type="submit">Отправить</button>
                       </div>
-                    </div>
-                  </div>
-                </div>
+                    </div><!-- /.modal__col -->
+                  </div><!-- /.modal__cols -->
+                </form>
               </div>
             </div>
           </div>
         </div>
-        <div class="contextblock offerblock" id="block3">
-          <div class="container">
-            <div class="offerblock__title">
-              <h2>КОНТЕКСТНАЯ РЕКЛАМА</h2>
-              <div class="offerblock__descr">
-                Контекстная реклама - это объявления, показываемые по ключевым фразам. Хороший источник новых клиентов
-                практически для любого вида бизнеса, отлично работающий вместе с поисковым продвижением сайта. Ваши
-                потенциальные клиенты могут увидеть эти объявления, как на сайте ПС Яндекс, так и на тысячах других
-                сайтов.
-              </div>
-            </div>
-            <div class="offerblock__fitches offerblock__fitches_type2">
-              <h3>Преимущества</h3>
-              <div class="offerfitches">
-                <div class="offerfitches__items">
-                  <div
-                    class="offerfitches__item slide-in-bottom wow"
-                    data-wow-delay="0.3s"
-                    style="visibility: visible; animation-delay: 0.3s"
-                  >
-                    <div class="offerfitches__content">
-                      <div class="offerfitches__header">
-                        <div class="offerfitches__icon"><img src="img/checkout.svg" alt="" /></div>
-                        <div class="offerfitches__title">Быстрые<br />заявки</div>
-                      </div>
-                      <div class="offerfitches__text">Мгновенное увеличение качественных заявок с сайта</div>
-                    </div>
-                  </div>
-                  <div
-                    class="offerfitches__item slide-in-bottom wow"
-                    data-wow-delay="0.6s"
-                    style="visibility: visible; animation-delay: 0.6s"
-                  >
-                    <div class="offerfitches__content">
-                      <div class="offerfitches__header">
-                        <div class="offerfitches__icon"><img src="img/target2.svg" alt="" /></div>
-                        <div class="offerfitches__title">целевая<br />аудитория</div>
-                      </div>
-                      <div class="offerfitches__text">Показ объявления только<br />целевой аудитории</div>
-                    </div>
-                  </div>
-                  <div
-                    class="offerfitches__item slide-in-bottom wow"
-                    data-wow-delay="0.9s"
-                    style="visibility: visible; animation-delay: 0.9s"
-                  >
-                    <div class="offerfitches__content">
-                      <div class="offerfitches__header">
-                        <div class="offerfitches__icon"><img src="img/seo2.svg" alt="" /></div>
-                        <div class="offerfitches__title">двойная<br />выгода</div>
-                      </div>
-                      <div class="offerfitches__text">Контекстная реклама дает положительный эффект для SEO</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h3>Сколько стоит настройка и ведение?</h3>
-            <div class="offerblock__text offerblock__text_big">от <span>15 000</span> руб.</div>
-            <div class="offerblock__descr">(в стоимость не входит бюджет на клики)</div>
-            <div class="offerblock__cases offerblock__cases_red">
-              <a href="#modal__order" data-toggle="modal"
-                ><img src="img/calculator.svg" alt="" /> <span>РАССЧИТАТЬ СТОИМОСТЬ</span></a
-              >
-            </div>
-          </div>
-        </div>
-      </main>
+      </div>
+    </div>
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Sly/1.6.1/sly.min.js"></script>
+    <script src="js/maskedinput.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bundle.js"></script>
+
     </body>
-  </div>
-  <footer class="footer" id="footer">
-    <div class="container">
-      <div class="footer__content">
-        <div class="footer__menu">
-          <div class="footermenu">
-            <ul class="footermenu__ul">
-              <li class="footermenu__li"><a href="">Проекты</a></li>
-              <li class="footermenu__li"><a href="">Услуги</a></li>
-              <li class="footermenu__li"><a href="">Компания</a></li>
-              <li class="footermenu__li"><a href="">Контакты</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer__contacts">
-          <div class="footercontacts">
-            <div class="footercontacts__item">
-              <div class="footercontacts__phone"><a href="tel:79165133202">+7 495 118 30 13</a></div>
-            </div>
-            <div class="footercontacts__item">
-              <div class="footercontacts__mess">
-                <div class="footercontacts__text">Связаться через:</div>
-                <div class="socials">
-                  <ul>
-                    <li>
-                      <a href="//api.whatsapp.com/send?phone=79165133202" target="_blank"
-                        ><img src="img/whatsapp.svg" alt=""
-                      /></a>
-                    </li>
-                    <li>
-                      <a href="//tlgg.ru/79165133202" target="_blank"><img src="img/telegram.svg" alt="" /></a>
-                    </li>
-                    <li>
-                      <a href="viber://chat?number=%79165133202" target="_blank"><img src="img/viber.svg" alt="" /></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="footercontacts__item">
-              <div class="footercontacts__email">
-                <div class="footercontacts__text"><a href="mailto:info@empis.ru">info@empis.ru</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer__info">
-          <div class="footerinfo">
-            <div class="footerinfo__items">
-              <div class="footerinfo__item footerinfo__item--mobile-3">
-                <div class="footerinfo__text">© 2010–2021, digital-агентство EMPIS</div>
-                <div class="footerinfo__text">
-                  <small
-                    >Сайт защищен reCAPTCHA и Google. <a href="">Конфиденциальность</a> и <a href="">Условия</a>.</small
-                  >
-                </div>
-              </div>
-              <div class="footerinfo__item">
-                <div class="footerinfo__text">Москва, 5-й Донской проезд, д.15,<br />стр.9, офис 175</div>
-              </div>
-              <div class="footerinfo__item">
-                <div class="footerinfo__link"><a href="">Публичная оферта</a></div>
-              </div>
-              <div class="footerinfo__item">
-                <div class="footerinfo__link"><a href="">Политика конфиденциальности</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <div id="modal__callback" class="modal fade" tabindex="-1">
-    <div class="modal-dialog">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-        <img src="img/modalclose.png" />
-      </button>
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="modal__content">
-            <div class="modal__header">
-              <div class="modal-title">Оставьте ваш номер</div>
-              <div class="modal-subtitle">И мы перезвоним в удобное для вас время.</div>
-            </div>
-            <div class="modal__form">
-              <form>
-                <div class="form-group">
-                  <label for="">Представьтесь, пожалуйста *</label> <input name="" placeholder="" class="input_error" />
-                </div>
-                <div class="form-group">
-                  <label for="">Телефон *</label> <input type="tel" name="" placeholder="" />
-                </div>
-                <div class="form-group">
-                  <label for="">Время *</label>
-                  <div class="inputcols">
-                    <div class="inputcols__input">
-                      <select name="" id="">
-                        <option value="10:00">10:00</option>
-                        <option value="11:00">11:00</option>
-                        <option value="12:00">12:00</option>
-                        <option value="13:00">13:00</option>
-                        <option value="14:00">14:00</option>
-                        <option value="14:00">15:00</option>
-                      </select>
-                    </div>
-                    <div class="inputcols__input">
-                      <select name="" id="">
-                        <option value="10:00">10:00</option>
-                        <option value="11:00">11:00</option>
-                        <option value="12:00">12:00</option>
-                        <option value="13:00">13:00</option>
-                        <option value="14:00">14:00</option>
-                        <option value="14:00">15:00</option>
-                        <option value="14:00">16:00</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="check">
-                  <input type="checkbox" id="checkbox_modal_1" checked="checked" />
-                  <label for="checkbox_modal_1">Согласие на обработку <a href="">персональных данных</a></label>
-                </div>
-                <div class="form-group form-group_last">
-                  <button class="btn btn_gradient btn_modal maingradient" type="submit">Перезвоните мне</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="modal__order" class="modal modal_large fade" tabindex="-1">
-    <div class="modal-dialog">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-        <img src="img/modalclose.png" />
-      </button>
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="modal__content">
-            <div class="modal__header"><div class="modal-title">Отправить заявку</div></div>
-            <div class="modal__form">
-              <form>
-                <div class="modal__cols">
-                  <div class="modal__col">
-                    <div class="form-group">
-                      <label for="">Какая услуга Вас интересует?</label>
-                      <div class="dropdown">
-                        <input type="hidden" value="" class="dropdown_value" />
-                        <div class="dropdown__label">Создание сайтов</div>
-                        <ul class="dropdown__menu">
-                          <li>Создание сайтов</li>
-                          <li>Готовое решение</li>
-                          <li>Мобильное приложение</li>
-                          <li>Поисковая оптимизация</li>
-                          <li>SEO-продвижение</li>
-                          <li>Контектсная реклама</li>
-                          <li>Поддержка сайта</li>
-                          <li>Интеграция с Битрикс 24</li>
-                          <li>Интеграция с 1С</li>
-                          <li>Другие услуги</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="">Представьтесь, пожалуйста *</label>
-                      <input name="" placeholder="" class="input_error" />
-                    </div>
-                    <div class="form-group">
-                      <label for="">Телефон *</label> <input type="tel" name="" placeholder="" class="input_error" />
-                    </div>
-                    <div class="form-group">
-                      <label for="">E-mail *</label> <input name="" placeholder="" class="input_error" />
-                    </div>
-                    <div class="form-group"><label for="">Сайт</label> <input name="" placeholder="" /></div>
-                  </div>
-                  <div class="modal__col">
-                    <div class="form-group"><label for="">Сообщение</label> <textarea></textarea></div>
-                    <div class="form-group">
-                      <div class="fileupload">
-                        <label
-                          ><div class="fileupload__files">
-                            <div class="fileupload__file">
-                              <input type="file" name="file_upload" /> <span class="filebutton">Прикрепить файл</span>
-                            </div>
-                          </div></label
-                        >
-                      </div>
-                    </div>
-                    <div class="check">
-                      <input type="checkbox" id="checkbox_modal_2" checked="checked" />
-                      <label for="checkbox_modal_2">Согласие на обработку <a href="">персональных данных</a></label>
-                    </div>
-                    <div class="form-group form-group_last">
-                      <button class="btn btn_gradient btn_modal maingradient" type="submit">Отправить</button>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/Sly/1.6.1/sly.min.js"></script>
-  <script src="js/maskedinput.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/bundle.js"></script>
-</html>
+
+    </html>

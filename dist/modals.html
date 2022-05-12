@@ -1,228 +1,231 @@
+
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
-    <link rel="preload" href="/fonts/New_Channel_Font-Medium.ttf" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="/fonts/New_Channel_Font-Bold.ttf" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="/fonts/New_Channel_Font-Black.ttf" as="font" crossorigin="anonymous" />
-    <link rel="shortcut icon" href="favicon/favicon.ico" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.bundle.css" />
-    <title>Заголовок | Проект</title>
-  </head>
-  <body>
-    <header id="header" class="header">
-      <div class="container">
-        <div class="header__content">
-          <div class="header__left">
-            <div class="header__logo">
-              <a href="/"
-                ><img src="img/logo_black.svg" alt="" class="logo" width="155" height="44" />
-                <img src="img/logo.svg" alt="" class="logo logo--fixed" width="155" height="44"
-              /></a>
-            </div>
-            <div class="header__menu">
-              <a href="#"
-                ><img src="img/menu.png" alt="" class="headerToggler" width="25" height="13" />
-                <img src="img/menu2.png" alt="" class="headerToggler headerToggler--fixed" width="25" height="13"
-              /></a>
-            </div>
-          </div>
-          <div class="header__right">
-            <div class="header__nav">
-              <div class="headernav">
-                <div class="headernav__menu">
-                  <ul>
-                    <li class="headernav__link"><a href="">Проекты</a></li>
-                    <li class="headernav__link"><a href="">Услуги</a></li>
-                    <li class="headernav__link"><a href="">Компания</a></li>
-                    <li class="headernav__link"><a href="">Контакты</a></li>
-                  </ul>
-                </div>
-                <div class="headernav__contact">
-                  <div class="contact">
-                    <div class="contact__call"><a href="#">Связаться с нами</a></div>
-                    <div class="contact__content">
-                      <div class="contact__text">Мы принимаем звонки по будням с 10:00 до 18:00</div>
-                      <div class="contact__phone"><a href="tel:+74951183013">+7 495 118 30 13</a></div>
-                      <div class="contact__socials">
-                        <div class="socials">
-                          <ul>
-                            <li>
-                              <a href="//api.whatsapp.com/send?phone=79165133202" target="_blank"
-                                ><img src="img/whatsapp.svg" alt=""
-                              /></a>
-                            </li>
-                            <li>
-                              <a href="//tlgg.ru/79165133202" target="_blank"><img src="img/telegram.svg" alt="" /></a>
-                            </li>
-                            <li>
-                              <a href="viber://chat?number=%79165133202" target="_blank"
-                                ><img src="img/viber.svg" alt=""
-                              /></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="contact__button"><a href="" class="btn btn--small">Обратный звонок</a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="topmenu" id="topmenu">
-        <div class="container">
-          <div class="topmenu__wrapper">
-            <div class="topmenu__header">
-              <div class="topmenu__logo">
-                <a href="/"><img src="img/logo.svg" alt="" /></a>
-              </div>
-              <div class="topmenu__close">
-                <a href="#"><img src="img/close.png" alt="" /></a>
-              </div>
-            </div>
-            <div class="topmenu__main">
-              <div class="topmenu__left">
-                <div class="topmenu__menu">
-                  <div class="topmenu__items">
-                    <div class="topmenu__item">
-                      <div class="topmenu__title"><a href="">Услуги</a></div>
-                      <div class="topmenu__subitems">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preload" href="/fonts/New_Channel_Font-Medium.ttf" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/New_Channel_Font-Bold.ttf" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/New_Channel_Font-Black.ttf" as="font" crossorigin="anonymous">
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.bundle.css" />
+
+  <title>Заголовок | Проект</title>
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__left">
+          <div class="header__logo">
+            <a href="/">
+              <img src="img/logo_black.svg" alt="" class="logo" width="155" height="44">
+              <img src="img/logo.svg" alt="" class="logo logo--fixed" width="155" height="44">
+            </a>
+          </div><!-- /.header__logo -->
+          <div class="header__menu"><a href="#">
+              <img src="img/menu.png" alt="" class="headerToggler" width="25" height="13">
+              <img src="img/menu2.png" alt="" class="headerToggler headerToggler--fixed" width="25" height="13">
+            </a>
+          </div><!-- /.header__menu -->
+        </div><!-- /.header__left -->
+
+        <div class="header__right">
+          <div class="header__nav">
+            <div class="headernav">
+              <div class="headernav__menu">
+                <ul>
+                  <li class="headernav__link"><a href="">Проекты</a></li>
+                  <li class="headernav__link"><a href="">Услуги</a></li>
+                  <li class="headernav__link"><a href="">Компания</a></li>
+                  <li class="headernav__link"><a href="">Контакты</a></li>
+                </ul>
+              </div><!-- /.headernav__menu -->
+              <div class="headernav__contact">
+                <div class="contact">
+                  <div class="contact__call"><a href="#">Связаться с нами</a></div><!-- /.contact__call -->
+                  <div class="contact__content">
+                    <div class="contact__text">Мы принимаем звонки по будням с 10:00 до 18:00</div>
+                    <!-- /.contact__text -->
+                    <div class="contact__phone"><a href="tel:+74951183013">+7 495 118 30 13</a></div>
+                    <!-- /.contact__phone -->
+
+
+                    <div class="contact__socials">
+                      <div class="socials">
                         <ul>
-                          <li><a href="">Веб-разработка</a></li>
-                          <li><a href="">Маркетинг</a></li>
-                          <li><a href="">Поддержка и автоматизация</a></li>
-                          <li><a href="">Другие услуги</a></li>
+                          <li><a href="//api.whatsapp.com/send?phone=79165133202" target="_blank"><img
+                                src="img/whatsapp.svg" alt=""></a></li>
+                          <li><a href="//tlgg.ru/79165133202" target="_blank"><img src="img/telegram.svg" alt=""></a>
+                          </li>
+                          <li><a href="viber://chat?number=%79165133202" target="_blank"><img src="img/viber.svg"
+                                alt=""></a></li>
                         </ul>
-                      </div>
-                    </div>
-                    <div class="topmenu__item">
-                      <div class="topmenu__title"><a href="">Проекты</a></div>
-                      <div class="topmenu__title"><a href="">Компания</a></div>
-                      <div class="topmenu__title"><a href="">Контакты</a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="topmenu__right">
-                <div class="topmenu__button"><a href="#" class="bigButton">Оставить заявку</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="page">
-        <section class="servicesblock">
-          <div class="container">
-            <a href="#modal__callback" data-toggle="modal" class="btn">Форма - заказать звонок</a>
-            <a href="#modal__order" data-toggle="modal" class="btn">Форма - отправить заявку</a>
-          </div>
-        </section>
-      </div>
-    </main>
+                      </div><!-- /.socials -->
+                    </div><!-- /.contact__socials -->
+                    <div class="contact__button"><a href="" class="btn btn--small">Обратный звонок</a><!-- /.btn -->
+                    </div><!-- /.contact__button -->
+                  </div><!-- /.contact__content -->
+                </div><!-- /.contact -->
+              </div><!-- /.headernav__contact -->
+            </div><!-- /.headernav -->
+          </div><!-- /.header__nav -->
+        </div><!-- /.header__right -->
+      </div><!-- /.header__content -->
+    </div><!-- /.container -->
+    <div class="topmenu" id="topmenu">
+      <div class="container">
+        <div class="topmenu__wrapper">
+          <div class="topmenu__header">
+            <div class="topmenu__logo">
+              <a href="/">
+                <img src="img/logo.svg" alt="">
+              </a>
+            </div><!-- /.topmenu__logo -->
+            <div class="topmenu__close"><a href="#"><img src="img/close.png" alt=""></a></div><!-- /.topmenu__close -->
+          </div><!-- /.topmenu__header -->
+          <div class="topmenu__main">
+            <div class="topmenu__left">
+              <div class="topmenu__menu">
+                <div class="topmenu__items">
+                  <div class="topmenu__item">
+                    <div class="topmenu__title"><a href="">Услуги</a></div><!-- /.topmenu__title -->
+                    <div class="topmenu__subitems">
+                      <ul>
+                        <li><a href="">Веб-разработка</a></li>
+                        <li><a href="">Маркетинг</a></li>
+                        <li><a href="">Поддержка и автоматизация</a></li>
+                        <li><a href="">Другие услуги</a></li>
+                      </ul>
+                    </div><!-- /.topmenu__subitems -->
+                  </div><!-- /.topmenu__item -->
+                  <div class="topmenu__item">
+                    <div class="topmenu__title"><a href="">Проекты</a></div><!-- /.topmenu__title -->
+                    <div class="topmenu__title"><a href="">Компания</a></div><!-- /.topmenu__title -->
+                    <div class="topmenu__title"><a href="">Контакты</a></div><!-- /.topmenu__title -->
+                  </div><!-- /.topmenu__item -->
+                </div><!-- /.topmenu__items -->
+              </div><!-- /.topmenu__menu -->
+            </div><!-- /.topmenu__left -->
+            <div class="topmenu__right">
+              <div class="topmenu__button"><a href="#" class="bigButton">Оставить заявку</a><!-- /.bigButton -->
+              </div><!-- /.topmenu__button -->
+            </div><!-- /.topmenu__right -->
+          </div><!-- /.topmenu__main -->
+        </div><!-- /.topmenu__wrapper -->
+      </div><!-- /.container -->
+    </div><!-- /.topmenu -->
+  </header>
+
+<main>
+  <div class="page">
+    <section class="servicesblock">
+      <div class="container">
+        <a href="#modal__callback" data-toggle="modal" class="btn ">Форма - заказать звонок</a>
+        <a href="#modal__order" data-toggle="modal" class="btn ">Форма - отправить заявку</a>
+      </div><!-- /.container -->
+    </section>
+  </div><!-- /.page -->
+</main>
+
     <footer class="footer" id="footer">
       <div class="container">
         <div class="footer__content">
           <div class="footer__menu">
             <div class="footermenu">
               <ul class="footermenu__ul">
-                <li class="footermenu__li"><a href="">Проекты</a></li>
-                <li class="footermenu__li"><a href="">Услуги</a></li>
-                <li class="footermenu__li"><a href="">Компания</a></li>
-                <li class="footermenu__li"><a href="">Контакты</a></li>
-              </ul>
-            </div>
-          </div>
+                <li class="footermenu__li"><a href="">Проекты</a></li><!-- /.footermenu__li -->
+                <li class="footermenu__li"><a href="">Услуги</a></li><!-- /.footermenu__li -->
+                <li class="footermenu__li"><a href="">Компания</a></li><!-- /.footermenu__li -->
+                <li class="footermenu__li"><a href="">Контакты</a></li><!-- /.footermenu__li -->
+              </ul><!-- /.footermenu__ul -->
+            </div><!-- /.footermenu -->
+          </div><!-- /.footer__menu -->
           <div class="footer__contacts">
             <div class="footercontacts">
               <div class="footercontacts__item">
-                <div class="footercontacts__phone"><a href="tel:79165133202">+7 495 118 30 13</a></div>
-              </div>
+                <div class="footercontacts__phone"><a href="tel:79165133202 ">+7 495 118 30 13 </a></div>
+                <!-- /.footercontacts__phone -->
+              </div><!-- /.footercontacts__item -->
               <div class="footercontacts__item">
                 <div class="footercontacts__mess">
-                  <div class="footercontacts__text">Связаться через:</div>
+                  <div class="footercontacts__text">Связаться через:</div><!-- /.footercontacts__text -->
                   <div class="socials">
                     <ul>
-                      <li>
-                        <a href="//api.whatsapp.com/send?phone=79165133202" target="_blank"
-                          ><img src="img/whatsapp.svg" alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="//tlgg.ru/79165133202" target="_blank"><img src="img/telegram.svg" alt="" /></a>
-                      </li>
-                      <li>
-                        <a href="viber://chat?number=%79165133202" target="_blank"
-                          ><img src="img/viber.svg" alt=""
-                        /></a>
-                      </li>
+                      <li><a href="//api.whatsapp.com/send?phone=79165133202" target="_blank"><img
+                            src="img/whatsapp.svg" alt=""></a></li>
+                      <li><a href="//tlgg.ru/79165133202" target="_blank"><img src="img/telegram.svg" alt=""></a></li>
+                      <li><a href="viber://chat?number=%79165133202" target="_blank"><img src="img/viber.svg"
+                            alt=""></a></li>
                     </ul>
                   </div>
-                </div>
-              </div>
+                </div><!-- /.footercontacts__mess -->
+
+              </div><!-- /.footercontacts__item -->
               <div class="footercontacts__item">
                 <div class="footercontacts__email">
                   <div class="footercontacts__text"><a href="mailto:info@empis.ru">info@empis.ru</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
+                  <!-- /.footercontacts__text -->
+                </div><!-- /.footercontacts__email -->
+              </div><!-- /.footercontacts__item -->
+            </div><!-- /.footercontacts -->
+          </div><!-- /.footer__contacts -->
+
           <div class="footer__info">
             <div class="footerinfo">
               <div class="footerinfo__items">
                 <div class="footerinfo__item footerinfo__item--mobile-3">
-                  <div class="footerinfo__text">© 2010–2021, digital-агентство EMPIS</div>
-                  <div class="footerinfo__text">
-                    <small
-                      >Сайт защищен reCAPTCHA и Google. <a href="">Конфиденциальность</a> и
-                      <a href="">Условия</a>.</small
-                    >
-                  </div>
-                </div>
+                  <div class="footerinfo__text">© 2010–2021, digital-агентство EMPIS</div><!-- /.footerinfo__text -->
+                  <div class="footerinfo__text"><small> Сайт защищен reCAPTCHA и Google. <a
+                        href="">Конфиденциальность</a> и <a href="">Условия</a>.</small></div>
+                  <!-- /.footerinfo__link -->
+                </div><!-- /.footerinfo__item -->
                 <div class="footerinfo__item">
-                  <div class="footerinfo__text">Москва, 5-й Донской проезд, д.15,<br />стр.9, офис 175</div>
-                </div>
+                  <div class="footerinfo__text">Москва, 5-й Донской проезд, д.15, <br> стр.9, офис 175</div>
+                  <!-- /.footerinfo__text -->
+                </div><!-- /.footerinfo__item -->
                 <div class="footerinfo__item">
-                  <div class="footerinfo__link"><a href="">Публичная оферта</a></div>
-                </div>
+                  <div class="footerinfo__link"><a href="">Публичная оферта</a></div><!-- /.footerinfo__link -->
+                </div><!-- /.footerinfo__item -->
                 <div class="footerinfo__item">
                   <div class="footerinfo__link"><a href="">Политика конфиденциальности</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                  <!-- /.footerinfo__link -->
+                </div><!-- /.footerinfo__item -->
+              </div><!-- /.footerinfo__items -->
+            </div><!-- /.footerinfo -->
+          </div><!-- /.footer__info -->
+        </div><!-- /.footer__content -->
+      </div><!-- /.container -->
     </footer>
-    <div id="modal__callback" class="modal fade" tabindex="-1">
+
+
+    <div id="modal__callback" class="modal fade" tabindex='-1'>
       <div class="modal-dialog">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-          <img src="img/modalclose.png" />
-        </button>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img
+            src="img/modalclose.png"></button>
         <div class="modal-content">
           <div class="modal-body">
             <div class="modal__content">
               <div class="modal__header">
                 <div class="modal-title">Оставьте ваш номер</div>
                 <div class="modal-subtitle">И мы перезвоним в удобное для вас время.</div>
-              </div>
+              </div><!-- /.modal__header -->
+
               <div class="modal__form">
                 <form>
                   <div class="form-group">
                     <label for="">Представьтесь, пожалуйста *</label>
-                    <input name="" placeholder="" class="input_error" />
+                    <input type="text" name="" placeholder="" class="input_error">
                   </div>
                   <div class="form-group">
-                    <label for="">Телефон *</label> <input type="tel" name="" placeholder="" />
+                    <label for="">Телефон *</label>
+                    <input type="tel" name="" placeholder="">
                   </div>
                   <div class="form-group">
                     <label for="">Время *</label>
@@ -248,12 +251,15 @@
                           <option value="14:00">16:00</option>
                         </select>
                       </div>
-                    </div>
+                    </div><!-- /.inputcols -->
+
                   </div>
+
                   <div class="check">
-                    <input type="checkbox" id="checkbox_modal_1" checked="checked" />
-                    <label for="checkbox_modal_1">Согласие на обработку <a href="">персональных данных</a></label>
+                    <input type="checkbox" id="checkbox_modal_1" checked>
+                    <label for="checkbox_modal_1">Согласие на обработку <a href=""> персональных данных</a></label>
                   </div>
+
                   <div class="form-group form-group_last">
                     <button class="btn btn_gradient btn_modal maingradient" type="submit">Перезвоните мне</button>
                   </div>
@@ -264,23 +270,27 @@
         </div>
       </div>
     </div>
-    <div id="modal__order" class="modal modal_large fade" tabindex="-1">
+
+
+    <div id="modal__order" class="modal modal_large fade" tabindex='-1'>
       <div class="modal-dialog">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-          <img src="img/modalclose.png" />
-        </button>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img
+            src="img/modalclose.png"></button>
         <div class="modal-content">
           <div class="modal-body">
             <div class="modal__content">
-              <div class="modal__header"><div class="modal-title">Отправить заявку</div></div>
+              <div class="modal__header">
+                <div class="modal-title">Отправить заявку</div>
+              </div><!-- /.modal__header -->
               <div class="modal__form">
                 <form>
                   <div class="modal__cols">
                     <div class="modal__col">
                       <div class="form-group">
                         <label for="">Какая услуга Вас интересует?</label>
+                        <!-- кастомный "селект" -->
                         <div class="dropdown">
-                          <input type="hidden" value="" class="dropdown_value" />
+                          <input type="hidden" value="" class="dropdown_value">
                           <div class="dropdown__label">Создание сайтов</div>
                           <ul class="dropdown__menu">
                             <li>Создание сайтов</li>
@@ -298,38 +308,50 @@
                       </div>
                       <div class="form-group">
                         <label for="">Представьтесь, пожалуйста *</label>
-                        <input name="" placeholder="" class="input_error" />
+                        <input type="text" name="" placeholder="" class="input_error">
                       </div>
                       <div class="form-group">
-                        <label for="">Телефон *</label> <input type="tel" name="" placeholder="" class="input_error" />
+                        <label for="">Телефон *</label>
+                        <input type="tel" name="" placeholder="" class="input_error">
                       </div>
                       <div class="form-group">
-                        <label for="">E-mail *</label> <input name="" placeholder="" class="input_error" />
+                        <label for="">E-mail *</label>
+                        <input type="text" name="" placeholder="" class="input_error">
                       </div>
-                      <div class="form-group"><label for="">Сайт</label> <input name="" placeholder="" /></div>
-                    </div>
+                      <div class="form-group">
+                        <label for="">Сайт</label>
+                        <input type="text" name="" placeholder="">
+                      </div>
+
+                    </div><!-- /.modal__col -->
                     <div class="modal__col">
-                      <div class="form-group"><label for="">Сообщение</label> <textarea></textarea></div>
+                      <div class="form-group">
+                        <label for="">Сообщение</label>
+                        <textarea></textarea>
+                      </div>
                       <div class="form-group">
                         <div class="fileupload">
-                          <label
-                            ><div class="fileupload__files">
+                          <label>
+                            <div class="fileupload__files">
                               <div class="fileupload__file">
-                                <input type="file" name="file_upload" /> <span class="filebutton">Прикрепить файл</span>
+                                <input type="file" name="file_upload"> <span class="filebutton">Прикрепить файл</span>
                               </div>
-                            </div></label
-                          >
+                            </div>
+                          </label>
                         </div>
                       </div>
+
                       <div class="check">
-                        <input type="checkbox" id="checkbox_modal_2" checked="checked" />
-                        <label for="checkbox_modal_2">Согласие на обработку <a href="">персональных данных</a></label>
+                        <input type="checkbox" id="checkbox_modal_2" checked>
+                        <label for="checkbox_modal_2">Согласие на обработку <a href=""> персональных
+                            данных</a></label>
                       </div>
+
                       <div class="form-group form-group_last">
                         <button class="btn btn_gradient btn_modal maingradient" type="submit">Отправить</button>
                       </div>
-                    </div>
-                  </div>
+                    </div><!-- /.modal__col -->
+                  </div><!-- /.modal__cols -->
                 </form>
               </div>
             </div>
@@ -345,5 +367,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/bundle.js"></script>
-  </body>
-</html>
+
+    </body>
+
+    </html>

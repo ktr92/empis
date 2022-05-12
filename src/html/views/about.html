@@ -1,0 +1,482 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<main>
+  <div class="pageheader pageheader_leftside pageheader--cover pageheader_about"
+    style="background-image: url(./img/about.jpg);">
+    <div class="pagecover">
+
+      <div class="pageheader__breacrumbs">
+        <div class="container">
+          <div class="breadcrumbs">
+            <ul>
+              <li><a href=""><span>Главная</span></a></li>
+              <li><span>О компании</span></li>
+            </ul>
+          </div><!-- /.breadcrumbs -->
+        </div><!-- /.container -->
+
+      </div><!-- /.pageheader__breacrumbs -->
+      <div class="pagecover__content pagecover__content_left">
+        <div class="container">
+          <div class="pageheader__title pageheader__title--center">
+            <h1>EMPIS - digital агентство полного цикла</h1>
+            <div class="offer">От исследования и стратегии до дизайна и многофункциональной разработки</div>
+            <!-- /.offer -->
+          </div><!-- /.pageheader__title -->
+        </div><!-- /.container -->
+      </div><!-- /.pagecover__content -->
+    </div><!-- /.pagecover -->
+  </div><!-- /.pageheader -->
+  <div class="cardblock cardblock_square cardblock_left">
+    <div class="container">
+      <div class="card">
+        <div class="card__wrapper">
+          <div class="card__main">
+            <div class="card__item">
+              <div class="card__title">EMPIS – агентство полного цикла, оказывающее весь комплекс услуг по разработке и
+                поддержке WEB-систем. </div>
+              <div class="card__text">Высокий профессиональный уровень наших сотрудников, ориентация на потребности
+                заказчика позволяют нам выполнить работу любой сложности.</div>
+            </div><!-- /.card__item -->
+            <div class="cardfiles">
+              <div class="cardfiles__items">
+                <div class="cardfiles__item">
+                  <div class="cardfiles__icon">
+                    <div class="cardfiles__img">
+                      <img src="img/download.svg" alt="">
+                    </div>
+                  </div><!-- /.cardfiles__icon -->
+                  <div class="cardfiles__content">
+                    <a href="#" class="cardfiles__name">Скачать презентацию агентства</a>
+                    <span class="cardfiles__info">PDF.2mb</span>
+                  </div>
+                </div><!-- /.cardfiles__item -->
+
+                <div class="cardfiles__item">
+                  <div class="cardfiles__icon">
+                    <div class="cardfiles__img">
+                      <img src="img/download.svg" alt="">
+                    </div>
+                  </div><!-- /.cardfiles__icon -->
+                  <div class="cardfiles__content">
+                    <a href="#" class="cardfiles__name">Скачать бриф на разработку сайта</a>
+                    <span class="cardfiles__info">PDF.2mb</span>
+                  </div>
+                </div><!-- /.cardfiles__item -->
+
+              </div><!-- /.cardfiles__items -->
+            </div><!-- /.cardfiles -->
+
+
+          </div><!-- /.card__main -->
+          <div class="card__form">
+            <div class="callform">
+              <div class="callform__content">
+                <div class="callform__title">Хотите получить консультацию?</div>
+                <div class="callform__text">Оставьте заявку, и наш менеджер свяжется с вами в течение дня.</div>
+                <div class="callform__button">
+                  <a href="#formblock" class="btn btn--border scrollTo">Отправить заявку</a>
+                </div><!-- /.callform__button -->
+              </div><!-- /.callform__content -->
+            </div><!-- /.callform -->
+          </div><!-- /.card__form -->
+        </div><!-- /.card__wrapper -->
+      </div><!-- /.card -->
+    </div><!-- /.container -->
+  </div><!-- /.cardblock -->
+
+  <div class="solution">
+    <div class="container">
+      <div class="stats">
+        <div class="stats__items">
+          <div class="stats__item">
+            <div class="stats__content">
+              <div class="stats__number"><span data-value="2010">2010</span></div>
+              <div class="stats__text">год основания компании</div>
+            </div>
+          </div>
+          <div class="stats__item">
+            <div class="stats__content">
+              <div class="stats__number">><span data-value="200">200</span></div>
+              <div class="stats__text">проектов реализовано на<br> Битриксе</div>
+            </div>
+          </div>
+          <div class="stats__item">
+            <div class="stats__content">
+              <div class="stats__number"><span data-value="95">95</span>%</div>
+              <div class="stats__text">источник роста -<br> сарафанное радио</div>
+            </div>
+          </div>
+          <div class="stats__item">
+            <div class="stats__content">
+              <div class="stats__number">> <span data-value="25000">45</span></div>
+              <div class="stats__text">клиентов на поддержке</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__clients">
+        <div class="rounditems rounditems_diff">
+          <div class="rounditems__items">
+            <div class="rounditems__col">
+              <div class="rounditems__item">
+                <div class="rounditems__content">
+                  <div class="rounditems__wrapper">
+                    <div class="rounditems__image"><img src="img/client1.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="rounditems__item">
+                <div class="rounditems__content">
+                  <div class="rounditems__wrapper">
+                    <div class="rounditems__image"><img src="img/client2.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="rounditems__item">
+                <div class="rounditems__content">
+                  <div class="rounditems__wrapper">
+                    <div class="rounditems__image"><img src="img/client7.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="rounditems__item">
+                <div class="rounditems__content">
+                  <div class="rounditems__wrapper">
+                    <div class="rounditems__image"><img src="img/client8.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounditems__col rounditems__col_big">
+              <div class="rounditems__item ">
+                <div class="rounditems__content">
+                  <div class="rounditems__wrapper">
+                    <div class="rounditems__text">
+                      Нам доверяют <br> более <mark>100 компаний</mark> <br>по всей России
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounditems__col">
+              <div class="rounditems__item">
+                <div class="rounditems__content">
+                  <div class="rounditems__wrapper">
+                    <div class="rounditems__image"><img src="img/client5.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="rounditems__item">
+                <div class="rounditems__content">
+                  <div class="rounditems__wrapper">
+                    <div class="rounditems__image"><img src="img/client6.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="rounditems__item">
+                <div class="rounditems__content">
+                  <div class="rounditems__wrapper">
+                    <div class="rounditems__image"><img src="img/client11.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="rounditems__item">
+                <div class="rounditems__content">
+                  <div class="rounditems__wrapper">
+                    <div class="rounditems__image"><img src="img/client12.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounditems__items">
+
+            <div class="rounditems__item">
+              <div class="rounditems__content">
+                <div class="rounditems__wrapper">
+                  <div class="rounditems__image"><img src="img/client3.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="rounditems__item">
+              <div class="rounditems__content">
+                <div class="rounditems__wrapper">
+                  <div class="rounditems__image"><img src="img/client9.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="rounditems__item">
+              <div class="rounditems__content">
+                <div class="rounditems__wrapper">
+                  <div class="rounditems__image"><img src="img/client4.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="rounditems__item">
+              <div class="rounditems__content">
+                <div class="rounditems__wrapper">
+                  <div class="rounditems__image"><img src="img/client10.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounditems__item">
+              <div class="rounditems__content">
+                <div class="rounditems__wrapper">
+                  <div class="rounditems__image"><img src="img/client13.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="rounditems__item">
+              <div class="rounditems__content">
+                <div class="rounditems__wrapper">
+                  <div class="rounditems__image"><img src="img/client14.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+  </div><!-- /.solution -->
+
+  <div class="aboutfitches">
+    <div class="container">
+      <div class="aboutfitches__title">
+        <h2>Преимущества работы <br> с нашей компанией:</h2>
+      </div>
+      <div class="aboutfitches__wrapper">
+        <div class="aboutfitches__items">
+          <div class="aboutfitches__item">
+            <div class="aboutfitches__content">
+              <div class="aboutfitches__image"><img src="img/aboutfitches1.svg" alt=""></div>
+              <div class="aboutfitches__name">Открытость и честность</div>
+              <div class="aboutfitches__text">Наша цель – построить длительные, взаимовыгодные отношения с клиентами,
+                основанные на уважении, честности и профессионализме.</div>
+            </div><!-- /.aboutfitches__content -->
+          </div><!-- /.aboutfitches__item -->
+
+          <div class="aboutfitches__item">
+            <div class="aboutfitches__content">
+              <div class="aboutfitches__image"><img src="img/aboutfitches2.svg" alt=""></div>
+              <div class="aboutfitches__name">Сначала изучаем задачи
+              </div>
+              <div class="aboutfitches__text"> Нашу работу мы начинаем с изучения и понимания ваших задач, прежде чем
+                предлагаем решения.</div>
+            </div><!-- /.aboutfitches__content -->
+          </div><!-- /.aboutfitches__item -->
+          <div class="aboutfitches__item">
+            <div class="aboutfitches__content">
+              <div class="aboutfitches__image"><img src="img/aboutfitches3.svg" alt=""></div>
+              <div class="aboutfitches__name">Командная работа
+              </div>
+              <div class="aboutfitches__text">Наши клиенты – партнеры, которые всегда включены в процесс разработки. У
+                вас будет прямой доступ к команде для обсуждения идей.</div>
+            </div><!-- /.aboutfitches__content -->
+          </div><!-- /.aboutfitches__item -->
+          <div class="aboutfitches__item">
+            <div class="aboutfitches__content">
+              <div class="aboutfitches__image"><img src="img/aboutfitches5.svg" alt=""></div>
+              <div class="aboutfitches__name">Сражаемся до последнего
+              </div>
+              <div class="aboutfitches__text">Мы верим в то, что каждый сайт или продукт можно улучшить, независимо от
+                того каким идеальным на ваш взгляд он является. Анализируем, тестируем и предлагаем решения для
+                достижения лучших результатов.</div>
+            </div><!-- /.aboutfitches__content -->
+          </div><!-- /.aboutfitches__item -->
+          <div class="aboutfitches__item">
+            <div class="aboutfitches__content">
+              <div class="aboutfitches__image"><img src="img/aboutfitches4.svg" alt=""></div>
+              <div class="aboutfitches__name">Качество
+              </div>
+              <div class="aboutfitches__text">Ваша будущая рекомендация студии важна для нас. Поэтому качество работ —
+                наш приоритет на каждой стадии проекта.</div>
+            </div><!-- /.aboutfitches__content -->
+          </div><!-- /.aboutfitches__item -->
+          <div class="aboutfitches__item">
+            <div class="aboutfitches__content">
+              <div class="aboutfitches__image"><img src="img/aboutfitches6.png" alt=""></div>
+              <div class="aboutfitches__name">Соблюдение договоренностей
+              </div>
+              <div class="aboutfitches__text">Строгое выполнение договоренностей наше преимущество перед конкурентами.
+                Нам можно доверить проект.</div>
+            </div><!-- /.aboutfitches__content -->
+          </div><!-- /.aboutfitches__item -->
+
+        </div><!-- /.aboutfitches__items -->
+      </div><!-- /.aboutfitches__wrapper -->
+    </div><!-- /.container -->
+  </div><!-- /.aboutfitches -->
+
+  <div class="pageslider">
+    <div class="container">
+      <h2>Наша команда</h2>
+      <div class="pageslider__container slickcontainer">
+        <div class="pageslider__slider">
+          <div class="pageslider__slide">
+            <div class="pageslider__content">
+              <div class="pageslider__photo">
+                <img src="img/nophoto.png" alt="">
+              </div>
+              <div class="pageslider__name">
+                <div class="pageslider__firstname">Рябченко</div>
+                <div class="pageslider__secondname">Виктор</div>
+              </div>
+              <div class="pageslider__role"><span>Генеральный директор</span> </div>
+            </div><!-- /.pageslider__content -->
+          </div><!-- /.pageslider__slide -->
+
+          <div class="pageslider__slide">
+            <div class="pageslider__content">
+              <div class="pageslider__photo">
+                <img src="img/nophoto.png" alt="">
+              </div>
+              <div class="pageslider__name">
+                <div class="pageslider__firstname">Копнин</div>
+                <div class="pageslider__secondname">Александр</div>
+              </div>
+              <div class="pageslider__role"><span>Руководитель отдела разработки</span> </div>
+            </div><!-- /.pageslider__content -->
+          </div><!-- /.pageslider__slide -->
+          <div class="pageslider__slide">
+            <div class="pageslider__content">
+              <div class="pageslider__photo">
+                <img src="img/nophoto.png" alt="">
+              </div>
+              <div class="pageslider__name">
+                <div class="pageslider__firstname">Гефель</div>
+                <div class="pageslider__secondname">Екатерина</div>
+              </div>
+              <div class="pageslider__role"><span>Руководитель SEO-отдела</span> </div>
+            </div><!-- /.pageslider__content -->
+          </div><!-- /.pageslider__slide -->
+          <div class="pageslider__slide">
+            <div class="pageslider__content">
+              <div class="pageslider__photo">
+                <img src="img/nophoto.png" alt="">
+              </div>
+              <div class="pageslider__name">
+                <div class="pageslider__firstname">Горлова </div>
+                <div class="pageslider__secondname">Лидия</div>
+              </div>
+              <div class="pageslider__role"><span>Менеджер проектов</span> </div>
+            </div><!-- /.pageslider__content -->
+          </div><!-- /.pageslider__slide -->
+          <div class="pageslider__slide">
+            <div class="pageslider__content">
+              <div class="pageslider__photo">
+                <img src="img/nophoto.png" alt="">
+              </div>
+              <div class="pageslider__name">
+                <div class="pageslider__firstname">Фамилия</div>
+                <div class="pageslider__secondname">Имя</div>
+              </div>
+              <div class="pageslider__role"><span>Должность</span> </div>
+            </div><!-- /.pageslider__content -->
+          </div><!-- /.pageslider__slide -->
+
+        </div><!-- /.pageslider__slider -->
+        <div class="pageslider__arrows slickarrows">
+          <div class="pageslider__arrow">
+            <div class="prev"><img src="img/prev.png" alt=""></div>
+            <div class="next"><img src="img/next.png" alt=""></div>
+          </div><!-- /.pageslider__arrow -->
+        </div><!-- /.pageslider__arrows -->
+      </div><!-- /.pageslider__container -->
+    </div><!-- /.contaier -->
+  </div><!-- /.pageslider -->
+
+  <div class="reviewsblock reviewsblock_slider">
+    <div class="container">
+      <div class="titleLine">
+        <h3>Отзывы клиентов</h3>
+        <hr>
+      </div>
+      <div class="imgcard">
+        <div class="imgcard__wrapper imgcard__wrapper_slider">
+          <div class="imgcard__image">
+            <div class="imgcard__img"><a href="img/img4.png" data-lightbox="review"><img src="img/img4.png" alt=""></a>
+            </div>
+          </div>
+          <div class="imgcard__image">
+            <div class="imgcard__img"><a href="img/img4.png" data-lightbox="review"><img src="img/img4.png" alt=""></a>
+            </div>
+          </div>
+          <div class="imgcard__image">
+            <div class="imgcard__img"><a href="img/img4.png" data-lightbox="review"><img src="img/img4.png" alt=""></a>
+            </div>
+          </div>
+          <div class="imgcard__image">
+            <div class="imgcard__img"><a href="img/img4.png" data-lightbox="review"><img src="img/img4.png" alt=""></a>
+            </div>
+          </div>
+          <div class="imgcard__image">
+            <div class="imgcard__img"><a href="img/img4.png" data-lightbox="review"><img src="img/img4.png" alt=""></a>
+            </div>
+          </div>
+          <div class="imgcard__image">
+            <div class="imgcard__img"><a href="img/img4.png" data-lightbox="review"><img src="img/img4.png" alt=""></a>
+            </div>
+          </div>
+        </div><!-- /.imgcard__wrapper -->
+      </div><!-- /.imgcard -->
+    </div><!-- /.container -->
+  </div><!-- /.reviewsblock -->
+  <div class="formblock" id="formblock">
+    <div class="container">
+      <div class="form">
+        <div class="form__title">Расскажите о вашем проекте</div><!-- /.form__title -->
+        <div class="form__form">
+          <form action="">
+            <div class="form__row">
+              <div class="form__input"><input type="text" placeholder="Ваше имя *"></div><!-- /.form__input -->
+              <div class="form__input"><input type="text" placeholder="Телефон *"></div><!-- /.form__input -->
+              <div class="form__input form__input--halfsm"><input type="text" placeholder="E-mail *"></div>
+              <!-- /.form__input -->
+
+              <div class="form__input form__input--full"><textarea name="" id="" cols="" rows="1"
+                  placeholder="Сообщение"></textarea>
+                <!-- /# -->
+              </div><!-- /.form__input -->
+            </div><!-- /.form__row -->
+            <div class="form__row form__row--notsm">
+              <div class="form__input">
+                <div class="check">
+                  <input type="checkbox" id="checkbox_3"> <label for="checkbox_3">Согласие на обработку
+                    <a href="">персональных данных</a></label>
+                </div>
+              </div><!-- /.form__input -->
+              <div class="form__input">
+                <div class="fileupload">
+                  <label>
+                    <div class="fileupload__files">
+                      <div class="fileupload__file">
+                        <input type="file" name="file_upload">
+                        <span class="filebutton">Прикрепить файл</span>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div><!-- /.form__input -->
+              <div class="form__input">
+                <butto type="submit" class="bigButton">Отправить</butto>
+              </div><!-- /.form__input -->
+            </div><!-- /.form__row -->
+          </form>
+        </div><!-- /.form__form -->
+      </div><!-- /.form -->
+    </div><!-- /.container -->
+  </div><!-- /.formblock -->
+</main>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

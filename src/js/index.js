@@ -61,6 +61,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
 $(document).ready(function () {
 
+  var something = (function () {
+    var executed = false;
+    return function () {
+      if (!executed) {
+        executed = true;
+        $('.stats__number span').each(function () {
+          $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+          }, {
+            duration: 2000,
+            easing: 'swing',
+            step: function (now) {
+              $(this).text(Math.ceil(now));
+            }
+          });
+        });
+      }
+    };
+  })();
+
+
+
+  $(window).scroll(function () {
+    var top_of_element = $(".stats").offset().top;
+    var bottom_of_element = $(".stats").offset().top + $(".stats").outerHeight();
+    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+    var top_of_screen = $(window).scrollTop();
+
+    if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
+      something()
+    } else {
+
+    }
+  });
+
   function init() {
     $('.slidecontent').css('width', window.innerWidth + 'px');
 
@@ -106,11 +141,30 @@ $(document).ready(function () {
 
     });
 
-    $(".siteslider__container .next").click(function (e) {
-      $(this).parent().parent().find(".slick-slider").slick("slickNext");
+    $('.pageslider__slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      fade: false,
+      infinite: false,
+      arrows: false,
+
     });
-    $(".siteslider__container .prev").click(function (e) {
-      $(this).parent().parent().find(".slick-slider").slick("slickPrev");
+
+    $('.imgcard__wrapper_slider').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      fade: false,
+      infinite: false,
+      arrows: false,
+      dots: true
+
+    });
+
+    $(".slickarrows .next").click(function (e) {
+      $(this).closest('.slickcontainer').find(".slick-slider").slick("slickNext");
+    });
+    $(".slickarrows .prev").click(function (e) {
+      $(this).closest('.slickcontainer').find(".slick-slider").slick("slickPrev");
     });
 
     /* 
