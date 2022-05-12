@@ -1,9 +1,3 @@
-import './sly.min.js'
-import './bootstrap.min.js';
-import './maskedinput.min.js';
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
 
   let cover = document.querySelector('.pageheader--cover')
@@ -67,145 +61,246 @@ document.addEventListener('DOMContentLoaded', function () {
 
 $(document).ready(function () {
 
-  new WOW().init();
-
-  $('.slidecontent').css('width', window.innerWidth + 'px');
-
-
-  $('.solutionslider__wrapper').css(
-    'height',
-    $('.solutionslider__content').outerHeight() + $('.scrollbar').outerHeight(true))
-
-  $('#slider-app').sly({
-
-    horizontal: 1,
-    itemNav: 'basic',
-    smart: 1,
-    mouseDragging: 1,
-    touchDragging: 1,
-    releaseSwing: 1,
-    startAt: 0,
-    scrollBar: $('#slider-app').parent().find('.scrollbar'),
-    scrollBy: 1,
-    speed: 400,
-    elasticBounds: 1,
-    dragHandle: 1,
-    dynamicHandle: 1,
-    clickBar: 1,
-
-    // Cycling
-    cycleBy: 'items',
-    cycleInterval: 0,
-    pauseOnHover: 1,
+  function init() {
+    $('.slidecontent').css('width', window.innerWidth + 'px');
 
 
-    // Buttons
-    prev: $(this).parent().find('.prev'),
-    next: $(this).parent().find('.next')
-  });
+    $('.solutionslider__wrapper').css(
+      'height',
+      $('.solutionslider__content').outerHeight() + $('.scrollbar').outerHeight(true))
 
-  $('#slider-site').sly({
-    horizontal: 1,
-    itemNav: 'forceCentered',
-    smart: 1,
-    activateMiddle: 1,
-    releaseSwing: 1,
-    startAt: 0,
-    scrollBy: 1,
-    speed: 300,
-    elasticBounds: 1,
-    dragHandle: 1,
-    touchDragging: 1,
-    dynamicHandle: 1,
-    clickBar: 1,
-    pagesBar: $(this).find('.dots'),
-    activatePageOn: 'click',
+    $('#slider-app').sly({
 
-    // Buttons
-    prev: $(this).find('.prev'),
-    next: $(this).find('.next')
-  });
+      horizontal: 1,
+      itemNav: 'basic',
+      smart: 1,
+      mouseDragging: 1,
+      touchDragging: 1,
+      releaseSwing: 1,
+      startAt: 0,
+      scrollBar: $('#slider-app').parent().find('.scrollbar'),
+      scrollBy: 1,
+      speed: 400,
+      elasticBounds: 1,
+      dragHandle: 1,
+      dynamicHandle: 1,
+      clickBar: 1,
 
-  $('#slider-branding').sly({
-    horizontal: 1,
-    itemNav: 'forceCentered',
-    smart: 1,
-    activateMiddle: 1,
-    releaseSwing: 1,
-    startAt: 0,
-    scrollBy: 1,
-    speed: 300,
-    elasticBounds: 1,
-    dragHandle: 1,
-    touchDragging: 1,
-    dynamicHandle: 1,
-    clickBar: 1,
-    pagesBar: $(this).find('.dots'),
-    activatePageOn: 'click',
-
-    // Buttons
-    prev: $(this).find('.prev'),
-    next: $(this).find('.next')
-  });
+      // Cycling
+      cycleBy: 'items',
+      cycleInterval: 0,
+      pauseOnHover: 1,
 
 
-  $('#slider-devblock').sly({
-    horizontal: 1,
-    itemNav: 'forceCentered',
-    smart: 1,
-    activateMiddle: 1,
-    mouseDragging: 1,
-    touchDragging: 1,
-    releaseSwing: 1,
-    startAt: 0,
-    scrollBy: 1,
-    speed: 300,
-    elasticBounds: 1,
-    dragHandle: 1,
-    dynamicHandle: 1,
-    clickBar: 1,
-    cycleBy:       'items',  // Enable automatic cycling by 'items' or 'pages'.
-  	cycleInterval: 3000,  // Delay between cycles in milliseconds.
-
-  });
-
-
-
-
-  $('#slider-solutionblock').sly({
-    horizontal: 1,
-    itemNav: 'forceCentered',
-    smart: 1,
-    activateMiddle: 1,
-    mouseDragging: 1,
-    touchDragging: 1,
-    releaseSwing: 1,
-    startAt: 0,
-    scrollBy: 1,
-    speed: 300,
-    elasticBounds: 1,
-    dragHandle: 1,
-    dynamicHandle: 1,
-    clickBar: 1,
-    cycleBy:       'items',  // Enable automatic cycling by 'items' or 'pages'.
-  	cycleInterval: 3000,  // Delay between cycles in milliseconds.
-  });
-
-  $('.offerslider__slide').each(function() {
-    let w = $(this).closest('.offerslider__container').width()
-    $(this).css('width', w + 'px')
-  })
-
-
-  $('.next').each(function () {
-    $(this).on('click', function () {
-      var item = $(this).closest('.frame').data('item');
-      $(this).closest('.frame').sly('next', item);
+      // Buttons
+      prev: $(this).parent().find('.prev'),
+      next: $(this).parent().find('.next')
     });
 
-  })
+    $('.siteslider__slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: true,
+      infinite: false,
+      arrows: false,
+
+    });
+
+    $(".siteslider__container .next").click(function (e) {
+      $(this).parent().parent().find(".slick-slider").slick("slickNext");
+    });
+    $(".siteslider__container .prev").click(function (e) {
+      $(this).parent().parent().find(".slick-slider").slick("slickPrev");
+    });
+
+    /* 
+        $('#slider-site').sly({
+          horizontal: 1,
+          itemNav: 'forceCentered',
+          smart: 1,
+          activateMiddle: 0,
+          releaseSwing: 0,
+          startAt: 0,
+          scrollBy: 0,
+          speed: 300,
+          elasticBounds: 0,
+          dragHandle: 0,
+          touchDragging: 1,
+          dynamicHandle: 0,
+          clickBar: 0,
+          easing: 'swing',
+          pagesBar: $(this).find('.dots'),
+
+          // Buttons
+          prev: $(this).find('.prev'),
+          next: $(this).find('.next')
+        });
+     */
+    $('#slider-branding').sly({
+      horizontal: 1,
+      itemNav: 'forceCentered',
+      smart: 1,
+      activateMiddle: 1,
+      releaseSwing: 1,
+      startAt: 0,
+      scrollBy: 1,
+      speed: 300,
+      elasticBounds: 1,
+      dragHandle: 1,
+      touchDragging: 1,
+      dynamicHandle: 1,
+      clickBar: 1,
+      pagesBar: $(this).find('.dots'),
+      activatePageOn: 'click',
+
+      // Buttons
+      prev: $(this).find('.prev'),
+      next: $(this).find('.next')
+    });
 
 
+    $('#slider-devblock').sly({
+      horizontal: 1,
+      itemNav: 'forceCentered',
+      smart: 1,
+      activateMiddle: 1,
+      mouseDragging: 1,
+      touchDragging: 1,
+      releaseSwing: 1,
+      startAt: 0,
+      scrollBy: 1,
+      speed: 300,
+      elasticBounds: 1,
+      dragHandle: 1,
+      dynamicHandle: 1,
+      clickBar: 1,
+      cycleBy: 'items', // Enable automatic cycling by 'items' or 'pages'.
+      cycleInterval: 3000, // Delay between cycles in milliseconds.
+
+    });
+
+
+
+
+    $('#slider-solutionblock').sly({
+      horizontal: 1,
+      itemNav: 'forceCentered',
+      smart: 1,
+      activateMiddle: 1,
+      mouseDragging: 1,
+      touchDragging: 1,
+      releaseSwing: 1,
+      startAt: 0,
+      scrollBy: 1,
+      speed: 300,
+      elasticBounds: 1,
+      dragHandle: 1,
+      dynamicHandle: 1,
+      clickBar: 1,
+      cycleBy: 'items', // Enable automatic cycling by 'items' or 'pages'.
+      cycleInterval: 3000, // Delay between cycles in milliseconds.
+    });
+    $('#slider-topseoblock').sly({
+      horizontal: 1,
+      itemNav: 'forceCentered',
+      smart: 1,
+      activateMiddle: 1,
+      mouseDragging: 1,
+      touchDragging: 1,
+      releaseSwing: 1,
+      startAt: 0,
+      scrollBy: 1,
+      speed: 300,
+      elasticBounds: 1,
+      dragHandle: 1,
+      dynamicHandle: 1,
+      clickBar: 1,
+      /*  cycleBy: 'items', // Enable automatic cycling by 'items' or 'pages'.
+       cycleInterval: 3000, // Delay between cycles in milliseconds. */
+    });
+
+    $('.offerslider__slide').each(function () {
+      let w = $(this).closest('.offerslider__container').width()
+      $(this).css('width', w + 'px')
+    })
+
+
+    $('.next').each(function () {
+      $(this).on('click', function () {
+        var item = $(this).closest('.frame').data('item');
+        $(this).closest('.frame').sly('next', item);
+      });
+
+    })
+
+
+
+    $('.slidecontent').css('width', window.innerWidth + 'px');
+
+
+    $('.solutionslider__wrapper').css(
+      'height',
+      $('.solutionslider__content').outerHeight() + $('.scrollbar').outerHeight(true))
+
+    $('#slider-app').sly({
+
+      horizontal: 1,
+      itemNav: 'basic',
+      smart: 1,
+      mouseDragging: 1,
+      touchDragging: 1,
+      releaseSwing: 1,
+      startAt: 0,
+      scrollBar: $('#slider-app').parent().find('.scrollbar'),
+      scrollBy: 1,
+      speed: 400,
+      elasticBounds: 1,
+      dragHandle: 1,
+      dynamicHandle: 1,
+      clickBar: 1,
+
+      // Cycling
+      cycleBy: 'items',
+      cycleInterval: 0,
+      pauseOnHover: 1,
+
+
+      // Buttons
+      prev: $(this).parent().find('.prev'),
+      next: $(this).parent().find('.next')
+    });
+
+    $('.siteslider__slider').slick('refresh');
+    $('#slider-branding').sly('reload');
+    $('#slider-devblock').sly('reload');
+    $('#slider-solutionblock').sly('reload');
+    $('#slider-topseoblock').sly('reload');
+
+
+    $('.offerslider__slide').each(function () {
+      let w = $(this).closest('.offerslider__container').width()
+      $(this).css('width', w + 'px')
+    })
+
+
+    $('.next').each(function () {
+      $(this).on('click', function () {
+        var item = $(this).closest('.frame').data('item');
+        $(this).closest('.frame').sly('next', item);
+      });
+
+    })
+
+
+  };
+
+  init();
+
+  $(window).on('resize', function () {
+    init()
+  });
+
+  new WOW().init();
 
   $("input[type=tel]").mask("+7 (999) 999 99 99");
 

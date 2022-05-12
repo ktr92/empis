@@ -72,6 +72,7 @@ a {
 
 a:hover {
   color: $secondcolor;
+  text-decoration: none;
 }
 
 .btn {
@@ -344,7 +345,24 @@ h2 {
   .lb-data .lb-close {
     margin-right: 0;
   }
+
   .linkspanel {
     padding-bottom: 10px;
   }
+}
+
+.btn_black {
+  color: #000 !important;
+  padding: 16px 65px;
+  border-radius: 100px;
+  font-weight: 900;
+  font-style: 16px;
+}
+
+.offerblock__btn {
+  text-align: center;
+}
+
+.btn_black:hover {
+  color: #000;
 }

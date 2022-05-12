@@ -27,7 +27,7 @@ function generateHtmlPlugins(templateDir) {
 const htmlPlugins = generateHtmlPlugins("./src/html/views");
 
 const config = {
-  entry: ["./src/js/index.js", "./src/scss/style.scss"],
+  entry: ["./src/js/index.js", "./src/scss/main.scss"],
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "./js/bundle.js",
@@ -85,11 +85,6 @@ const config = {
     ],
   },
   plugins: [
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery'
-    }),
     new MiniCssExtractPlugin({
       filename: "./css/style.bundle.css",
     }),
@@ -117,6 +112,10 @@ const config = {
         {
           from: "./src/css",
           to: "./css",
+        },
+        {
+          from: "./src/js",
+          to: "./js",
         },
       ],
     }),

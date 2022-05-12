@@ -1,0 +1,408 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+
+<div class="landing">
+  <%= _.template(require('./../includes/header.html').default)(data) %>
+
+  <main>
+    <div class="pageheader">
+      <div class="container">
+        <div class="pageheader__breacrumbs">
+          <div class="container">
+            <div class="breadcrumbs">
+              <ul>
+                <li><a href=""><span>Главная</span></a></li>
+                <li><a href=""><span>Услуги</span></a></li>
+                <li><span>Маркетинг</span></li>
+              </ul>
+            </div><!-- /.breadcrumbs -->
+          </div><!-- /.container -->
+
+        </div><!-- /.pageheader__breacrumbs -->
+
+        <div class="container">
+          <div class="pageheader__title">
+            <h1>Маркетинг</h1>
+          </div><!-- /.pageheader__title -->
+        </div><!-- /.container -->
+      </div><!-- /.container -->
+    </div><!-- /.pageheader -->
+
+    <div class="container">
+      <div class="pagenav">
+        <ul>
+          <li class="active"><a href="#block1" class="scrollTo">Поисковая оптимизация</a></li>
+          <li><a href="#block2" class="scrollTo">SEO-продвижение</a></li>
+          <li><a href="#block3" class="scrollTo">Контекстная реклама</a></li>
+        </ul>
+      </div><!-- /.pagenav -->
+    </div><!-- /.container -->
+
+    <div class="baseseoblock offerblock" id="block1">
+      <div class="container">
+        <div class="offerblock__title">
+          <h2>Базовая поисковая оптимизация</h2>
+          <div class="offerblock__descr">Поисковые системы портят своё отношение к новым сайтам без базовой оптимизации.
+            Не упустите возможность эффективного продвижения сайта сразу после его создания.</div>
+        </div>
+
+        <div class="offerblock__btn"><a href="#modal__order" data-toggle="modal" class="btn btn_black">ОСТАВИТЬ
+            ЗАЯВКУ</a></div>
+
+        <div class="offerblock__cols">
+          <div class="offerblock__aside">
+            <div class="offerblock__image slide-in-left wow" data-wow-delay="0.2s"><img src="img/img2.png" alt=""></div>
+          </div><!-- /.offerblock__aside -->
+          <div class="offerblock__main offerblock__main_right">
+            <h4>
+              Зачем нужна поисковая оптимизация?
+            </h4><!-- /.offerblock__title -->
+            <div class="offerblock__descr">Проекты, у которых не проведены базовые работы по SEO — теряют свой авторитет
+              в глазах поисковых систем и не привлекают трафик. Чем раньше вы выполните базовую оптимизацию, тем проще
+              будет в дальнейшем увеличивать целевой трафик и количество заявок.</div><!-- /.offerblock__descr -->
+
+            <h3>негативно сказываются:</h3>
+            <div class="listround">
+              <ul>
+                <li>Пустые разделы</li>
+                <li>Битые ссылки</li>
+                <li>Дубли страниц</li>
+                <li>Отсутствие мета-тегов</li>
+                <li>Ошибки отображения и отсутствие региона привязки</li>
+              </ul>
+            </div><!-- /.listround -->
+
+          </div><!-- /.offerblock__main -->
+        </div><!-- /.offerblock__cols -->
+
+
+        <h3>Сколько стоит?</h3>
+        <div class="offerblock__text offerblock__text_big">
+          от <span>20 000</span> руб.
+        </div>
+        <div class="offerblock__descr">Базовая оптимизация требуется проектам на этапе разработки, с молодым доменом, с
+          не большим количеством страниц и узкоспециализированной тематикой.</div>
+        <div class="offerblock__cases offerblock__cases_blue">
+          <a href="#modal__order" data-toggle="modal">
+            <img src="img/calculator2.svg" alt="">
+            <span>РАССЧИТАТЬ СТОИМОСТЬ</span>
+          </a>
+        </div>
+
+
+
+      </div> <!-- /.container -->
+    </div><!-- /.devblock -->
+    <div class="topseoblock offerblock" id="block2">
+      <div class="container">
+        <div class="offerblock__title">
+          <h2>SEO-ПРОДВИЖЕНИЕ сайта</h2>
+          <div class="offerblock__descr">Успешно увеличиваем продажи с 2011 года! Гарантируем ТОП-10!</div>
+        </div>
+
+        <div class="offerblock__cases">
+          <a href="">
+            <img src="img/portfolio.svg" alt="">
+            <span>смотреть кейсы</span>
+          </a>
+        </div>
+
+        <div class="offerblock__prices">
+          <h3>ТАРИФЫ НА ПРОДВИЖЕНИЕ</h3>
+          <div class="offerblock__cards">
+            <div class="cards cards_3">
+              <div class="card slide-in-bottom wow" data-wow-delay="0.2s">
+                <div class="card__wrapper">
+                  <div class="card__content">
+                    <div class="card__main">
+                      <div class="card__icon">
+                        <div class="card__onlyicon">
+                          <img src="img/startup.svg" alt="">
+                        </div><!-- /.card__onlyicon -->
+                      </div><!-- /.card__icon -->
+                      <div class="card__title">ПРОДВИЖЕНИЕ САЙТА В ТОП-10</div><!-- /.card__title -->
+                      <div class="card__list">
+                        <ul>
+                          <li>Аудит сайта</li>
+                          <li>Внутренняя оптимизация</li>
+                          <li>Семантическое ядро</li>
+                          <li>Копирайтинг</li>
+                          <li>Входящие ссылки</li>
+                          <li>Улучшение представления сайта в результатах поиска</li>
+                          <li>Мониторинг текущей ситуации</li>
+                        </ul>
+                      </div><!-- /.card__list -->
+
+                    </div><!-- /.card__main -->
+                    <div class="card__bottom">
+                      <div class="card__price">
+                        <span class="card__price-text">от</span>
+                        <span class="card__price-value">30 000 <span class="rouble">₽</span> </span>
+                      </div><!-- /.card__price -->
+                      <div class="card__button"><a href="#modal__order" data-toggle="modal"
+                          class="btn btn_small">Получить предложение</a> </div>
+                      <!-- /.card__button
+                          -->
+                    </div><!-- /.card__bottom -->
+
+                  </div><!-- /.card__wrapper -->
+                </div>
+              </div><!-- /.card -->
+
+              <div class="card slide-in-bottom wow" data-wow-delay="0.5s">
+                <div class="card__wrapper">
+                  <div class="card__content">
+                    <div class="card__main">
+                      <div class="card__icon">
+                        <div class="card__onlyicon">
+                          <img src="img/online-data.svg" alt="">
+                        </div><!-- /.card__onlyicon -->
+                      </div><!-- /.card__icon -->
+                      <div class="card__title">ПРОДВИЖЕНИЕ САЙТА ПО ТРАФИКУ</div><!-- /.card__title -->
+                      <div class="card__list">
+                        <ul>
+                          <li>Комплексный аудит сайта</li>
+                          <li>Развитие сайта с учётом актуальных требований поисковых систем и удобства пользователей
+                          </li>
+                          <li> Доработки сайта входят в стоимость</li>
+                          <li>Повышение качества контента</li>
+                          <li>Улучшение юзабилити</li>
+                          <li>Увеличение конверсии и рост целевой аудитории</li>
+                          <li>Мониторинг текущей ситуации</li>
+
+                        </ul>
+                      </div><!-- /.card__list -->
+
+                    </div><!-- /.card__main -->
+                    <div class="card__bottom">
+                      <div class="card__price">
+                        <span class="card__price-text">от</span>
+                        <span class="card__price-value">30 000 <span class="rouble">₽</span> </span>
+                      </div><!-- /.card__price -->
+                      <div class="card__button"><a href="#modal__order" data-toggle="modal"
+                          class="btn btn_small">Получить предложение</a> </div>
+                      <!-- /.card__button
+                          -->
+                    </div><!-- /.card__bottom -->
+
+                  </div><!-- /.card__wrapper -->
+                </div>
+              </div><!-- /.card -->
+              <div class="card slide-in-bottom wow" data-wow-delay="0.8s">
+                <div class="card__wrapper">
+                  <div class="card__content">
+                    <div class="card__main">
+                      <div class="card__icon">
+                        <div class="card__onlyicon">
+                          <img src="img/top-three.svg" alt="">
+                        </div><!-- /.card__onlyicon -->
+                      </div><!-- /.card__icon -->
+                      <div class="card__title">КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ</div><!-- /.card__title -->
+                      <div class="card__list">
+                        <ul>
+                          <li>Комплексное продвижение сайта</li>
+                          <li> SEO-продвижение в поисковых системах</li>
+                          <li> Контекстная реклама Яндекс Директ и Google AdWords</li>
+                          <li>Реклама в Яндекс.Картах</li>
+                          <li> Работа с отзывами на площадках</li>
+                          <li>Привлечение дополнительного трафика</li>
+                          <li> Полная аналитика</li>
+
+                        </ul>
+                      </div><!-- /.card__list -->
+
+                    </div><!-- /.card__main -->
+                    <div class="card__bottom">
+                      <div class="card__price">
+                        <span class="card__price-text">от</span>
+                        <span class="card__price-value">30 000 <span class="rouble">₽</span> </span>
+                      </div><!-- /.card__price -->
+                      <div class="card__button"><a href="#modal__order" data-toggle="modal"
+                          class="btn btn_small">Получить предложение</a> </div>
+                      <!-- /.card__button
+                          -->
+                    </div><!-- /.card__bottom -->
+
+                  </div><!-- /.card__wrapper -->
+                </div>
+              </div><!-- /.card -->
+
+            </div><!-- /.cards -->
+          </div><!-- /.offerblock__cards -->
+        </div><!-- /.offerblock__prices -->
+        <br>
+        <div class="offerblock__text">
+          Самый важный для нас KPI — рост вашего бизнеса и числа продаж через интернет.
+
+        </div><!-- /.offerblock__text -->
+
+        <div class="offerblock__stages">
+          <h3>Этапы создания сайта</h3>
+          <div class="offerblock__slider">
+            <div class="offerslider">
+              <div class="offerslider__container frame frame_branding" id="slider-topseoblock">
+                <div class="offerslider__slider slidee">
+                  <div class="offerslider__slide">
+                    <div class="offerslider__wrapper">
+                      <div class="offerslider__content">
+                        <div class="offerslider__number">01</div>
+                        <div class="offerslider__main">
+                          <div class="offerslider__textcontent">
+                            <div class="offerslider__title">Как мы работаем</div>
+                            <div class="offerslider__text">Подбираем для вас наиболее эффективные с точки зрения SEO
+                              поисковые запросы с высоким конверсионным потенциалом. Правильные фразы позволяют достичь
+                              максимального объема продаж, сократить время продвижения, а также снизить стоимость
+                              конечного лида.</div>
+                          </div>
+
+                          <div class="offerslider__button">
+                            <button class="btn btn_small next">
+                              <span>Следующий этап</span>
+                              <img src="img/buttonArrow.png" alt="">
+                            </button></div>
+                        </div>
+                        <div class="offerslider__image">
+                          <img src="img/img3.png" alt="">
+                        </div><!-- /.offerslider__image -->
+
+                      </div><!-- /.offerslider__content -->
+                    </div><!-- /.offerslider__wrapper -->
+                  </div><!-- /.offerslider__slide -->
+
+                  <div class="offerslider__slide" style="background-image: url(img/slide1.png);">
+                    <div class="offerslider__wrapper">
+                      <div class="offerslider__content">
+                        <div class="offerslider__number">02</div>
+                        <div class="offerslider__main">
+                          <div class="offerslider__textcontent">
+                            <div class="offerslider__title">Брифование клиента</div>
+                            <div class="offerslider__text">Вы заполняете подробный бриф со всеми данными о проекте.
+                              После мы обсуждаем проект и находим подходящее решение, продумываем идею ресурса.</div>
+                          </div>
+
+                          <div class="offerslider__button">
+                            <button class="btn btn_small next">
+                              <span>Следующий этап</span>
+                              <img src="img/buttonArrow.png" alt="">
+                            </button>
+                          </div>
+                        </div>
+
+                      </div><!-- /.offerslider__content -->
+                    </div><!-- /.offerslider__wrapper -->
+                  </div><!-- /.offerslider__slide -->
+                  <div class="offerslider__slide" style="background-image: url(img/slide1.png);">
+                    <div class="offerslider__wrapper">
+                      <div class="offerslider__content">
+                        <div class="offerslider__number">03</div>
+                        <div class="offerslider__main">
+                          <div class="offerslider__textcontent">
+                            <div class="offerslider__title">Брифование клиента</div>
+                            <div class="offerslider__text">Вы заполняете подробный бриф со всеми данными о проекте.
+                              После мы обсуждаем проект и находим подходящее решение, продумываем идею ресурса.</div>
+                          </div>
+
+                          <div class="offerslider__button">
+                            <button class="btn btn_small next">
+                              <span>Следующий этап</span>
+                              <img src="img/buttonArrow.png" alt="">
+                            </button>
+                          </div>
+                        </div>
+
+                      </div><!-- /.offerslider__content -->
+                    </div><!-- /.offerslider__wrapper -->
+                  </div><!-- /.offerslider__slide -->
+
+                </div><!-- /.offerslider__slider -->
+              </div><!-- /.offerslider__container -->
+            </div><!-- /.offerslider -->
+          </div><!-- /.offerblock__slider -->
+        </div><!-- /.offerblock__stages -->
+      </div> <!-- /.container -->
+    </div><!-- /.devblock -->
+
+
+
+    <div class="contextblock offerblock" id="block3">
+      <div class="container">
+        <div class="offerblock__title">
+          <h2>КОНТЕКСТНАЯ РЕКЛАМА</h2>
+          <div class="offerblock__descr">Контекстная реклама - это объявления, показываемые по ключевым фразам. Хороший
+            источник новых клиентов практически для любого вида бизнеса, отлично работающий вместе с поисковым
+            продвижением сайта. Ваши потенциальные клиенты могут увидеть эти объявления, как на сайте ПС Яндекс, так и
+            на тысячах других сайтов.</div>
+        </div>
+
+        <div class="offerblock__fitches offerblock__fitches_type2">
+          <h3>Преимущества</h3>
+          <div class="offerfitches">
+            <div class="offerfitches__items">
+              <div class="offerfitches__item  slide-in-bottom wow" data-wow-delay="0.3s"
+                style="visibility: visible; animation-delay: 0.3s;">
+                <div class=" offerfitches__content">
+                  <div class="offerfitches__header">
+                    <div class="offerfitches__icon"><img src="img/checkout.svg" alt=""></div>
+                    <div class="offerfitches__title">Быстрые <br>заявки</div>
+                  </div><!-- /.offerfitches__header -->
+                  <div class="offerfitches__text">
+                    Мгновенное увеличение качественных заявок с сайта
+                  </div><!-- /.offerfitches__text -->
+                </div><!-- /.offerfitches__content -->
+              </div><!-- /.offerfitches__item -->
+              <div class="offerfitches__item  slide-in-bottom wow" data-wow-delay="0.6s"
+                style="visibility: visible; animation-delay: 0.6s;">
+                <div class="offerfitches__content">
+                  <div class="offerfitches__header">
+                    <div class="offerfitches__icon"><img src="img/target2.svg" alt=""></div>
+                    <div class="offerfitches__title">целевая <br> аудитория</div>
+                  </div><!-- /.offerfitches__header -->
+                  <div class="offerfitches__text">
+                    Показ объявления только <br> целевой аудитории
+                  </div><!-- /.offerfitches__text -->
+                </div><!-- /.offerfitches__content -->
+              </div><!-- /.offerfitches__item -->
+              <div class="offerfitches__item  slide-in-bottom wow" data-wow-delay="0.9s"
+                style="visibility: visible; animation-delay: 0.9s;">
+                <div class="offerfitches__content">
+                  <div class="offerfitches__header">
+                    <div class="offerfitches__icon"><img src="img/seo2.svg" alt=""></div>
+                    <div class="offerfitches__title">двойная <br> выгода</div>
+                  </div><!-- /.offerfitches__header -->
+                  <div class="offerfitches__text">
+                    Контекстная реклама дает
+                    положительный эффект для SEO
+                  </div><!-- /.offerfitches__text -->
+                </div><!-- /.offerfitches__content -->
+              </div><!-- /.offerfitches__item -->
+            </div><!-- /.offerfitches__items -->
+          </div><!-- /.offerfitches -->
+
+        </div>
+
+
+        <h3>Сколько стоит настройка и ведение?</h3>
+        <div class="offerblock__text offerblock__text_big">
+          от <span>15 000</span> руб.
+        </div>
+        <div class="offerblock__descr">(в стоимость не входит бюджет на клики)</div>
+        <div class="offerblock__cases offerblock__cases_red">
+          <a href="#modal__order" data-toggle="modal">
+            <img src="img/calculator.svg" alt="">
+            <span>РАССЧИТАТЬ СТОИМОСТЬ</span>
+          </a>
+        </div>
+
+
+
+      </div> <!-- /.container -->
+    </div><!-- /.devblock -->
+
+
+
+  </main>
+</div><!-- /.landing -->
+<%= _.template(require('./../includes/footer.html').default)(data) %>
